@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name power_new_18122021-rescue)(type Legacy)(uri ${KIPRJMOD}/power_new_18122021-rescue.lib)(options "")(descr ""))
+)
