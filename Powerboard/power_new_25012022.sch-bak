@@ -256,6 +256,7 @@ S 4350 3000 750  350
 U 61F04C1A
 F0 "3.3redundant" 50
 F1 "3.sch" 50
+F2 "Vin" I L 4350 3150 50 
 $EndSheet
 Connection ~ 3700 3150
 Wire Wire Line
