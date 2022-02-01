@@ -159,6 +159,9 @@ U 61BEB629
 F0 "battery Charger" 50
 F1 "battchrg.sch" 50
 F2 "System" I R 3300 3150 50 
+F3 "Stat1" I L 2450 3050 50 
+F4 "Stat2" I L 2450 3150 50 
+F5 "PG" I L 2450 3250 50 
 $EndSheet
 $Comp
 L Transistor_FET:IRF6728M Q?
