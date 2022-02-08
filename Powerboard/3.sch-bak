@@ -291,7 +291,6 @@ Wire Wire Line
 	6300 5800 6550 5800
 Wire Wire Line
 	6550 6050 6550 5800
-Connection ~ 6550 5800
 $Comp
 L iclr:LM2679T-3.3 U?
 U 1 1 61F3DFF6
@@ -586,8 +585,6 @@ Wire Wire Line
 	1000 1000 1000 3750
 Connection ~ 1000 3750
 Wire Wire Line
-	10150 1000 10150 3700
-Wire Wire Line
 	10500 3700 10150 3700
 Connection ~ 10150 3700
 Wire Wire Line
@@ -647,16 +644,16 @@ Connection ~ 7500 1750
 $Comp
 L Power_Management:LTC4412xS6 U?
 U 1 1 61FEA01F
-P 7650 5900
-F 0 "U?" H 7300 5350 50  0000 C CNN
-F 1 "LTC4412xS6" H 7300 5450 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 8300 5550 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf" H 9750 5700 50  0001 C CNN
-	1    7650 5900
+P 7850 5250
+F 0 "U?" H 7500 4700 50  0000 C CNN
+F 1 "LTC4412xS6" H 7500 4800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 8500 4900 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf" H 9950 5050 50  0001 C CNN
+	1    7850 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 5800 7250 5800
+	6750 5150 7450 5150
 $Comp
 L power:GND #PWR?
 U 1 1 61FED494
@@ -666,6 +663,104 @@ F 1 "GND" H 7655 6127 50  0000 C CNN
 F 2 "" H 7650 6300 50  0001 C CNN
 F 3 "" H 7650 6300 50  0001 C CNN
 	1    7650 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L iclr:CSD25485F5T Q?
+U 1 1 6202F74F
+P 8450 1050
+F 0 "Q?" V 8925 1150 50  0000 C CNN
+F 1 "CSD25485F5T" V 9016 1150 50  0000 C CNN
+F 2 "CSD13385F5" H 8900 1000 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/CSD25485F5" H 8900 900 50  0001 L CNN
+F 4 "-20V, P ch NexFET MOSFET, single LGA 0.8x1.5, 42mOhm" H 8900 800 50  0001 L CNN "Description"
+F 5 "0" H 8900 700 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 8900 600 50  0001 L CNN "Manufacturer_Name"
+F 7 "CSD25485F5T" H 8900 500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-CSD25485F5T" H 8900 400 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CSD25485F5T?qs=Bho%2FbeBaDExWIlvMtFx97A%3D%3D" H 8900 300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "CSD25485F5T" H 8900 200 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/csd25485f5t/texas-instruments" H 8900 100 50  0001 L CNN "Arrow Price/Stock"
+	1    8450 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 1000 8250 1000
+Wire Wire Line
+	8250 1000 8250 1350
+Connection ~ 7500 1000
+Wire Wire Line
+	8450 1050 7900 1050
+Wire Wire Line
+	7900 1050 7900 1450
+Wire Wire Line
+	8850 1350 10150 1350
+Wire Wire Line
+	10150 1350 10150 3700
+$Comp
+L power:GND #PWR?
+U 1 1 6203E5CB
+P 7500 1950
+F 0 "#PWR?" H 7500 1700 50  0001 C CNN
+F 1 "GND" V 7505 1822 50  0000 R CNN
+F 2 "" H 7500 1950 50  0001 C CNN
+F 3 "" H 7500 1950 50  0001 C CNN
+	1    7500 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6203EB10
+P 7450 5350
+F 0 "#PWR?" H 7450 5100 50  0001 C CNN
+F 1 "GND" V 7455 5222 50  0000 R CNN
+F 2 "" H 7450 5350 50  0001 C CNN
+F 3 "" H 7450 5350 50  0001 C CNN
+	1    7450 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L iclr:CSD25485F5T Q?
+U 1 1 6203F31D
+P 8650 5500
+F 0 "Q?" V 9125 5600 50  0000 C CNN
+F 1 "CSD25485F5T" V 9216 5600 50  0000 C CNN
+F 2 "CSD13385F5" H 9100 5450 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/CSD25485F5" H 9100 5350 50  0001 L CNN
+F 4 "-20V, P ch NexFET MOSFET, single LGA 0.8x1.5, 42mOhm" H 9100 5250 50  0001 L CNN "Description"
+F 5 "0" H 9100 5150 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 9100 5050 50  0001 L CNN "Manufacturer_Name"
+F 7 "CSD25485F5T" H 9100 4950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-CSD25485F5T" H 9100 4850 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CSD25485F5T?qs=Bho%2FbeBaDExWIlvMtFx97A%3D%3D" H 9100 4750 50  0001 L CNN "Mouser Price/Stock"
+F 10 "CSD25485F5T" H 9100 4650 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/csd25485f5t/texas-instruments" H 9100 4550 50  0001 L CNN "Arrow Price/Stock"
+	1    8650 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 5150 6750 5800
+Wire Wire Line
+	6750 5800 6550 5800
+Connection ~ 6550 5800
+Wire Wire Line
+	6750 5800 8450 5800
+Connection ~ 6750 5800
+Wire Wire Line
+	7850 4850 8650 4850
+Wire Wire Line
+	8650 4850 8650 5500
+Wire Wire Line
+	9050 5800 10150 5800
+$Comp
+L power:GND #PWR?
+U 1 1 62050F8C
+P 7850 5650
+F 0 "#PWR?" H 7850 5400 50  0001 C CNN
+F 1 "GND" H 7855 5477 50  0000 C CNN
+F 2 "" H 7850 5650 50  0001 C CNN
+F 3 "" H 7850 5650 50  0001 C CNN
+	1    7850 5650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
