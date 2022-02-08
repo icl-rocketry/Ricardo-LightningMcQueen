@@ -165,17 +165,6 @@ F5 "PG" I L 3900 4300 50
 $EndSheet
 $Comp
 L Transistor_FET:IRF6728M Q?
-U 1 1 61C4D11C
-P 5250 5000
-F 0 "Q?" H 5454 5046 50  0000 L CNN
-F 1 "IRF6728M" H 5454 4955 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_MX" H 5250 5000 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf6728mpbf.pdf?fileId=5546d462533600a4015355ed73701a9c" H 5250 5000 50  0001 L CNN
-	1    5250 5000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF6728M Q?
 U 1 1 61C4D116
 P 5250 4600
 F 0 "Q?" H 5454 4646 50  0000 L CNN
@@ -215,17 +204,6 @@ Wire Wire Line
 	5150 4400 5150 4200
 Wire Wire Line
 	5150 4200 4750 4200
-$Comp
-L Connector:Conn_01x01_Female J?
-U 1 1 61F29D49
-P 5950 5000
-F 0 "J?" H 5978 5026 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 5978 4935 50  0000 L CNN
-F 2 "" H 5950 5000 50  0001 C CNN
-F 3 "~" H 5950 5000 50  0001 C CNN
-	1    5950 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9100 5800 9000 5800
 Wire Wire Line
@@ -288,14 +266,34 @@ BATTSTAT2
 Text Label 10550 2850 0    50   ~ 0
 PG
 $Comp
-L Device:LED 24vEnableDiode
-U 1 1 6208CC45
-P 5600 5000
-F 0 "24vEnableDiode" H 5593 5217 50  0000 C CNN
-F 1 "LED" H 5593 5126 50  0000 C CNN
-F 2 "" H 5600 5000 50  0001 C CNN
-F 3 "~" H 5600 5000 50  0001 C CNN
-	1    5600 5000
+L Power_Management:LTC4412xS6 U?
+U 1 1 623ADA4B
+P 6250 5100
+F 0 "U?" H 6250 5681 50  0000 C CNN
+F 1 "LTC4412xS6" H 6250 5590 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 6900 4750 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf" H 8350 4900 50  0001 C CNN
+	1    6250 5100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Transistor_FET:CSD25302Q2 Q?
+U 1 1 623AE1FA
+P 5150 5400
+F 0 "Q?" H 5255 5354 50  0000 L CNN
+F 1 "CSD25302Q2" H 5255 5445 50  0000 L CNN
+F 2 "Package_SON:Texas_DQK" H 5650 5250 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/slps234b/slps234b.pdf" H 5050 5400 50  0001 C CNN
+	1    5150 5400
+	-1   0    0    1   
+$EndComp
+Text Label 5850 5200 2    50   ~ 0
+24vEnable
+Wire Wire Line
+	5150 4800 5150 5000
+Wire Wire Line
+	5150 5000 5850 5000
+Connection ~ 5150 5000
+Wire Wire Line
+	5150 5000 5150 5200
 $EndSCHEMATC
