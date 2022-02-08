@@ -218,12 +218,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Female J?
 U 1 1 61F29D49
-P 5650 5000
-F 0 "J?" H 5678 5026 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 5678 4935 50  0000 L CNN
-F 2 "" H 5650 5000 50  0001 C CNN
-F 3 "~" H 5650 5000 50  0001 C CNN
-	1    5650 5000
+P 5950 5000
+F 0 "J?" H 5978 5026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 5978 4935 50  0000 L CNN
+F 2 "" H 5950 5000 50  0001 C CNN
+F 3 "~" H 5950 5000 50  0001 C CNN
+	1    5950 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -287,4 +287,15 @@ Text Label 8950 2950 2    50   ~ 0
 BATTSTAT2
 Text Label 10550 2850 0    50   ~ 0
 PG
+$Comp
+L Device:LED 24vEnableDiode
+U 1 1 6208CC45
+P 5600 5000
+F 0 "24vEnableDiode" H 5593 5217 50  0000 C CNN
+F 1 "LED" H 5593 5126 50  0000 C CNN
+F 2 "" H 5600 5000 50  0001 C CNN
+F 3 "~" H 5600 5000 50  0001 C CNN
+	1    5600 5000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
