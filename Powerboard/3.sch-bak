@@ -133,7 +133,7 @@ F 3 "~" H 2750 5900 50  0001 C CNN
 $EndComp
 Connection ~ 2750 5800
 Wire Wire Line
-	2750 5800 3200 5800
+	2750 5800 3100 5800
 Wire Wire Line
 	1800 5800 2150 5800
 Wire Wire Line
@@ -417,7 +417,7 @@ F 3 "~" H 2700 1100 50  0001 C CNN
 $EndComp
 Connection ~ 2700 1000
 Wire Wire Line
-	2700 1000 3150 1000
+	2700 1000 2950 1000
 Wire Wire Line
 	1750 1000 2100 1000
 Wire Wire Line
@@ -582,10 +582,8 @@ Wire Wire Line
 Wire Wire Line
 	1000 5800 1450 5800
 Wire Wire Line
-	1000 3750 850  3750
-Wire Wire Line
 	1000 3750 1000 5800
-Text HLabel 850  3750 0    50   Input ~ 0
+Text HLabel 700  3750 0    50   Input ~ 0
 Vin
 Text HLabel 10500 3700 2    50   Input ~ 0
 Vout
@@ -771,14 +769,14 @@ Wire Wire Line
 	9000 1750 9000 1350
 Connection ~ 9000 1350
 Wire Wire Line
-	9000 1350 10150 1350
+	9000 1350 9250 1350
 Wire Wire Line
 	8250 5150 9200 5150
 Wire Wire Line
 	9200 5150 9200 5800
 Connection ~ 9200 5800
 Wire Wire Line
-	9200 5800 10150 5800
+	9200 5800 9450 5800
 Wire Wire Line
 	7850 5650 7300 5650
 Wire Wire Line
@@ -797,4 +795,62 @@ NoConn ~ 4950 1200
 NoConn ~ 3150 1100
 NoConn ~ 3200 5900
 NoConn ~ 5000 6000
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620D20B1
+P 9250 1350
+F 0 "TP?" H 9308 1468 50  0000 L CNN
+F 1 "TestPoint" H 9308 1377 50  0000 L CNN
+F 2 "" H 9450 1350 50  0001 C CNN
+F 3 "~" H 9450 1350 50  0001 C CNN
+	1    9250 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 9250 1350
+Wire Wire Line
+	9250 1350 10150 1350
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620D24CD
+P 9450 5800
+F 0 "TP?" H 9392 5826 50  0000 R CNN
+F 1 "TestPoint" H 9392 5917 50  0000 R CNN
+F 2 "" H 9650 5800 50  0001 C CNN
+F 3 "~" H 9650 5800 50  0001 C CNN
+	1    9450 5800
+	-1   0    0    1   
+$EndComp
+Connection ~ 9450 5800
+Wire Wire Line
+	9450 5800 10150 5800
+Wire Wire Line
+	700  3750 1000 3750
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620D653C
+P 2950 1000
+F 0 "TP?" H 3008 1118 50  0000 L CNN
+F 1 "TestPoint" H 3008 1027 50  0000 L CNN
+F 2 "" H 3150 1000 50  0001 C CNN
+F 3 "~" H 3150 1000 50  0001 C CNN
+	1    2950 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 1000
+Wire Wire Line
+	2950 1000 3150 1000
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620D69CA
+P 3100 5800
+F 0 "TP?" H 3158 5918 50  0000 L CNN
+F 1 "TestPoint" H 3158 5827 50  0000 L CNN
+F 2 "" H 3300 5800 50  0001 C CNN
+F 3 "~" H 3300 5800 50  0001 C CNN
+	1    3100 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 5800
+Wire Wire Line
+	3100 5800 3200 5800
 $EndSCHEMATC

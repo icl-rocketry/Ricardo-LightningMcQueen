@@ -501,8 +501,6 @@ Connection ~ 3300 3750
 Wire Wire Line
 	6650 3050 6650 3200
 Wire Wire Line
-	6550 3450 6650 3450
-Wire Wire Line
 	6650 3400 6650 3450
 Connection ~ 6650 3450
 Wire Wire Line
@@ -886,7 +884,7 @@ Wire Wire Line
 	4450 5200 4500 5200
 Text Label 4450 5450 2    50   ~ 0
 BTST
-Text HLabel 6550 3450 0    50   Input ~ 0
+Text HLabel 6300 3450 0    50   Input ~ 0
 System
 Text HLabel 8850 5250 3    50   Input ~ 0
 Stat2
@@ -1005,7 +1003,7 @@ Wire Wire Line
 Connection ~ 1200 1250
 Connection ~ 1200 2250
 Wire Wire Line
-	1200 2250 1000 2250
+	1200 2250 1100 2250
 Wire Wire Line
 	1200 2250 1650 2250
 Wire Wire Line
@@ -1079,7 +1077,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 6350 2150 6350
 Wire Wire Line
-	2800 6550 2800 6800
+	2800 6550 2800 6650
 Connection ~ 2800 6550
 Wire Wire Line
 	1550 6550 2800 6550
@@ -1619,4 +1617,48 @@ F 3 "~" H 7450 4650 50  0001 C CNN
 	1    7450 4650
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620C3115
+P 1100 2250
+F 0 "TP?" H 1042 2276 50  0000 R CNN
+F 1 "TestPoint" H 1042 2367 50  0000 R CNN
+F 2 "" H 1300 2250 50  0001 C CNN
+F 3 "~" H 1300 2250 50  0001 C CNN
+	1    1100 2250
+	-1   0    0    1   
+$EndComp
+Connection ~ 1100 2250
+Wire Wire Line
+	1100 2250 1000 2250
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620C3E08
+P 2800 6650
+F 0 "TP?" V 2754 6838 50  0000 L CNN
+F 1 "TestPoint" V 2845 6838 50  0000 L CNN
+F 2 "" H 3000 6650 50  0001 C CNN
+F 3 "~" H 3000 6650 50  0001 C CNN
+	1    2800 6650
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 6650
+Wire Wire Line
+	2800 6650 2800 6800
+Wire Wire Line
+	6300 3450 6450 3450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620D1148
+P 6450 3450
+F 0 "TP?" H 6508 3568 50  0000 L CNN
+F 1 "TestPoint" H 6508 3477 50  0000 L CNN
+F 2 "" H 6650 3450 50  0001 C CNN
+F 3 "~" H 6650 3450 50  0001 C CNN
+	1    6450 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 3450
+Wire Wire Line
+	6450 3450 6650 3450
 $EndSCHEMATC
