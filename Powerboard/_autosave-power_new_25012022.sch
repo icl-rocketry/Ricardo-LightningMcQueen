@@ -483,4 +483,186 @@ F 3 "~" H 3950 5850 50  0001 C CNN
 	1    3950 5850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620AFC71
+P 4700 3250
+F 0 "TP?" V 4654 3438 50  0000 L CNN
+F 1 "TestPoint" V 4745 3438 50  0000 L CNN
+F 2 "" H 4900 3250 50  0001 C CNN
+F 3 "~" H 4900 3250 50  0001 C CNN
+	1    4700 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B03B1
+P 4700 3350
+F 0 "TP?" V 4654 3538 50  0000 L CNN
+F 1 "TestPoint" V 4745 3538 50  0000 L CNN
+F 2 "" H 4900 3350 50  0001 C CNN
+F 3 "~" H 4900 3350 50  0001 C CNN
+	1    4700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B05A4
+P 4700 3450
+F 0 "TP?" V 4654 3638 50  0000 L CNN
+F 1 "TestPoint" V 4745 3638 50  0000 L CNN
+F 2 "" H 4900 3450 50  0001 C CNN
+F 3 "~" H 4900 3450 50  0001 C CNN
+	1    4700 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B0755
+P 4700 3650
+F 0 "TP?" V 4654 3838 50  0000 L CNN
+F 1 "TestPoint" V 4745 3838 50  0000 L CNN
+F 2 "" H 4900 3650 50  0001 C CNN
+F 3 "~" H 4900 3650 50  0001 C CNN
+	1    4700 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3250 4700 3250
+Wire Wire Line
+	4700 3350 4550 3350
+Wire Wire Line
+	4700 3450 4550 3450
+Wire Wire Line
+	4700 3650 4550 3650
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B49A6
+P 10550 1800
+F 0 "TP?" V 10504 1988 50  0000 L CNN
+F 1 "TestPoint" V 10595 1988 50  0000 L CNN
+F 2 "" H 10750 1800 50  0001 C CNN
+F 3 "~" H 10750 1800 50  0001 C CNN
+	1    10550 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B4E68
+P 10550 1900
+F 0 "TP?" V 10504 2088 50  0000 L CNN
+F 1 "TestPoint" V 10595 2088 50  0000 L CNN
+F 2 "" H 10750 1900 50  0001 C CNN
+F 3 "~" H 10750 1900 50  0001 C CNN
+	1    10550 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 1800 10250 1800
+Wire Wire Line
+	10550 1900 10250 1900
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B6EB6
+P 10550 2200
+F 0 "TP?" V 10504 2388 50  0000 L CNN
+F 1 "TestPoint" V 10595 2388 50  0000 L CNN
+F 2 "" H 10750 2200 50  0001 C CNN
+F 3 "~" H 10750 2200 50  0001 C CNN
+	1    10550 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B7211
+P 10550 2300
+F 0 "TP?" V 10504 2488 50  0000 L CNN
+F 1 "TestPoint" V 10595 2488 50  0000 L CNN
+F 2 "" H 10750 2300 50  0001 C CNN
+F 3 "~" H 10750 2300 50  0001 C CNN
+	1    10550 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B73CF
+P 10550 2400
+F 0 "TP?" V 10504 2588 50  0000 L CNN
+F 1 "TestPoint" V 10595 2588 50  0000 L CNN
+F 2 "" H 10750 2400 50  0001 C CNN
+F 3 "~" H 10750 2400 50  0001 C CNN
+	1    10550 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620B75EC
+P 10550 2500
+F 0 "TP?" V 10504 2688 50  0000 L CNN
+F 1 "TestPoint" V 10595 2688 50  0000 L CNN
+F 2 "" H 10750 2500 50  0001 C CNN
+F 3 "~" H 10750 2500 50  0001 C CNN
+	1    10550 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 2200 10250 2200
+Wire Wire Line
+	10550 2300 10250 2300
+Wire Wire Line
+	10550 2400 10250 2400
+Wire Wire Line
+	10550 2500 10250 2500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620BB99A
+P 8250 2600
+F 0 "TP?" V 8445 2672 50  0000 C CNN
+F 1 "TestPoint" V 8354 2672 50  0000 C CNN
+F 2 "" H 8450 2600 50  0001 C CNN
+F 3 "~" H 8450 2600 50  0001 C CNN
+	1    8250 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620BC227
+P 8250 2700
+F 0 "TP?" V 8445 2772 50  0000 C CNN
+F 1 "TestPoint" V 8354 2772 50  0000 C CNN
+F 2 "" H 8450 2700 50  0001 C CNN
+F 3 "~" H 8450 2700 50  0001 C CNN
+	1    8250 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 2700 8250 2700
+Wire Wire Line
+	8650 2600 8250 2600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620BEC29
+P 10050 5600
+F 0 "TP?" V 10004 5788 50  0000 L CNN
+F 1 "TestPoint" V 10095 5788 50  0000 L CNN
+F 2 "" H 10250 5600 50  0001 C CNN
+F 3 "~" H 10250 5600 50  0001 C CNN
+	1    10050 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 620BF59B
+P 10050 5700
+F 0 "TP?" V 10004 5888 50  0000 L CNN
+F 1 "TestPoint" V 10095 5888 50  0000 L CNN
+F 2 "" H 10250 5700 50  0001 C CNN
+F 3 "~" H 10250 5700 50  0001 C CNN
+	1    10050 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10050 5700 9900 5700
+Wire Wire Line
+	10050 5600 9900 5600
 $EndSCHEMATC

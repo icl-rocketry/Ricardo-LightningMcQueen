@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L iclr:LM2679T-3.3 U?
+L power_new_25012022-rescue:LM2679T-3.3-iclr U?
 U 1 1 61F11502
 P 4100 5800
 AR Path="/61F11502" Ref="U?"  Part="1" 
@@ -35,7 +35,7 @@ Wire Wire Line
 	1450 5800 1450 5950
 Connection ~ 1450 5800
 $Comp
-L iclr:EEUFM1H471 C?
+L power_new_25012022-rescue:EEUFM1H471-iclr C?
 U 1 1 61F06827
 P 1450 6050
 F 0 "C?" V 1450 5750 50  0000 L CNN
@@ -54,7 +54,7 @@ F 11 "12.5" H 1450 6050 50  0001 L BNN "D_nom"
 	0    1    1    0   
 $EndComp
 $Comp
-L iclr:EEUFM1H471 C?
+L power_new_25012022-rescue:EEUFM1H471-iclr C?
 U 1 1 61F07F24
 P 1800 6050
 F 0 "C?" V 1800 5750 50  0000 L CNN
@@ -78,7 +78,7 @@ Connection ~ 1800 5800
 Wire Wire Line
 	1800 5800 1450 5800
 $Comp
-L iclr:EEUFM1H471 C?
+L power_new_25012022-rescue:EEUFM1H471-iclr C?
 U 1 1 61F0A525
 P 2150 6050
 F 0 "C?" V 2150 5750 50  0000 L CNN
@@ -97,7 +97,7 @@ F 11 "12.5" H 2150 6050 50  0001 L BNN "D_nom"
 	0    1    1    0   
 $EndComp
 $Comp
-L iclr:EEUFM1H471 C?
+L power_new_25012022-rescue:EEUFM1H471-iclr C?
 U 1 1 61F0A533
 P 2500 6050
 F 0 "C?" V 2500 5750 50  0000 L CNN
@@ -188,7 +188,7 @@ $EndComp
 Wire Wire Line
 	3100 6450 3100 6550
 $Comp
-L iclr:P0846SNL L?
+L power_new_25012022-rescue:P0846SNL-iclr L?
 U 1 1 61F0F3B2
 P 5350 5800
 F 0 "L?" H 5750 6025 50  0000 C CNN
@@ -224,7 +224,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 5800 5300 5800
 $Comp
-L iclr:MBRD835LT4G D?
+L power_new_25012022-rescue:MBRD835LT4G-iclr D?
 U 1 1 61F1381F
 P 5300 6250
 F 0 "D?" V 5346 6170 50  0000 R CNN
@@ -250,7 +250,7 @@ Connection ~ 5300 5800
 Wire Wire Line
 	5300 5800 5000 5800
 $Comp
-L iclr:C0603C103J5REC7411 C?
+L power_new_25012022-rescue:C0603C103J5REC7411-iclr C?
 U 1 1 61F1681B
 P 6300 6150
 AR Path="/61F1681B" Ref="C?"  Part="1" 
@@ -263,7 +263,7 @@ F 3 "" H 6300 6150 50  0001 L BNN
 	0    1    1    0   
 $EndComp
 $Comp
-L iclr:C0603C103J5REC7411 C?
+L power_new_25012022-rescue:C0603C103J5REC7411-iclr C?
 U 1 1 61F17164
 P 6550 6150
 AR Path="/61F17164" Ref="C?"  Part="1" 
@@ -296,7 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 6050 6550 5800
 $Comp
-L iclr:LM2679T-3.3 U?
+L power_new_25012022-rescue:LM2679T-3.3-iclr U?
 U 1 1 61F3DFF6
 P 4050 1000
 AR Path="/61F3DFF6" Ref="U?"  Part="1" 
@@ -319,7 +319,7 @@ Wire Wire Line
 	1400 1000 1000 1000
 Connection ~ 1400 1000
 $Comp
-L iclr:EEUFM1H471 C?
+L power_new_25012022-rescue:EEUFM1H471-iclr C?
 U 1 1 61F3E007
 P 1400 1250
 F 0 "C?" V 1400 950 50  0000 L CNN
@@ -338,7 +338,7 @@ F 11 "12.5" H 1400 1250 50  0001 L BNN "D_nom"
 	0    1    1    0   
 $EndComp
 $Comp
-L iclr:EEUFM1H471 C?
+L power_new_25012022-rescue:EEUFM1H471-iclr C?
 U 1 1 61F3E015
 P 1750 1250
 F 0 "C?" V 1750 950 50  0000 L CNN
@@ -362,7 +362,7 @@ Connection ~ 1750 1000
 Wire Wire Line
 	1750 1000 1400 1000
 $Comp
-L iclr:EEUFM1H471 C?
+L power_new_25012022-rescue:EEUFM1H471-iclr C?
 U 1 1 61F3E026
 P 2100 1250
 F 0 "C?" V 2100 950 50  0000 L CNN
@@ -381,7 +381,7 @@ F 11 "12.5" H 2100 1250 50  0001 L BNN "D_nom"
 	0    1    1    0   
 $EndComp
 $Comp
-L iclr:EEUFM1H471 C?
+L power_new_25012022-rescue:EEUFM1H471-iclr C?
 U 1 1 61F3E034
 P 2450 1250
 F 0 "C?" V 2450 950 50  0000 L CNN
@@ -472,7 +472,7 @@ $EndComp
 Wire Wire Line
 	3050 1650 3050 1750
 $Comp
-L iclr:P0846SNL L?
+L power_new_25012022-rescue:P0846SNL-iclr L?
 U 1 1 61F3E06B
 P 5300 1000
 F 0 "L?" H 5700 1225 50  0000 C CNN
@@ -508,7 +508,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 1000 5250 1000
 $Comp
-L iclr:MBRD835LT4G D?
+L power_new_25012022-rescue:MBRD835LT4G-iclr D?
 U 1 1 61F3E07D
 P 5250 1450
 F 0 "D?" V 5296 1370 50  0000 R CNN
@@ -534,7 +534,7 @@ Connection ~ 5250 1000
 Wire Wire Line
 	5250 1000 4950 1000
 $Comp
-L iclr:C0603C103J5REC7411 C?
+L power_new_25012022-rescue:C0603C103J5REC7411-iclr C?
 U 1 1 61F3E08A
 P 6250 1350
 AR Path="/61F3E08A" Ref="C?"  Part="1" 
@@ -547,7 +547,7 @@ F 3 "" H 6250 1350 50  0001 L BNN
 	0    1    1    0   
 $EndComp
 $Comp
-L iclr:C0603C103J5REC7411 C?
+L power_new_25012022-rescue:C0603C103J5REC7411-iclr C?
 U 1 1 61F3E090
 P 6500 1350
 AR Path="/61F3E090" Ref="C?"  Part="1" 
@@ -663,18 +663,7 @@ $EndComp
 Wire Wire Line
 	6750 5150 7450 5150
 $Comp
-L power:GND #PWR?
-U 1 1 61FED494
-P 7650 6300
-F 0 "#PWR?" H 7650 6050 50  0001 C CNN
-F 1 "GND" H 7655 6127 50  0000 C CNN
-F 2 "" H 7650 6300 50  0001 C CNN
-F 3 "" H 7650 6300 50  0001 C CNN
-	1    7650 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L iclr:CSD25485F5T Q?
+L power_new_25012022-rescue:CSD25485F5T-iclr Q?
 U 1 1 6202F74F
 P 8450 1050
 F 0 "Q?" V 8925 1150 50  0000 C CNN
@@ -717,7 +706,7 @@ F 3 "" H 7300 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L iclr:CSD25485F5T Q?
+L power_new_25012022-rescue:CSD25485F5T-iclr Q?
 U 1 1 6203F31D
 P 8650 5500
 F 0 "Q?" V 9125 5600 50  0000 C CNN
