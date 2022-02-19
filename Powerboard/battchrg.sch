@@ -76,7 +76,7 @@ F 3 "" H 8650 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power_new_18122021-rescue:BQ24618RGET-iclr IC?
+L power_new_25012022-rescue:BQ24618RGET-iclr-power_new_18122021-rescue IC?
 U 1 1 61C1BE0B
 P 8250 4050
 AR Path="/61C1BE0B" Ref="IC?"  Part="1" 
@@ -396,7 +396,7 @@ F 3 "~" H 5550 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power_new_18122021-rescue:SI7617DN-T1-GE3-iclr Q?
+L power_new_25012022-rescue:SI7617DN-T1-GE3-iclr-power_new_18122021-rescue Q?
 U 1 1 61C1BEBC
 P 7550 4000
 AR Path="/61C1BEBC" Ref="Q?"  Part="1" 
@@ -633,7 +633,7 @@ Connection ~ 3300 2250
 Wire Wire Line
 	3300 2250 3300 2150
 $Comp
-L power_new_18122021-rescue:SI7617DN-T1-GE3-iclr Q1(ACFET)?
+L power_new_25012022-rescue:SI7617DN-T1-GE3-iclr-power_new_18122021-rescue Q1(ACFET)?
 U 1 1 61C1BF64
 P 3300 2150
 AR Path="/61C1BF64" Ref="Q1(ACFET)?"  Part="1" 
@@ -724,7 +724,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3950 3300 3850
 $Comp
-L power_new_18122021-rescue:SIS412DN-T1-GE3-iclr Q?
+L power_new_25012022-rescue:SIS412DN-T1-GE3-iclr-power_new_18122021-rescue Q?
 U 1 1 61C1BF9B
 P 3300 3750
 AR Path="/61C1BF9B" Ref="Q?"  Part="1" 
@@ -1319,7 +1319,7 @@ Text Label 4400 5000 0    50   ~ 0
 PH
 Connection ~ 4450 5200
 $Comp
-L power_new_18122021-rescue:SIS412DN-T1-GE3-iclr Q?
+L power_new_25012022-rescue:SIS412DN-T1-GE3-iclr-power_new_18122021-rescue Q?
 U 1 1 61C1BE69
 P 3300 2950
 AR Path="/61C1BE69" Ref="Q?"  Part="1" 
@@ -1472,7 +1472,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 2400 7200 2400
 $Comp
-L power_new_18122021-rescue:SI7617DN-T1-GE3-iclr Q?
+L power_new_25012022-rescue:SI7617DN-T1-GE3-iclr-power_new_18122021-rescue Q?
 U 1 1 61C1BEFF
 P 8300 2600
 AR Path="/61C1BEFF" Ref="Q?"  Part="1" 
