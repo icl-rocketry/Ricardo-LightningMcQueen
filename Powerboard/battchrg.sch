@@ -76,27 +76,6 @@ F 3 "" H 8650 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power_new_25012022-rescue:BQ24618RGET-iclr-power_new_18122021-rescue IC?
-U 1 1 61C1BE0B
-P 8250 4050
-AR Path="/61C1BE0B" Ref="IC?"  Part="1" 
-AR Path="/61BEB629/61C1BE0B" Ref="IC?"  Part="1" 
-F 0 "IC?" H 8900 4100 50  0000 L CNN
-F 1 "BQ24618RGET" H 8700 4200 50  0000 L CNN
-F 2 "QFN50P400X400X100-25N-D" H 9500 4650 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/bq24618" H 9500 4550 50  0001 L CNN
-F 4 "Stand-Alone USB-Friendly Synchronous Switch-Mode Li-Ion or Li-Polymer Battery Charger " H 9500 4450 50  0001 L CNN "Description"
-F 5 "1" H 9500 4350 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 9500 4250 50  0001 L CNN "Manufacturer_Name"
-F 7 "BQ24618RGET" H 9500 4150 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-BQ24618RGET" H 9500 4050 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24618RGET?qs=g5raLcSarOYqImwS4qptMw%3D%3D" H 9500 3950 50  0001 L CNN "Mouser Price/Stock"
-F 10 "BQ24618RGET" H 9500 3850 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/bq24618rget/texas-instruments?region=nac" H 9500 3750 50  0001 L CNN "Arrow Price/Stock"
-	1    8250 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 61C1BE11
 P 9500 5350
@@ -395,26 +374,6 @@ F 3 "~" H 5550 4150 50  0001 C CNN
 	1    5550 4150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power_new_25012022-rescue:SI7617DN-T1-GE3-iclr-power_new_18122021-rescue Q?
-U 1 1 61C1BEBC
-P 7550 4000
-AR Path="/61C1BEBC" Ref="Q?"  Part="1" 
-AR Path="/61BEB629/61C1BEBC" Ref="Q2"  Part="1" 
-F 0 "Q2" H 8050 3600 50  0000 C CNN
-F 1 "SI7617DN-T1-GE3" H 8050 4174 50  0000 C CNN
-F 2 "SIS862DNT1GE3" H 8400 4100 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/65164/si7617dn.pdf" H 8400 4000 50  0001 L CNN
-F 4 "VISHAY - SI7617DN-T1-GE3 - MOSFET, P CH, 30V, 35A, POWERPAK" H 8400 3900 50  0001 L CNN "Description"
-F 5 "Vishay" H 8400 3700 50  0001 L CNN "Manufacturer_Name"
-F 6 "SI7617DN-T1-GE3" H 8400 3600 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "781-SI7617DN-GE3" H 8400 3500 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7617DN-T1-GE3?qs=kt16UJ73eEF1rWSJwJchzg%3D%3D" H 8400 3400 50  0001 L CNN "Mouser Price/Stock"
-F 9 "SI7617DN-T1-GE3" H 8400 3300 50  0001 L CNN "Arrow Part Number"
-F 10 "https://www.arrow.com/en/products/si7617dn-t1-ge3/vishay?region=nac" H 8400 3200 50  0001 L CNN "Arrow Price/Stock"
-	1    7550 4000
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7550 3800 7700 3800
 Connection ~ 7900 3800
@@ -497,7 +456,6 @@ Wire Wire Line
 Connection ~ 5800 4350
 Wire Wire Line
 	4300 2450 4400 2450
-Connection ~ 3300 3750
 Wire Wire Line
 	6650 3050 6650 3200
 Wire Wire Line
@@ -618,40 +576,11 @@ Wire Wire Line
 Connection ~ 7050 3450
 Wire Wire Line
 	7050 3450 8100 3450
-Connection ~ 4300 2450
-Wire Wire Line
-	4300 2350 4300 2450
-Connection ~ 4300 2350
-Wire Wire Line
-	4300 2250 4300 2350
-Wire Wire Line
-	4300 2150 4300 2250
-Connection ~ 4300 2250
 Wire Wire Line
 	3300 2350 3300 2250
 Connection ~ 3300 2250
 Wire Wire Line
 	3300 2250 3300 2150
-$Comp
-L power_new_25012022-rescue:SI7617DN-T1-GE3-iclr-power_new_18122021-rescue Q1(ACFET)?
-U 1 1 61C1BF64
-P 3300 2150
-AR Path="/61C1BF64" Ref="Q1(ACFET)?"  Part="1" 
-AR Path="/61BEB629/61C1BF64" Ref="Q1(ACFET)"  Part="1" 
-F 0 "Q1(ACFET)" H 3800 2415 50  0000 C CNN
-F 1 "SI7617DN-T1-GE3" H 3800 2324 50  0000 C CNN
-F 2 "SIS862DNT1GE3" H 4150 2250 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/65164/si7617dn.pdf" H 4150 2150 50  0001 L CNN
-F 4 "VISHAY - SI7617DN-T1-GE3 - MOSFET, P CH, 30V, 35A, POWERPAK" H 4150 2050 50  0001 L CNN "Description"
-F 5 "Vishay" H 4150 1850 50  0001 L CNN "Manufacturer_Name"
-F 6 "SI7617DN-T1-GE3" H 4150 1750 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "781-SI7617DN-GE3" H 4150 1650 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7617DN-T1-GE3?qs=kt16UJ73eEF1rWSJwJchzg%3D%3D" H 4150 1550 50  0001 L CNN "Mouser Price/Stock"
-F 9 "SI7617DN-T1-GE3" H 4150 1450 50  0001 L CNN "Arrow Part Number"
-F 10 "https://www.arrow.com/en/products/si7617dn-t1-ge3/vishay?region=nac" H 4150 1350 50  0001 L CNN "Arrow Price/Stock"
-	1    3300 2150
-	1    0    0    -1  
-$EndComp
 Connection ~ 7900 4150
 $Comp
 L Device:C_Small C?
@@ -718,31 +647,6 @@ Text Label 5050 4450 2    50   ~ 0
 VCC
 Text Label 3250 3750 2    50   ~ 0
 GND
-Connection ~ 3300 3850
-Wire Wire Line
-	3300 3850 3300 3750
-Wire Wire Line
-	3300 3950 3300 3850
-$Comp
-L power_new_25012022-rescue:SIS412DN-T1-GE3-iclr-power_new_18122021-rescue Q?
-U 1 1 61C1BF9B
-P 3300 3750
-AR Path="/61C1BF9B" Ref="Q?"  Part="1" 
-AR Path="/61BEB629/61C1BF9B" Ref="Q5"  Part="1" 
-F 0 "Q5" H 3800 4015 50  0000 C CNN
-F 1 "SIS412DN-T1-GE3" H 3800 3924 50  0000 C CNN
-F 2 "POWERPAK-1212-8" H 4150 3850 50  0001 L CNN
-F 3 "https://www.vishay.com/docs/69006/sis412dn.pdf" H 4150 3750 50  0001 L CNN
-F 4 "VISHAY - SIS412DN-T1-GE3 - MOSFET, N-CH, 30V, 12A, POWERPAK8" H 4150 3650 50  0001 L CNN "Description"
-F 5 "Vishay" H 4150 3450 50  0001 L CNN "Manufacturer_Name"
-F 6 "SIS412DN-T1-GE3" H 4150 3350 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "781-SIS412DN-T1-GE3" H 4150 3250 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SIS412DN-T1-GE3?qs=cPOO8qjhL6NqDrBget0Fyg%3D%3D" H 4150 3150 50  0001 L CNN "Mouser Price/Stock"
-F 9 "SIS412DN-T1-GE3" H 4150 3050 50  0001 L CNN "Arrow Part Number"
-F 10 "https://www.arrow.com/en/products/sis412dn-t1-ge3/vishay?region=nac" H 4150 2950 50  0001 L CNN "Arrow Price/Stock"
-	1    3300 3750
-	1    0    0    -1  
-$EndComp
 Text Label 3300 4050 2    50   ~ 0
 LODRV
 Wire Wire Line
@@ -756,15 +660,6 @@ Wire Wire Line
 	4300 3750 4400 3750
 Text Label 4400 3750 0    50   ~ 0
 Q5-D
-Wire Wire Line
-	4300 3750 4300 3850
-Connection ~ 4300 3750
-Connection ~ 4300 3850
-Wire Wire Line
-	4300 3850 4300 3950
-Connection ~ 4300 3950
-Wire Wire Line
-	4300 3950 4300 4050
 Wire Wire Line
 	6850 3450 6950 3450
 Wire Wire Line
@@ -1318,41 +1213,8 @@ $EndComp
 Text Label 4400 5000 0    50   ~ 0
 PH
 Connection ~ 4450 5200
-$Comp
-L power_new_25012022-rescue:SIS412DN-T1-GE3-iclr-power_new_18122021-rescue Q?
-U 1 1 61C1BE69
-P 3300 2950
-AR Path="/61C1BE69" Ref="Q?"  Part="1" 
-AR Path="/61BEB629/61C1BE69" Ref="Q4"  Part="1" 
-F 0 "Q4" H 3800 3215 50  0000 C CNN
-F 1 "SIS412DN-T1-GE3" H 3800 3124 50  0000 C CNN
-F 2 "POWERPAK-1212-8" H 4150 3050 50  0001 L CNN
-F 3 "https://www.vishay.com/docs/69006/sis412dn.pdf" H 4150 2950 50  0001 L CNN
-F 4 "VISHAY - SIS412DN-T1-GE3 - MOSFET, N-CH, 30V, 12A, POWERPAK8" H 4150 2850 50  0001 L CNN "Description"
-F 5 "Vishay" H 4150 2650 50  0001 L CNN "Manufacturer_Name"
-F 6 "SIS412DN-T1-GE3" H 4150 2550 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "781-SIS412DN-T1-GE3" H 4150 2450 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SIS412DN-T1-GE3?qs=cPOO8qjhL6NqDrBget0Fyg%3D%3D" H 4150 2350 50  0001 L CNN "Mouser Price/Stock"
-F 9 "SIS412DN-T1-GE3" H 4150 2250 50  0001 L CNN "Arrow Part Number"
-F 10 "https://www.arrow.com/en/products/sis412dn-t1-ge3/vishay?region=nac" H 4150 2150 50  0001 L CNN "Arrow Price/Stock"
-	1    3300 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 3250 4300 3150
 Text Label 3300 3250 2    50   ~ 0
 Q4-G
-Wire Wire Line
-	3300 3150 3300 3050
-Wire Wire Line
-	3300 3050 3300 2950
-Connection ~ 3300 3050
-Connection ~ 4300 3050
-Wire Wire Line
-	4300 3050 4300 2950
-Wire Wire Line
-	4300 3150 4300 3050
-Connection ~ 4300 3150
 Text Label 3300 2950 2    50   ~ 0
 Q4-S
 Text Label 4300 2950 0    50   ~ 0
@@ -1448,49 +1310,14 @@ Wire Wire Line
 	7200 2400 7200 3150
 Text Label 8350 2600 0    50   ~ 0
 Q3-S
-Connection ~ 8300 2600
 Wire Wire Line
 	8300 2600 8350 2600
-Connection ~ 8300 2500
-Wire Wire Line
-	8300 2500 8300 2600
-Wire Wire Line
-	8300 2400 8300 2500
 Wire Wire Line
 	8500 2300 8300 2300
-Connection ~ 7300 2300
-Connection ~ 7300 2400
-Wire Wire Line
-	7300 2400 7300 2300
-Wire Wire Line
-	7300 2500 7300 2600
-Connection ~ 7300 2500
-Wire Wire Line
-	7300 2400 7300 2500
 Wire Wire Line
 	6850 2300 7300 2300
 Wire Wire Line
 	6850 2400 7200 2400
-$Comp
-L power_new_25012022-rescue:SI7617DN-T1-GE3-iclr-power_new_18122021-rescue Q?
-U 1 1 61C1BEFF
-P 8300 2600
-AR Path="/61C1BEFF" Ref="Q?"  Part="1" 
-AR Path="/61BEB629/61C1BEFF" Ref="Q3"  Part="1" 
-F 0 "Q3" H 8800 2865 50  0000 C CNN
-F 1 "SI7617DN-T1-GE3" H 8800 2774 50  0000 C CNN
-F 2 "SIS862DNT1GE3" H 9150 2700 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/65164/si7617dn.pdf" H 9150 2600 50  0001 L CNN
-F 4 "VISHAY - SI7617DN-T1-GE3 - MOSFET, P CH, 30V, 35A, POWERPAK" H 9150 2500 50  0001 L CNN "Description"
-F 5 "Vishay" H 9150 2300 50  0001 L CNN "Manufacturer_Name"
-F 6 "SI7617DN-T1-GE3" H 9150 2200 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "781-SI7617DN-GE3" H 9150 2100 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7617DN-T1-GE3?qs=kt16UJ73eEF1rWSJwJchzg%3D%3D" H 9150 2000 50  0001 L CNN "Mouser Price/Stock"
-F 9 "SI7617DN-T1-GE3" H 9150 1900 50  0001 L CNN "Arrow Part Number"
-F 10 "https://www.arrow.com/en/products/si7617dn-t1-ge3/vishay?region=nac" H 9150 1800 50  0001 L CNN "Arrow Price/Stock"
-	1    8300 2600
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7000 4650 7200 4650
 $Comp
@@ -1661,4 +1488,165 @@ $EndComp
 Connection ~ 6450 3450
 Wire Wire Line
 	6450 3450 6650 3450
+$Comp
+L iclr:BQ24618RGET-iclr IC?
+U 1 1 621274F9
+P 8250 4050
+F 0 "IC?" H 9694 3896 50  0000 L CNN
+F 1 "BQ24618RGET-iclr" H 9694 3805 50  0000 L CNN
+F 2 "QFN50P400X400X100-25N-D" H 9500 4650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/bq24618" H 9500 4550 50  0001 L CNN
+F 4 "Stand-Alone USB-Friendly Synchronous Switch-Mode Li-Ion or Li-Polymer Battery Charger " H 9500 4450 50  0001 L CNN "Description"
+F 5 "1" H 9500 4350 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 9500 4250 50  0001 L CNN "Manufacturer_Name"
+F 7 "BQ24618RGET" H 9500 4150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-BQ24618RGET" H 9500 4050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24618RGET?qs=g5raLcSarOYqImwS4qptMw%3D%3D" H 9500 3950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "BQ24618RGET" H 9500 3850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/bq24618rget/texas-instruments?region=nac" H 9500 3750 50  0001 L CNN "Arrow Price/Stock"
+	1    8250 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2300 7300 2400
+$Comp
+L iclr:SI7617DN-T1-GE3 Q1
+U 1 1 621270B4
+P 3300 2150
+F 0 "Q1" H 3800 2415 50  0000 C CNN
+F 1 "SI7617DN-T1-GE3" H 3800 2324 50  0000 C CNN
+F 2 "SIS862DNT1GE3" H 4150 2250 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/65164/si7617dn.pdf" H 4150 2150 50  0001 L CNN
+F 4 "VISHAY - SI7617DN-T1-GE3 - MOSFET, P CH, 30V, 35A, POWERPAK" H 4150 2050 50  0001 L CNN "Description"
+F 5 "Vishay" H 4150 1850 50  0001 L CNN "Manufacturer_Name"
+F 6 "SI7617DN-T1-GE3" H 4150 1750 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "781-SI7617DN-GE3" H 4150 1650 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7617DN-T1-GE3?qs=kt16UJ73eEF1rWSJwJchzg%3D%3D" H 4150 1550 50  0001 L CNN "Mouser Price/Stock"
+F 9 "SI7617DN-T1-GE3" H 4150 1450 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/si7617dn-t1-ge3/vishay?region=nac" H 4150 1350 50  0001 L CNN "Arrow Price/Stock"
+	1    3300 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2350 4300 2450
+Connection ~ 4300 2450
+Wire Wire Line
+	4300 2350 4300 2250
+Connection ~ 4300 2350
+Connection ~ 4300 2250
+Wire Wire Line
+	4300 2250 4300 2150
+$Comp
+L iclr:SIS412DN-T1-GE3-iclr Q4
+U 1 1 6217044A
+P 3300 2950
+F 0 "Q4" H 3800 3215 50  0000 C CNN
+F 1 "SIS412DN-T1-GE3-iclr" H 3800 3124 50  0000 C CNN
+F 2 "POWERPAK-1212-8" H 4150 3050 50  0001 L CNN
+F 3 "https://www.vishay.com/docs/69006/sis412dn.pdf" H 4150 2950 50  0001 L CNN
+F 4 "VISHAY - SIS412DN-T1-GE3 - MOSFET, N-CH, 30V, 12A, POWERPAK8" H 4150 2850 50  0001 L CNN "Description"
+F 5 "Vishay" H 4150 2650 50  0001 L CNN "Manufacturer_Name"
+F 6 "SIS412DN-T1-GE3" H 4150 2550 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "781-SIS412DN-T1-GE3" H 4150 2450 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SIS412DN-T1-GE3?qs=cPOO8qjhL6NqDrBget0Fyg%3D%3D" H 4150 2350 50  0001 L CNN "Mouser Price/Stock"
+F 9 "SIS412DN-T1-GE3" H 4150 2250 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/sis412dn-t1-ge3/vishay?region=nac" H 4150 2150 50  0001 L CNN "Arrow Price/Stock"
+	1    3300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3050 3300 3150
+Wire Wire Line
+	4300 3150 4300 3250
+Wire Wire Line
+	4300 3150 4300 3050
+Connection ~ 4300 3150
+Connection ~ 4300 3050
+Wire Wire Line
+	4300 3050 4300 2950
+Wire Wire Line
+	3300 3050 3300 2950
+Connection ~ 3300 3050
+$Comp
+L iclr:SIS412DN-T1-GE3-iclr Q5
+U 1 1 6218830C
+P 3300 3750
+F 0 "Q5" H 3800 4015 50  0000 C CNN
+F 1 "SIS412DN-T1-GE3-iclr" H 3800 3924 50  0000 C CNN
+F 2 "POWERPAK-1212-8" H 4150 3850 50  0001 L CNN
+F 3 "https://www.vishay.com/docs/69006/sis412dn.pdf" H 4150 3750 50  0001 L CNN
+F 4 "VISHAY - SIS412DN-T1-GE3 - MOSFET, N-CH, 30V, 12A, POWERPAK8" H 4150 3650 50  0001 L CNN "Description"
+F 5 "Vishay" H 4150 3450 50  0001 L CNN "Manufacturer_Name"
+F 6 "SIS412DN-T1-GE3" H 4150 3350 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "781-SIS412DN-T1-GE3" H 4150 3250 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SIS412DN-T1-GE3?qs=cPOO8qjhL6NqDrBget0Fyg%3D%3D" H 4150 3150 50  0001 L CNN "Mouser Price/Stock"
+F 9 "SIS412DN-T1-GE3" H 4150 3050 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/sis412dn-t1-ge3/vishay?region=nac" H 4150 2950 50  0001 L CNN "Arrow Price/Stock"
+	1    3300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3750 3300 3850
+Connection ~ 3300 3750
+Connection ~ 3300 3850
+Wire Wire Line
+	3300 3850 3300 3950
+Wire Wire Line
+	4300 3750 4300 3850
+Connection ~ 4300 3750
+Connection ~ 4300 3850
+Wire Wire Line
+	4300 3850 4300 3950
+Connection ~ 4300 3950
+Wire Wire Line
+	4300 3950 4300 4050
+$Comp
+L iclr:SI7617DN-T1-GE3 Q3
+U 1 1 621B9708
+P 8300 2600
+F 0 "Q3" H 8800 2035 50  0000 C CNN
+F 1 "SI7617DN-T1-GE3" H 8800 2126 50  0000 C CNN
+F 2 "SIS862DNT1GE3" H 9150 2700 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/65164/si7617dn.pdf" H 9150 2600 50  0001 L CNN
+F 4 "VISHAY - SI7617DN-T1-GE3 - MOSFET, P CH, 30V, 35A, POWERPAK" H 9150 2500 50  0001 L CNN "Description"
+F 5 "Vishay" H 9150 2300 50  0001 L CNN "Manufacturer_Name"
+F 6 "SI7617DN-T1-GE3" H 9150 2200 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "781-SI7617DN-GE3" H 9150 2100 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7617DN-T1-GE3?qs=kt16UJ73eEF1rWSJwJchzg%3D%3D" H 9150 2000 50  0001 L CNN "Mouser Price/Stock"
+F 9 "SI7617DN-T1-GE3" H 9150 1900 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/si7617dn-t1-ge3/vishay?region=nac" H 9150 1800 50  0001 L CNN "Arrow Price/Stock"
+	1    8300 2600
+	-1   0    0    1   
+$EndComp
+Connection ~ 7300 2300
+Wire Wire Line
+	7300 2600 7300 2500
+Connection ~ 7300 2400
+Connection ~ 7300 2500
+Wire Wire Line
+	7300 2500 7300 2400
+Wire Wire Line
+	8300 2400 8300 2500
+Connection ~ 8300 2600
+Connection ~ 8300 2500
+Wire Wire Line
+	8300 2500 8300 2600
+$Comp
+L iclr:SI7617DN-T1-GE3 Q2
+U 1 1 621D4ED7
+P 7550 4000
+F 0 "Q2" H 8050 4150 50  0000 C CNN
+F 1 "SI7617DN-T1-GE3" H 8400 4200 50  0000 C CNN
+F 2 "SIS862DNT1GE3" H 8400 4100 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/65164/si7617dn.pdf" H 8400 4000 50  0001 L CNN
+F 4 "VISHAY - SI7617DN-T1-GE3 - MOSFET, P CH, 30V, 35A, POWERPAK" H 8400 3900 50  0001 L CNN "Description"
+F 5 "Vishay" H 8400 3700 50  0001 L CNN "Manufacturer_Name"
+F 6 "SI7617DN-T1-GE3" H 8400 3600 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "781-SI7617DN-GE3" H 8400 3500 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7617DN-T1-GE3?qs=kt16UJ73eEF1rWSJwJchzg%3D%3D" H 8400 3400 50  0001 L CNN "Mouser Price/Stock"
+F 9 "SI7617DN-T1-GE3" H 8400 3300 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/si7617dn-t1-ge3/vishay?region=nac" H 8400 3200 50  0001 L CNN "Arrow Price/Stock"
+	1    7550 4000
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

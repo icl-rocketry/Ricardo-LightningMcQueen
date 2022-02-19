@@ -463,6 +463,66 @@ X S 8 0 -200 100 U 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
+# iclr_BQ24618RGET-iclr
+#
+DEF iclr_BQ24618RGET-iclr IC 0 30 Y Y 1 F N
+F0 "IC" 1250 800 50 H V L CNN
+F1 "iclr_BQ24618RGET-iclr" 1250 700 50 H V L CNN
+F2 "QFN50P400X400X100-25N-D" 1250 600 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/bq24618" 1250 500 50 H I L CNN
+F4 "Stand-Alone USB-Friendly Synchronous Switch-Mode Li-Ion or Li-Polymer Battery Charger " 1250 400 50 H I L CNN "Description"
+F5 "1" 1250 300 50 H I L CNN "Height"
+F6 "Texas Instruments" 1250 200 50 H I L CNN "Manufacturer_Name"
+F7 "BQ24618RGET" 1250 100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-BQ24618RGET" 1250 0 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24618RGET?qs=g5raLcSarOYqImwS4qptMw%3D%3D" 1250 -100 50 H I L CNN "Mouser Price/Stock"
+F10 "BQ24618RGET" 1250 -200 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/bq24618rget/texas-instruments?region=nac" 1250 -300 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 600 1200 600 1200 -1000 200 -1000 200 600 N
+X ACN 1 0 0 200 R 50 50 0 0 P
+X VREF 10 700 -1200 200 U 50 50 0 0 P
+X ISET1 11 800 -1200 200 U 50 50 0 0 P
+X VFB 12 900 -1200 200 U 50 50 0 0 P
+X SRN 13 1400 -500 200 L 50 50 0 0 P
+X SRP 14 1400 -400 200 L 50 50 0 0 P
+X ISET2 15 1400 -300 200 L 50 50 0 0 P
+X ACSET 16 1400 -200 200 L 50 50 0 0 P
+X GND 17 1400 -100 200 L 50 50 0 0 P
+X REGN 18 1400 0 200 L 50 50 0 0 P
+X LODRV 19 1000 800 200 D 50 50 0 0 P
+X ACP 2 0 -100 200 R 50 50 0 0 P
+X PH 20 900 800 200 D 50 50 0 0 P
+X HIDRV 21 800 800 200 D 50 50 0 0 P
+X BTST 22 700 800 200 D 50 50 0 0 P
+X ~BATDRV 23 600 800 200 D 50 50 0 0 P
+X VCC 24 500 800 200 D 50 50 0 0 P
+X EP 25 400 800 200 D 50 50 0 0 P
+X ~ACDRV 3 0 -200 200 R 50 50 0 0 P
+X CE 4 0 -300 200 R 50 50 0 0 P
+X STAT1 5 0 -400 200 R 50 50 0 0 P
+X TS 6 0 -500 200 R 50 50 0 0 P
+X TTC 7 400 -1200 200 U 50 50 0 0 P
+X ~PG 8 500 -1200 200 U 50 50 0 0 P
+X STAT2 9 600 -1200 200 U 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# iclr_C0603C103J5REC7411-iclr
+#
+DEF iclr_C0603C103J5REC7411-iclr C 0 40 Y N 1 L N
+F0 "C" 0 150 50 H V L BNN
+F1 "iclr_C0603C103J5REC7411-iclr" 0 -200 50 H V L BNN
+F2 "CAPC1608X87N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S 0 -75 25 75 0 0 0 F
+S 75 -75 100 75 0 0 0 F
+X ~ 1 -100 0 100 R 40 40 0 0 P
+X ~ 2 200 0 100 L 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
 # iclr_CP2102
 #
 DEF iclr_CP2102 IC 0 30 Y Y 1 F N
@@ -510,6 +570,145 @@ X ~RST 9 400 -1400 200 U 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
+# iclr_CSD25485F5T-iclr
+#
+DEF iclr_CSD25485F5T-iclr Q 0 30 Y Y 1 F N
+F0 "Q" 450 150 50 H V L CNN
+F1 "iclr_CSD25485F5T-iclr" 450 50 50 H V L CNN
+F2 "CSD13385F5" 450 -50 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/CSD25485F5" 450 -150 50 H I L CNN
+F4 "-20V, P ch NexFET MOSFET, single LGA 0.8x1.5, 42mOhm" 450 -250 50 H I L CNN "Description"
+F5 "0" 450 -350 50 H I L CNN "Height"
+F6 "Texas Instruments" 450 -450 50 H I L CNN "Manufacturer_Name"
+F7 "CSD25485F5T" 450 -550 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-CSD25485F5T" 450 -650 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CSD25485F5T?qs=Bho%2FbeBaDExWIlvMtFx97A%3D%3D" 450 -750 50 H I L CNN "Mouser Price/Stock"
+F10 "CSD25485F5T" 450 -850 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/csd25485f5t/texas-instruments" 450 -950 50 H I L CNN "Arrow Price/Stock"
+DRAW
+C 250 100 150 0 1 10 N
+P 2 0 1 6 230 -20 230 20 N
+P 2 0 1 6 230 0 300 0 N
+P 2 0 1 6 230 80 230 120 N
+P 2 0 1 6 230 220 230 180 N
+P 2 0 1 6 300 100 230 100 N
+P 2 0 1 6 300 100 300 -100 N
+P 2 0 1 6 300 200 230 200 N
+P 2 0 1 6 300 200 300 300 N
+P 3 0 1 6 100 0 200 0 200 200 N
+P 4 0 1 10 300 100 260 120 260 80 300 100 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 300 -200 100 U 50 50 0 0 P
+X ~ 3 300 400 100 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# iclr_EEUFM1H471-iclr
+#
+DEF iclr_EEUFM1H471-iclr C 0 40 N N 1 L N
+F0 "C" -100 150 50 H V L BNN
+F1 "iclr_EEUFM1H471-iclr" -100 -200 50 H V L BNN
+F2 "CAPPRD500W60D1250H2000" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "PANASONIC" 0 0 50 H I L BNN "MF"
+F5 "0.6" 0 0 50 H I L BNN "b_nom"
+F6 "20" 0 0 50 H I L BNN "A_max"
+F7 "FM-A" 0 0 50 H I L BNN "DESCRIPTION"
+F8 "28-FEB-20" 0 0 50 H I L BNN "PARTREV"
+F9 "0.65" 0 0 50 H I L BNN "b_max"
+F10 "5" 0 0 50 H I L BNN "e_nom"
+F11 "12.5" 0 0 50 H I L BNN "D_nom"
+DRAW
+A 233 0 174 1450 -1450 0 0 10 N 90 100 90 -100
+S -46 -60 -11 -55 0 0 0 F
+S -31 -75 -26 -40 0 0 0 F
+P 2 0 0 6 0 0 20 0 N
+P 2 0 0 10 20 0 20 -100 N
+P 2 0 0 10 20 100 20 0 N
+P 2 0 0 6 100 0 60 0 N
+X ~ N 200 0 100 L 40 40 0 0 P
+X ~ P -100 0 100 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# iclr_LM2679T-3.3-iclr
+#
+DEF iclr_LM2679T-3.3-iclr U 0 40 Y Y 1 L N
+F0 "U" -181 248 50 H V L BNN
+F1 "iclr_LM2679T-3.3-iclr" -211 -616 50 H V L BNN
+F2 "TO127P457X1016X2052-7P" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "National Semiconductor" 0 0 50 H I L BNN "SUPPLIER"
+F5 "TO220-7" 0 0 50 H I L BNN "PACKAGE"
+F6 "LM2679T-3.3" 0 0 50 H I L BNN "MPN"
+F7 "41K4227" 0 0 50 H I L BNN "OC_NEWARK"
+F8 "-" 0 0 50 H I L BNN "OC_FARNELL"
+DRAW
+S -700 -500 700 200 0 0 16 f
+X SW 1 900 0 200 L 40 40 0 0 O
+X VIN 2 -900 0 200 R 40 40 0 0 I
+X BOOST 3 -900 -100 200 R 40 40 0 0 P
+X GND 4 -900 -300 200 R 40 40 0 0 P
+X CURRENT_ADJ 5 900 -300 200 L 40 40 0 0 P
+X FB 6 900 -100 200 L 40 40 0 0 P
+X SOFTSTART 7 900 -200 200 L 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# iclr_MBRD835LT4G-iclr
+#
+DEF iclr_MBRD835LT4G-iclr D 0 40 N N 1 L N
+F0 "D" -200 100 50 H V L BNN
+F1 "iclr_MBRD835LT4G-iclr" -200 -150 50 H V L BNN
+F2 "DPAK229P990X238-3N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "IPC-7351B" 0 0 50 H I L BNN "STANDARD"
+F5 "On Semiconductor" 0 0 50 H I L BNN "MANUFACTURER"
+F6 "8" 0 0 50 H I L BNN "PARTREV"
+DRAW
+P 2 0 0 10 -100 0 -50 0 N
+P 2 0 0 10 -50 -50 50 0 N
+P 2 0 0 10 -50 0 -50 -50 N
+P 2 0 0 10 -50 50 -50 0 N
+P 2 0 0 10 25 -40 25 -50 N
+P 2 0 0 10 50 -50 25 -50 N
+P 2 0 0 10 50 0 -50 50 N
+P 2 0 0 10 50 0 50 -50 N
+P 2 0 0 10 50 50 50 0 N
+P 2 0 0 10 75 50 50 50 N
+P 2 0 0 10 75 50 75 40 N
+P 2 0 0 10 100 0 50 0 N
+X ~ 1 -200 0 100 R 40 40 0 0 P
+X ~ 3 -200 0 100 R 40 40 0 0 P
+X ~ 4 200 0 100 L 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# iclr_P0846SNL-iclr
+#
+DEF iclr_P0846SNL-iclr L 0 30 Y Y 1 F N
+F0 "L" 650 250 50 H V L CNN
+F1 "iclr_P0846SNL-iclr" 650 150 50 H V L CNN
+F2 "P0846SNL" 650 50 50 H I L CNN
+F3 "https://datasheet.datasheetarchive.com/originals/dk/DKDS-10/182482.pdf" 650 -50 50 H I L CNN
+F4 "Fixed Inductors 260KHZ SWITCHER IND" 650 -150 50 H I L CNN "Description"
+F5 "10.16" 650 -250 50 H I L CNN "Height"
+F6 "Pulse" 650 -350 50 H I L CNN "Manufacturer_Name"
+F7 "P0846SNL" 650 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "673-P0846SNL" 650 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/P0846SNL?qs=GY25Nw16qaXiqUAx%252BvLTgw%3D%3D" 650 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "P0846SNL" 650 -750 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/p0846snl/pulse-electronics-corporation" 650 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
+A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
+A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
+A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 800 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # iclr_SI7315DN-T1-GE3
 #
 DEF iclr_SI7315DN-T1-GE3 Q 0 30 Y Y 1 F N
@@ -536,6 +735,60 @@ X D_2 6 1000 0 200 L 50 50 0 0 P
 X D_3 7 1000 -100 200 L 50 50 0 0 P
 X D_4 8 1000 -200 200 L 50 50 0 0 P
 X D_5 9 1000 -300 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# iclr_SI7617DN-T1-GE3
+#
+DEF iclr_SI7617DN-T1-GE3 Q 0 30 Y Y 1 F N
+F0 "Q" 850 300 50 H V L CNN
+F1 "iclr_SI7617DN-T1-GE3" 850 200 50 H V L CNN
+F2 "SIS862DNT1GE3" 850 100 50 H I L CNN
+F3 "http://www.vishay.com/docs/65164/si7617dn.pdf" 850 0 50 H I L CNN
+F4 "VISHAY - SI7617DN-T1-GE3 - MOSFET, P CH, 30V, 35A, POWERPAK" 850 -100 50 H I L CNN "Description"
+F5 "Vishay" 850 -300 50 H I L CNN "Manufacturer_Name"
+F6 "SI7617DN-T1-GE3" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "781-SI7617DN-GE3" 850 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7617DN-T1-GE3?qs=kt16UJ73eEF1rWSJwJchzg%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "SI7617DN-T1-GE3" 850 -700 50 H I L CNN "Arrow Part Number"
+F10 "https://www.arrow.com/en/products/si7617dn-t1-ge3/vishay?region=nac" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+X S_1 1 0 0 200 R 50 50 0 0 P
+X S_2 2 0 -100 200 R 50 50 0 0 P
+X S_3 3 0 -200 200 R 50 50 0 0 P
+X G 4 0 -300 200 R 50 50 0 0 P
+X D_1 5 1000 0 200 L 50 50 0 0 P
+X D_2 6 1000 -100 200 L 50 50 0 0 P
+X D_3 7 1000 -200 200 L 50 50 0 0 P
+X D_4 8 1000 -300 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# iclr_SIS412DN-T1-GE3-iclr
+#
+DEF iclr_SIS412DN-T1-GE3-iclr Q 0 30 Y Y 1 F N
+F0 "Q" 850 300 50 H V L CNN
+F1 "iclr_SIS412DN-T1-GE3-iclr" 850 200 50 H V L CNN
+F2 "POWERPAK-1212-8" 850 100 50 H I L CNN
+F3 "https://www.vishay.com/docs/69006/sis412dn.pdf" 850 0 50 H I L CNN
+F4 "VISHAY - SIS412DN-T1-GE3 - MOSFET, N-CH, 30V, 12A, POWERPAK8" 850 -100 50 H I L CNN "Description"
+F5 "Vishay" 850 -300 50 H I L CNN "Manufacturer_Name"
+F6 "SIS412DN-T1-GE3" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "781-SIS412DN-T1-GE3" 850 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SIS412DN-T1-GE3?qs=cPOO8qjhL6NqDrBget0Fyg%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "SIS412DN-T1-GE3" 850 -700 50 H I L CNN "Arrow Part Number"
+F10 "https://www.arrow.com/en/products/sis412dn-t1-ge3/vishay?region=nac" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+X S_1 1 0 0 200 R 50 50 0 0 P
+X S_2 2 0 -100 200 R 50 50 0 0 P
+X S_3 3 0 -200 200 R 50 50 0 0 P
+X G 4 0 -300 200 R 50 50 0 0 P
+X D_1 5 1000 0 200 L 50 50 0 0 P
+X D_2 6 1000 -100 200 L 50 50 0 0 P
+X D_3 7 1000 -200 200 L 50 50 0 0 P
+X D_4 8 1000 -300 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -595,259 +848,6 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X VBUS 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_BQ24618RGET-iclr-power_new_18122021-rescue
-#
-DEF power_new_25012022-rescue_BQ24618RGET-iclr-power_new_18122021-rescue IC 0 30 Y Y 1 F N
-F0 "IC" 1250 800 50 H V L CNN
-F1 "power_new_25012022-rescue_BQ24618RGET-iclr-power_new_18122021-rescue" 1250 700 50 H V L CNN
-F2 "QFN50P400X400X100-25N-D" 1250 600 50 H I L CNN
-F3 "http://www.ti.com/lit/gpn/bq24618" 1250 500 50 H I L CNN
-F4 "Stand-Alone USB-Friendly Synchronous Switch-Mode Li-Ion or Li-Polymer Battery Charger " 1250 400 50 H I L CNN "Description"
-F5 "1" 1250 300 50 H I L CNN "Height"
-F6 "Texas Instruments" 1250 200 50 H I L CNN "Manufacturer_Name"
-F7 "BQ24618RGET" 1250 100 50 H I L CNN "Manufacturer_Part_Number"
-F8 "595-BQ24618RGET" 1250 0 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24618RGET?qs=g5raLcSarOYqImwS4qptMw%3D%3D" 1250 -100 50 H I L CNN "Mouser Price/Stock"
-F10 "BQ24618RGET" 1250 -200 50 H I L CNN "Arrow Part Number"
-F11 "https://www.arrow.com/en/products/bq24618rget/texas-instruments?region=nac" 1250 -300 50 H I L CNN "Arrow Price/Stock"
-DRAW
-P 5 0 1 6 200 600 1200 600 1200 -1000 200 -1000 200 600 N
-X ACN 1 0 0 200 R 50 50 0 0 P
-X VREF 10 700 -1200 200 U 50 50 0 0 P
-X ISET1 11 800 -1200 200 U 50 50 0 0 P
-X VFB 12 900 -1200 200 U 50 50 0 0 P
-X SRN 13 1400 -500 200 L 50 50 0 0 P
-X SRP 14 1400 -400 200 L 50 50 0 0 P
-X ISET2 15 1400 -300 200 L 50 50 0 0 P
-X ACSET 16 1400 -200 200 L 50 50 0 0 P
-X GND 17 1400 -100 200 L 50 50 0 0 P
-X REGN 18 1400 0 200 L 50 50 0 0 P
-X LODRV 19 1000 800 200 D 50 50 0 0 P
-X ACP 2 0 -100 200 R 50 50 0 0 P
-X PH 20 900 800 200 D 50 50 0 0 P
-X HIDRV 21 800 800 200 D 50 50 0 0 P
-X BTST 22 700 800 200 D 50 50 0 0 P
-X ~BATDRV 23 600 800 200 D 50 50 0 0 P
-X VCC 24 500 800 200 D 50 50 0 0 P
-X EP 25 400 800 200 D 50 50 0 0 P
-X ~ACDRV 3 0 -200 200 R 50 50 0 0 P
-X CE 4 0 -300 200 R 50 50 0 0 P
-X STAT1 5 0 -400 200 R 50 50 0 0 P
-X TS 6 0 -500 200 R 50 50 0 0 P
-X TTC 7 400 -1200 200 U 50 50 0 0 P
-X ~PG 8 500 -1200 200 U 50 50 0 0 P
-X STAT2 9 600 -1200 200 U 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_C0603C103J5REC7411-iclr
-#
-DEF power_new_25012022-rescue_C0603C103J5REC7411-iclr C 0 40 Y N 1 L N
-F0 "C" 0 150 50 H V L BNN
-F1 "power_new_25012022-rescue_C0603C103J5REC7411-iclr" 0 -200 50 H V L BNN
-F2 "CAPC1608X87N" 0 0 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-DRAW
-S 0 -75 25 75 0 0 0 F
-S 75 -75 100 75 0 0 0 F
-X ~ 1 -100 0 100 R 40 40 0 0 P
-X ~ 2 200 0 100 L 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_CSD25485F5T-iclr
-#
-DEF power_new_25012022-rescue_CSD25485F5T-iclr Q 0 30 Y Y 1 F N
-F0 "Q" 450 150 50 H V L CNN
-F1 "power_new_25012022-rescue_CSD25485F5T-iclr" 450 50 50 H V L CNN
-F2 "CSD13385F5" 450 -50 50 H I L CNN
-F3 "http://www.ti.com/lit/gpn/CSD25485F5" 450 -150 50 H I L CNN
-F4 "-20V, P ch NexFET MOSFET, single LGA 0.8x1.5, 42mOhm" 450 -250 50 H I L CNN "Description"
-F5 "0" 450 -350 50 H I L CNN "Height"
-F6 "Texas Instruments" 450 -450 50 H I L CNN "Manufacturer_Name"
-F7 "CSD25485F5T" 450 -550 50 H I L CNN "Manufacturer_Part_Number"
-F8 "595-CSD25485F5T" 450 -650 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CSD25485F5T?qs=Bho%2FbeBaDExWIlvMtFx97A%3D%3D" 450 -750 50 H I L CNN "Mouser Price/Stock"
-F10 "CSD25485F5T" 450 -850 50 H I L CNN "Arrow Part Number"
-F11 "https://www.arrow.com/en/products/csd25485f5t/texas-instruments" 450 -950 50 H I L CNN "Arrow Price/Stock"
-DRAW
-C 250 100 150 0 1 10 N
-P 2 0 1 6 230 -20 230 20 N
-P 2 0 1 6 230 0 300 0 N
-P 2 0 1 6 230 80 230 120 N
-P 2 0 1 6 230 220 230 180 N
-P 2 0 1 6 300 100 230 100 N
-P 2 0 1 6 300 100 300 -100 N
-P 2 0 1 6 300 200 230 200 N
-P 2 0 1 6 300 200 300 300 N
-P 3 0 1 6 100 0 200 0 200 200 N
-P 4 0 1 10 300 100 260 120 260 80 300 100 F
-X ~ 1 0 0 100 R 50 50 0 0 P
-X ~ 2 300 -200 100 U 50 50 0 0 P
-X ~ 3 300 400 100 D 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_EEUFM1H471-iclr
-#
-DEF power_new_25012022-rescue_EEUFM1H471-iclr C 0 40 N N 1 L N
-F0 "C" -100 150 50 H V L BNN
-F1 "power_new_25012022-rescue_EEUFM1H471-iclr" -100 -200 50 H V L BNN
-F2 "CAPPRD500W60D1250H2000" 0 0 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-F4 "PANASONIC" 0 0 50 H I L BNN "MF"
-F5 "0.6" 0 0 50 H I L BNN "b_nom"
-F6 "20" 0 0 50 H I L BNN "A_max"
-F7 "FM-A" 0 0 50 H I L BNN "DESCRIPTION"
-F8 "28-FEB-20" 0 0 50 H I L BNN "PARTREV"
-F9 "0.65" 0 0 50 H I L BNN "b_max"
-F10 "5" 0 0 50 H I L BNN "e_nom"
-F11 "12.5" 0 0 50 H I L BNN "D_nom"
-DRAW
-A 233 0 174 1450 -1450 0 0 10 N 90 100 90 -100
-S -46 -60 -11 -55 0 0 0 F
-S -31 -75 -26 -40 0 0 0 F
-P 2 0 0 6 0 0 20 0 N
-P 2 0 0 10 20 0 20 -100 N
-P 2 0 0 10 20 100 20 0 N
-P 2 0 0 6 100 0 60 0 N
-X ~ N 200 0 100 L 40 40 0 0 P
-X ~ P -100 0 100 R 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_LM2679T-3.3-iclr
-#
-DEF power_new_25012022-rescue_LM2679T-3.3-iclr U 0 40 Y Y 1 L N
-F0 "U" -181 248 50 H V L BNN
-F1 "power_new_25012022-rescue_LM2679T-3.3-iclr" -211 -616 50 H V L BNN
-F2 "TO127P457X1016X2052-7P" 0 0 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-F4 "National Semiconductor" 0 0 50 H I L BNN "SUPPLIER"
-F5 "TO220-7" 0 0 50 H I L BNN "PACKAGE"
-F6 "LM2679T-3.3" 0 0 50 H I L BNN "MPN"
-F7 "41K4227" 0 0 50 H I L BNN "OC_NEWARK"
-F8 "-" 0 0 50 H I L BNN "OC_FARNELL"
-DRAW
-S -700 -500 700 200 0 0 16 f
-X SW 1 900 0 200 L 40 40 0 0 O
-X VIN 2 -900 0 200 R 40 40 0 0 I
-X BOOST 3 -900 -100 200 R 40 40 0 0 P
-X GND 4 -900 -300 200 R 40 40 0 0 P
-X CURRENT_ADJ 5 900 -300 200 L 40 40 0 0 P
-X FB 6 900 -100 200 L 40 40 0 0 P
-X SOFTSTART 7 900 -200 200 L 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_MBRD835LT4G-iclr
-#
-DEF power_new_25012022-rescue_MBRD835LT4G-iclr D 0 40 N N 1 L N
-F0 "D" -200 100 50 H V L BNN
-F1 "power_new_25012022-rescue_MBRD835LT4G-iclr" -200 -150 50 H V L BNN
-F2 "DPAK229P990X238-3N" 0 0 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-F4 "IPC-7351B" 0 0 50 H I L BNN "STANDARD"
-F5 "On Semiconductor" 0 0 50 H I L BNN "MANUFACTURER"
-F6 "8" 0 0 50 H I L BNN "PARTREV"
-DRAW
-P 2 0 0 10 -100 0 -50 0 N
-P 2 0 0 10 -50 -50 50 0 N
-P 2 0 0 10 -50 0 -50 -50 N
-P 2 0 0 10 -50 50 -50 0 N
-P 2 0 0 10 25 -40 25 -50 N
-P 2 0 0 10 50 -50 25 -50 N
-P 2 0 0 10 50 0 -50 50 N
-P 2 0 0 10 50 0 50 -50 N
-P 2 0 0 10 50 50 50 0 N
-P 2 0 0 10 75 50 50 50 N
-P 2 0 0 10 75 50 75 40 N
-P 2 0 0 10 100 0 50 0 N
-X ~ 1 -200 0 100 R 40 40 0 0 P
-X ~ 3 -200 0 100 R 40 40 0 0 P
-X ~ 4 200 0 100 L 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_P0846SNL-iclr
-#
-DEF power_new_25012022-rescue_P0846SNL-iclr L 0 30 Y Y 1 F N
-F0 "L" 650 250 50 H V L CNN
-F1 "power_new_25012022-rescue_P0846SNL-iclr" 650 150 50 H V L CNN
-F2 "P0846SNL" 650 50 50 H I L CNN
-F3 "https://datasheet.datasheetarchive.com/originals/dk/DKDS-10/182482.pdf" 650 -50 50 H I L CNN
-F4 "Fixed Inductors 260KHZ SWITCHER IND" 650 -150 50 H I L CNN "Description"
-F5 "10.16" 650 -250 50 H I L CNN "Height"
-F6 "Pulse" 650 -350 50 H I L CNN "Manufacturer_Name"
-F7 "P0846SNL" 650 -450 50 H I L CNN "Manufacturer_Part_Number"
-F8 "673-P0846SNL" 650 -550 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/P0846SNL?qs=GY25Nw16qaXiqUAx%252BvLTgw%3D%3D" 650 -650 50 H I L CNN "Mouser Price/Stock"
-F10 "P0846SNL" 650 -750 50 H I L CNN "Arrow Part Number"
-F11 "https://www.arrow.com/en/products/p0846snl/pulse-electronics-corporation" 650 -850 50 H I L CNN "Arrow Price/Stock"
-DRAW
-A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
-A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
-A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
-A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
-X ~ 1 0 0 200 R 50 50 0 0 P
-X ~ 2 800 0 200 L 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_SI7617DN-T1-GE3-iclr-power_new_18122021-rescue
-#
-DEF power_new_25012022-rescue_SI7617DN-T1-GE3-iclr-power_new_18122021-rescue Q 0 30 Y Y 1 F N
-F0 "Q" 850 300 50 H V L CNN
-F1 "power_new_25012022-rescue_SI7617DN-T1-GE3-iclr-power_new_18122021-rescue" 850 200 50 H V L CNN
-F2 "SIS862DNT1GE3" 850 100 50 H I L CNN
-F3 "http://www.vishay.com/docs/65164/si7617dn.pdf" 850 0 50 H I L CNN
-F4 "VISHAY - SI7617DN-T1-GE3 - MOSFET, P CH, 30V, 35A, POWERPAK" 850 -100 50 H I L CNN "Description"
-F5 "Vishay" 850 -300 50 H I L CNN "Manufacturer_Name"
-F6 "SI7617DN-T1-GE3" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
-F7 "781-SI7617DN-GE3" 850 -500 50 H I L CNN "Mouser Part Number"
-F8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7617DN-T1-GE3?qs=kt16UJ73eEF1rWSJwJchzg%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
-F9 "SI7617DN-T1-GE3" 850 -700 50 H I L CNN "Arrow Part Number"
-F10 "https://www.arrow.com/en/products/si7617dn-t1-ge3/vishay?region=nac" 850 -800 50 H I L CNN "Arrow Price/Stock"
-DRAW
-P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
-X S_1 1 0 0 200 R 50 50 0 0 P
-X S_2 2 0 -100 200 R 50 50 0 0 P
-X S_3 3 0 -200 200 R 50 50 0 0 P
-X G 4 0 -300 200 R 50 50 0 0 P
-X D_1 5 1000 0 200 L 50 50 0 0 P
-X D_2 6 1000 -100 200 L 50 50 0 0 P
-X D_3 7 1000 -200 200 L 50 50 0 0 P
-X D_4 8 1000 -300 200 L 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_new_25012022-rescue_SIS412DN-T1-GE3-iclr-power_new_18122021-rescue
-#
-DEF power_new_25012022-rescue_SIS412DN-T1-GE3-iclr-power_new_18122021-rescue Q 0 30 Y Y 1 F N
-F0 "Q" 850 300 50 H V L CNN
-F1 "power_new_25012022-rescue_SIS412DN-T1-GE3-iclr-power_new_18122021-rescue" 850 200 50 H V L CNN
-F2 "POWERPAK-1212-8" 850 100 50 H I L CNN
-F3 "https://www.vishay.com/docs/69006/sis412dn.pdf" 850 0 50 H I L CNN
-F4 "VISHAY - SIS412DN-T1-GE3 - MOSFET, N-CH, 30V, 12A, POWERPAK8" 850 -100 50 H I L CNN "Description"
-F5 "Vishay" 850 -300 50 H I L CNN "Manufacturer_Name"
-F6 "SIS412DN-T1-GE3" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
-F7 "781-SIS412DN-T1-GE3" 850 -500 50 H I L CNN "Mouser Part Number"
-F8 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SIS412DN-T1-GE3?qs=cPOO8qjhL6NqDrBget0Fyg%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
-F9 "SIS412DN-T1-GE3" 850 -700 50 H I L CNN "Arrow Part Number"
-F10 "https://www.arrow.com/en/products/sis412dn-t1-ge3/vishay?region=nac" 850 -800 50 H I L CNN "Arrow Price/Stock"
-DRAW
-P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
-X S_1 1 0 0 200 R 50 50 0 0 P
-X S_2 2 0 -100 200 R 50 50 0 0 P
-X S_3 3 0 -200 200 R 50 50 0 0 P
-X G 4 0 -300 200 R 50 50 0 0 P
-X D_1 5 1000 0 200 L 50 50 0 0 P
-X D_2 6 1000 -100 200 L 50 50 0 0 P
-X D_3 7 1000 -200 200 L 50 50 0 0 P
-X D_4 8 1000 -300 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
