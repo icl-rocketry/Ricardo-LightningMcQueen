@@ -327,6 +327,10 @@
     [
       "00000000-0000-0000-0000-000061f04c1a",
       "3.3V Redundant Regulators"
+    ],
+    [
+      "b1853ee1-af2e-49ab-93e4-e29b2d9f793d",
+      "USB --> UART"
     ]
   ],
   "text_variables": {}
