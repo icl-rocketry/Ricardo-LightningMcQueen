@@ -3465,7 +3465,7 @@
       (reference "C?") (unit 1) (value "1μF") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bffc"
-      (reference "CTTC") (unit 1) (value "0.022µF") (footprint "")
+      (reference "CTTC") (unit 1) (value "22nF") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c2a8f1"
       (reference "Cff") (unit 1) (value "22pF") (footprint "")
