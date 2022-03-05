@@ -238,7 +238,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "power_new_25012022.kicad_pro",
+    "filename": "powerboard_sc21_as25.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -330,7 +330,7 @@
     ],
     [
       "b1853ee1-af2e-49ab-93e4-e29b2d9f793d",
-      "USB --> UART"
+      "USB To UART"
     ]
   ],
   "text_variables": {}
