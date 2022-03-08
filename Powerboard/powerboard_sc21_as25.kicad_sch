@@ -3494,9 +3494,6 @@
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bf31"
       (reference "GroundPower") (unit 1) (value "Conn_01x02_Female") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-0000620b3898"
-      (reference "GroundPowerSwitch") (unit 1) (value "Conn_01x02_Female") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-0000621274f9"
       (reference "IC?") (unit 1) (value "BQ24618RGET-iclr") (footprint "QFN50P400X400X100-25N-D")
     )
@@ -3508,6 +3505,9 @@
     )
     (path "/00000000-0000-0000-0000-0000620cf89f"
       (reference "J?") (unit 1) (value "Conn_01x05_Male") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061beb629/a24bcba9-b0f1-40d7-8732-95e93809e1cb"
+      (reference "J?") (unit 1) (value "IsolationSwitch") (footprint "")
     )
     (path "/c8adaee4-a569-4b26-9704-a76aac17e42f"
       (reference "J?") (unit 1) (value "Conn_01x02_Male") (footprint "")
