@@ -331,6 +331,10 @@
     [
       "b1853ee1-af2e-49ab-93e4-e29b2d9f793d",
       "USB To UART"
+    ],
+    [
+      "33e9abb9-e634-4336-bd82-f9f25ebb0731",
+      "Battery Monitor"
     ]
   ],
   "text_variables": {}

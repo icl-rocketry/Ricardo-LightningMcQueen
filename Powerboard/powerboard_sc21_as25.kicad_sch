@@ -3055,6 +3055,18 @@
     )
   )
 
+  (sheet (at 87.63 167.005) (size 25.146 18.796) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 33e9abb9-e634-4336-bd82-f9f25ebb0731)
+    (property "Sheet name" "Battery Monitor" (id 0) (at 87.63 166.2934 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "battmonitor.kicad_sch" (id 1) (at 87.63 186.3856 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
   (sheet (at 48.26 167.64) (size 21.59 16.51)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
@@ -3092,6 +3104,7 @@
     (path "/00000000-0000-0000-0000-000061beb629" (page "2"))
     (path "/00000000-0000-0000-0000-000061f04c1a" (page "3"))
     (path "/b1853ee1-af2e-49ab-93e4-e29b2d9f793d" (page "4"))
+    (path "/33e9abb9-e634-4336-bd82-f9f25ebb0731" (page "5"))
   )
 
   (symbol_instances
@@ -3500,6 +3513,9 @@
     (path "/b1853ee1-af2e-49ab-93e4-e29b2d9f793d/b2b64254-1dda-41e5-8c17-5f747eac523c"
       (reference "IC?") (unit 1) (value "CP2102") (footprint "QFN50P500X500X100-29N-D")
     )
+    (path "/33e9abb9-e634-4336-bd82-f9f25ebb0731/c1d61362-65a2-49c7-92c4-42116f69f186"
+      (reference "IC?") (unit 1) (value "BQ34Z110PWR") (footprint "SOP65P640X120-14N")
+    )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bdf7"
       (reference "J1") (unit 1) (value "Thermistor Connection 103AT NTC") (footprint "")
     )
@@ -3587,20 +3603,11 @@
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be17"
       (reference "R3") (unit 1) (value "100kΩ") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be29"
-      (reference "R4") (unit 1) (value "150kΩ") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be1d"
       (reference "R5") (unit 1) (value "100kΩ") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be2f"
-      (reference "R6") (unit 1) (value "13kΩ") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be11"
       (reference "R7") (unit 1) (value "100kΩ") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be23"
-      (reference "R8") (unit 1) (value "32kΩ") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bdd5"
       (reference "R9") (unit 1) (value "9.31kΩ") (footprint "")
@@ -3694,6 +3701,15 @@
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bdbb"
       (reference "RAC") (unit 1) (value "10mΩ") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be29"
+      (reference "RAdp") (unit 1) (value "150kΩ") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be23"
+      (reference "RFast") (unit 1) (value "32kΩ") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be2f"
+      (reference "RPre") (unit 1) (value "13kΩ") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c2a94c"
       (reference "RSR") (unit 1) (value "10mΩ") (footprint "")
