@@ -1964,7 +1964,7 @@
     (property "Value" "CP2102" (id 1) (at 173.8376 91.313 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "QFN50P500X500X100-29N-D" (id 2) (at 168.91 68.58 0)
+    (property "Footprint" "" (id 2) (at 168.91 68.58 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "https://componentsearchengine.com/Datasheets/1/CP2102.pdf" (id 3) (at 168.91 71.12 0)
