@@ -4186,20 +4186,20 @@
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bf71"
       (reference "C4") (unit 1) (value "1μF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be4f"
-      (reference "C5") (unit 1) (value "1μF") (footprint "")
+    (path "/00000000-0000-0000-0000-000061beb629/cbf4484c-9a1a-4164-8260-b12caec65aa4"
+      (reference "C5") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c2a958"
       (reference "C6") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bf45"
-      (reference "C7") (unit 1) (value "1µF") (footprint "")
+    (path "/00000000-0000-0000-0000-000061beb629/486e312f-3a5a-4da0-ba38-ec57816e33ba"
+      (reference "C7") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be7f"
-      (reference "C8") (unit 1) (value "10μF") (footprint "")
+    (path "/00000000-0000-0000-0000-000061beb629/fa0219bd-ef04-412e-8ab9-28366b6563fd"
+      (reference "C8") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be85"
-      (reference "C9") (unit 1) (value "10μF") (footprint "")
+    (path "/00000000-0000-0000-0000-000061beb629/71d361a2-0a13-42ed-95ac-084db4036962"
+      (reference "C9") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bf10"
       (reference "C10") (unit 1) (value "0.1μF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -4207,11 +4207,11 @@
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bf0a"
       (reference "C11") (unit 1) (value "0.1μF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c2a946"
-      (reference "C12") (unit 1) (value "10μF") (footprint "")
+    (path "/00000000-0000-0000-0000-000061beb629/9070543a-f536-4858-b064-08c2c0881aa8"
+      (reference "C12") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c2a940"
-      (reference "C13") (unit 1) (value "10μF") (footprint "")
+    (path "/00000000-0000-0000-0000-000061beb629/ae0251fc-94dd-4c54-92de-959d4dbadb2c"
+      (reference "C13") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1beaf"
       (reference "C14") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -4219,8 +4219,8 @@
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bf24"
       (reference "C15") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bf37"
-      (reference "C16") (unit 1) (value "2.2μF") (footprint "")
+    (path "/00000000-0000-0000-0000-000061beb629/c46192b8-c72f-41fc-8c7c-70b27a282be1"
+      (reference "C16") (unit 1) (value "2.2uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/ea2c9c05-b58a-4b60-be53-68b76a809548"
       (reference "C17") (unit 1) (value "1μF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -4342,8 +4342,8 @@
     (path "/b1853ee1-af2e-49ab-93e4-e29b2d9f793d/19b6fdb7-c2da-4e40-b2bb-be0a937611f0"
       (reference "C58") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1bffc"
-      (reference "CTTC1") (unit 1) (value "22nF") (footprint "")
+    (path "/00000000-0000-0000-0000-000061beb629/a427be9f-271f-4538-82c4-ac0ca7b062c8"
+      (reference "CTTC1") (unit 1) (value "22nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c2a8f1"
       (reference "Cff1") (unit 1) (value "22pF") (footprint "")
