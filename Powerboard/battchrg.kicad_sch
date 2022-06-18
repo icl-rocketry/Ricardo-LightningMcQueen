@@ -3705,7 +3705,7 @@
     (uuid ea71a934-761c-4ba9-9b6b-f4d951ec6b22)
     (property "Reference" "J5" (id 0) (at 22.86 50.8 0))
     (property "Value" "Conn_01x04_Male" (id 1) (at 15.367 45.085 0))
-    (property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-08A2_2x04_P4.20mm_Vertical" (id 2) (at 18.923 57.023 0)
+    (property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical" (id 2) (at 18.923 57.023 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 18.923 57.023 0)
