@@ -3437,7 +3437,7 @@
     (property "Value" "10uF" (id 1) (at 212.09 133.3562 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 209.55 132.08 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (id 2) (at 209.55 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 209.55 132.08 0)
@@ -4398,7 +4398,7 @@
       (reference "C24") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/810ce37c-bcb9-42d5-b47b-cf294d5ee30b"
-      (reference "C25") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C25") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/5e192409-b840-4d5f-9d5c-3ea193c694ce"
       (reference "C26") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -4844,6 +4844,9 @@
     (path "/00000000-0000-0000-0000-000061c4d10a"
       (reference "U3") (unit 1) (value "ESP32-PICO-D4") (footprint "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm")
     )
+    (path "/b1853ee1-af2e-49ab-93e4-e29b2d9f793d/14491313-c362-4522-af8c-f043f102cbc2"
+      (reference "U4") (unit 1) (value "RT9025-25GSP") (footprint "iclr:SOIC127P599X175-9N")
+    )
     (path "/00000000-0000-0000-0000-000061f04c1a/00000000-0000-0000-0000-000062121b9e"
       (reference "U6") (unit 1) (value "LM2679T-3.3-iclr") (footprint "Package_TO_SOT_SMD:TO-263-7_TabPin4")
     )
@@ -4855,9 +4858,6 @@
     )
     (path "/00000000-0000-0000-0000-000061f04c1a/00000000-0000-0000-0000-0000620b10e4"
       (reference "U9") (unit 1) (value "LTC4412xS6") (footprint "Package_TO_SOT_SMD:TSOT-23-6")
-    )
-    (path "/b1853ee1-af2e-49ab-93e4-e29b2d9f793d/1444d49f-1253-44c6-b265-5d56e5057df7"
-      (reference "U10") (unit 1) (value "RT9025-25GSP") (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm")
     )
     (path "/b1853ee1-af2e-49ab-93e4-e29b2d9f793d/8f776380-fcbf-4da6-96c0-055517925d40"
       (reference "U11") (unit 1) (value "LTC4411") (footprint "Package_TO_SOT_SMD:SOT-23-5")
