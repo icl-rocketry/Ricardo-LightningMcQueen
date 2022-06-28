@@ -1975,7 +1975,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4346fe55-f906-453a-b81a-1c013104a598)
   )
-  (label "ISET2" (at 248.92 143.51 0)
+  (label "ICSET2" (at 248.92 143.51 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 49a65079-57a9-46fc-8711-1d7f2cab8dbf)
   )
