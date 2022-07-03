@@ -1668,7 +1668,7 @@
   (symbol (lib_id "Device:R_Small") (at 147.32 130.81 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3fdc1205-170d-4bad-a583-c2274b810ac0)
-    (property "Reference" "R39" (id 0) (at 144.78 129.54 0)
+    (property "Reference" "R39" (id 0) (at 142.875 128.397 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "47k" (id 1) (at 147.32 132.08 0)
