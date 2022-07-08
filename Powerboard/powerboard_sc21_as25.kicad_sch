@@ -2235,7 +2235,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 72a11ac3-9a31-4cbe-be83-a08ff11aeeeb)
   )
-  (label "LPC_24V" (at 115.697 126.619 90)
+  (label "LPC_24V" (at 115.7224 126.6444 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7760a75a-d74b-4185-b34e-cbc7b2c339b6)
   )
