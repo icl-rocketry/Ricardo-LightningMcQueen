@@ -4420,8 +4420,8 @@
     (path "/00000000-0000-0000-0000-000061beb629/00000000-0000-0000-0000-000061c1be2f"
       (reference "RPre1") (unit 1) (value "13k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000061beb629/b656980c-b198-4301-8435-6bbc537e7852"
-      (reference "RSR1") (unit 1) (value "FCSL110R010FER") (footprint "iclr:RESC50110X70N")
+    (path "/00000000-0000-0000-0000-000061beb629/5a02d18b-6334-416e-a527-4bd7d2d39801"
+      (reference "RSR1") (unit 1) (value "10m") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/6475a1e6-8bd5-44d3-bfd0-320d530e7f43"
       (reference "TP14") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
