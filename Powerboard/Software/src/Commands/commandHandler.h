@@ -9,8 +9,8 @@
 #include <functional>
 
 #include "commands.h"
-#include "rnp_packet.h"
-#include "rnp_networkmanager.h"
+#include <rnp_packet.h>
+#include <rnp_networkmanager.h>
 #include "commandpacket.h"
 
 
@@ -36,5 +36,10 @@ class CommandHandler {
 
         void Reboot(const RnpPacketSerialized& packet);
 
+        void ChargingStatCommand(const RnpPacketSerialized& packet);
+
+        void BatVCommand(const RnpPacketSerialized& packet);
+
+        void PowerGoodCommand(const RnpPacketSerialized& packet);
 
 };	

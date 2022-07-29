@@ -17,13 +17,14 @@
 #include "rnp_interface.h"
 #include "Network/interfaces/radio.h"
 #include "commandpacket.h"
+#include "Battery/battery.h"
 
 
-
-
-CommandHandler::CommandHandler(stateMachine* sm):
+CommandHandler::CommandHandler(stateMachine* sm, Battery* battery):
 _sm(sm)
-{};
+{
+	_battery = battery;
+};
 
 void CommandHandler::handleCommand(std::unique_ptr<RnpPacketSerialized> packetptr) {
 
@@ -82,4 +83,19 @@ void CommandHandler::ArmCommand(const RnpPacketSerialized& packet)
 void CommandHandler::Reboot(const RnpPacketSerialized& packet)
 {
 	ESP.restart();
+}
+
+void CommandHandler::ChargingStatCommand(const RnpPacketSerialized& packet)
+{
+	_battery->getChargingStat();
+}
+
+void CommandHandler::BatVCommand(const RnpPacketSerialized& packet)
+{
+	_battery->getBatV();
+}
+
+void CommandHandler::PowerGoodCommand(const RnpPacketSerialized& packet)
+{
+	_battery->PowerGood();
 }
