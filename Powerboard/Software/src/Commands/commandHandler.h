@@ -19,6 +19,7 @@ class stateMachine;//forward declaration
 
 class CommandHandler {
     public:
+
         CommandHandler(stateMachine* sm);
         
         std::function<void(std::unique_ptr<RnpPacketSerialized>)> getCallback();

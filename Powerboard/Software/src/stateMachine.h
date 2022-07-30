@@ -13,6 +13,7 @@ Written by the Electronics team, Imperial College London Rocketry
 
 #include "Storage/systemstatus.h"
 #include "Storage/logController.h"
+#include "Battery/battery.h"
 
 #include "Network/interfaces/usb.h"
 #include "Network/interfaces/radio.h"
@@ -22,8 +23,6 @@ Written by the Electronics team, Imperial College London Rocketry
 #include "rnp_routingtable.h"
 
 #include "Commands/commandHandler.h"
-
-
 
 #include "SPI.h"
 #include "Wire.h"
@@ -53,7 +52,7 @@ class stateMachine {
 
     LogController logcontroller;
     SystemStatus systemstatus;
-
+    Battery battery;
    
   private:
     State* _currStatePtr;

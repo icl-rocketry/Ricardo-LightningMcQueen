@@ -3,7 +3,10 @@
 
 class Battery {
     public:
+        Battery();
         uint8_t getChargingStat();
         float getBatV();
         bool PowerGood();
+        float battvoltage;
+        
 };

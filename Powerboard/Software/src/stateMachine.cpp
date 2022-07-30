@@ -43,7 +43,8 @@ stateMachine::stateMachine() :
     networkmanager(static_cast<uint8_t>(DEFAULT_ADDRESS::GROUNDSTATION_GATEWAY),NODETYPE::HUB,true),
     commandhandler(this),
     logcontroller(networkmanager),
-    systemstatus(&logcontroller)
+    systemstatus(&logcontroller),
+    battery()
 {};
 
 
@@ -113,7 +114,6 @@ void stateMachine::changeState(State* newStatePtr) {
   if (_currStatePtr != NULL){
     //if not null pointer call exitstate method
     _currStatePtr->exitstate();
-
   };
 
   delete _currStatePtr;

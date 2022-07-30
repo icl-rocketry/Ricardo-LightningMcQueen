@@ -20,11 +20,9 @@
 #include "Battery/battery.h"
 
 
-CommandHandler::CommandHandler(stateMachine* sm, Battery* battery):
+CommandHandler::CommandHandler(stateMachine* sm):
 _sm(sm)
-{
-	_battery = battery;
-};
+{};
 
 void CommandHandler::handleCommand(std::unique_ptr<RnpPacketSerialized> packetptr) {
 
@@ -87,15 +85,15 @@ void CommandHandler::Reboot(const RnpPacketSerialized& packet)
 
 void CommandHandler::ChargingStatCommand(const RnpPacketSerialized& packet)
 {
-	_battery->getChargingStat();
+	_sm->battery.getChargingStat();
 }
 
 void CommandHandler::BatVCommand(const RnpPacketSerialized& packet)
 {
-	_battery->getBatV();
+	_sm->battery.getBatV();
 }
 
 void CommandHandler::PowerGoodCommand(const RnpPacketSerialized& packet)
 {
-	_battery->PowerGood();
+	_sm->battery.PowerGood();
 }
