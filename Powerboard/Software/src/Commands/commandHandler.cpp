@@ -11,6 +11,7 @@
 
 
 #include "Storage/logController.h"
+#include "Storage/systemstatus.h"
 #include "States/bricked.h"
 #include "States/live.h"
 #include "rnp_packet.h"
@@ -18,6 +19,9 @@
 #include "Network/interfaces/radio.h"
 #include "commandpacket.h"
 #include "Battery/battery.h"
+#include "3V3 Regulators/reg3v3.h"
+
+#include "PDUPacket.h"
 
 
 CommandHandler::CommandHandler(stateMachine* sm):
@@ -83,17 +87,24 @@ void CommandHandler::Reboot(const RnpPacketSerialized& packet)
 	ESP.restart();
 }
 
-void CommandHandler::ChargingStatCommand(const RnpPacketSerialized& packet)
+void CommandHandler::PDUPacketCommand(const RnpPacketSerialized& packet)
 {
-	_sm->battery.getChargingStat();
+
+	PDUPacket PDU_status;
+
+	PDU_status.header.type = static_cast<uint8_t>(CommandPacket::TYPES::PDU_STATUS_RESPONSE);
+	PDU_status.header.source = _sm->networkmanager.getAddress();
+	PDU_status.header.source_service = serviceID;
+	PDU_status.header.destination = packet.header.source;
+	PDU_status.header.destination_service = packet.header.source_service;
+	PDU_status.header.uid = packet.header.uid; 
+
+	PDU_status.ChargingStat = static_cast<uint8_t>(_sm->battery.getChargingStat());
+	PDU_status.BatV = _sm->battery.getBatV();
+	PDU_status.powergood = _sm->battery.PowerGood();
+	PDU_status.RegStat = static_cast<uint8_t>(_sm->reg3V3.get3V3Stat());
+	PDU_status.Current_state = _sm->systemstatus.getStatus();
+
+	_sm->networkmanager.sendPacket(PDU_status);	
 }
 
-void CommandHandler::BatVCommand(const RnpPacketSerialized& packet)
-{
-	_sm->battery.getBatV();
-}
-
-void CommandHandler::PowerGoodCommand(const RnpPacketSerialized& packet)
-{
-	_sm->battery.PowerGood();
-}

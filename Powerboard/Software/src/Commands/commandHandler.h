@@ -37,10 +37,8 @@ class CommandHandler {
 
         void Reboot(const RnpPacketSerialized& packet);
 
-        void ChargingStatCommand(const RnpPacketSerialized& packet);
+        void PDUPacketCommand(const RnpPacketSerialized& packet);
 
-        void BatVCommand(const RnpPacketSerialized& packet);
-
-        void PowerGoodCommand(const RnpPacketSerialized& packet);
+        void LowPowerCutoffCommand(const RnpPacketSerialized& packet);
 
 };	

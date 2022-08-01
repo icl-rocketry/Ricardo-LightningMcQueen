@@ -9,22 +9,22 @@ Battery::Battery()
 {}
 
 
-uint8_t Battery::getChargingStat(){
-    if(digitalRead(BattStat1)==HIGH && digitalRead(BattStat2)==LOW){
+Battery::STATUS Battery::getChargingStat(){
+    if(digitalRead(BattStat1) == HIGH && digitalRead(BattStat2) == LOW){
         //charge in progress
-        return 0;
+        return STATUS::IN_PROGRESS;
     }
-    else if(digitalRead(BattStat1)==LOW && digitalRead(BattStat2)==HIGH){
+    else if(digitalRead(BattStat1) == LOW && digitalRead(BattStat2) == HIGH){
         //charge complete
-        return 1;
+        return STATUS::CHARGE_COMPLETE;
     }
-    else if(digitalRead(BattStat1)==LOW && digitalRead(BattStat2)==LOW){
-        //Charge suspend, timer fault, overvoltage, sleep mode, battery absent
-        return 2;
+    else if(digitalRead(BattStat1) == LOW && digitalRead(BattStat2) == LOW){
+        //charge suspend, timer fault, overvoltage, sleep mode, battery absent
+        return STATUS::CHARGE_SUSPEND;
     }
     else{
         //error in charge status
-        return 3;
+        return STATUS::ERROR;
     }
 }
 

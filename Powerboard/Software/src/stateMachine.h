@@ -14,6 +14,8 @@ Written by the Electronics team, Imperial College London Rocketry
 #include "Storage/systemstatus.h"
 #include "Storage/logController.h"
 #include "Battery/battery.h"
+#include "3V3 Regulators/reg3v3.h"
+
 
 #include "Network/interfaces/usb.h"
 #include "Network/interfaces/radio.h"
@@ -53,6 +55,7 @@ class stateMachine {
     LogController logcontroller;
     SystemStatus systemstatus;
     Battery battery;
+    Reg3V3 reg3V3;
    
   private:
     State* _currStatePtr;

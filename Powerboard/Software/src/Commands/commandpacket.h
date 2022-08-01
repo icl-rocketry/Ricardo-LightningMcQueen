@@ -15,7 +15,8 @@ namespace CommandPacket{
         SIMPLE = 0,
         MAGCAL = 10,
         MESSAGE_RESPONSE = 100,
-        TELEMETRY_RESPONSE = 101
+        TELEMETRY_RESPONSE = 101,
+        PDU_STATUS_RESPONSE = 102
 
     };
 };

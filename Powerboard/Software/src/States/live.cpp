@@ -1,5 +1,6 @@
 
 #include "live.h"
+#include "armed.h"
 
 #include "flags.h"
 #include "stateMachine.h"
@@ -16,9 +17,13 @@ void Live::initialise(){
 };
 
 State* Live::update(){
-    
-    Serial.print("live");
-    return 0;
+    if(_sm->battery.getBatV() <= 20){
+        State* armed_ptr = new Armed(_sm);
+        return armed_ptr;       
+    }
+    else{
+        return this;
+    }
 
 };
 

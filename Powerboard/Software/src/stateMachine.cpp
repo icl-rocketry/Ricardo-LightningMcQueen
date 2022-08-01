@@ -44,7 +44,8 @@ stateMachine::stateMachine() :
     commandhandler(this),
     logcontroller(networkmanager),
     systemstatus(&logcontroller),
-    battery()
+    battery(),
+    reg3V3()
 {};
 
 
