@@ -2343,7 +2343,7 @@
     (uuid 00000000-0000-0000-0000-000061c1bdf7)
     (property "Reference" "J1" (id 0) (at 170.18 118.11 0))
     (property "Value" "Thermistor Connection 103AT NTC" (id 1) (at 163.83 120.65 0))
-    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" (id 2) (at 172.72 118.11 0)
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (id 2) (at 172.72 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 172.72 118.11 0)
