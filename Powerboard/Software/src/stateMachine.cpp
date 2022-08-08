@@ -29,8 +29,7 @@ Written by the Electronics team, Imperial College London Rocketry
 #include "SPI.h"
 #include "Wire.h"
 
-
-
+#include "LEDScreen/ledscreen.h"
 
 
 stateMachine::stateMachine() : 
@@ -45,7 +44,8 @@ stateMachine::stateMachine() :
     logcontroller(networkmanager),
     systemstatus(&logcontroller),
     battery(),
-    reg3V3()
+    reg3V3(),
+    ledscreen(this,systemstatus, battery, Wire)
 {};
 
 
@@ -93,8 +93,13 @@ void stateMachine::initialise(State* initStatePtr) {
 
   //call setup state
   changeState(initStatePtr);
- 
-  
+
+
+  //led screen setup
+  ledscreen.setupScreen();
+
+  timer = millis();
+
 };
 
 void stateMachine::update() {
@@ -103,10 +108,23 @@ void stateMachine::update() {
 
   State* newStatePtr = _currStatePtr->update();
 
+
+  if(millis() - timer > 100){
+    if(systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){
+      ledscreen.updateTimerScreen(battery.getBatV(), timer);
+    }
+
+    else{
+      ledscreen.updateDefaultScreen(battery.getChargingStat(), battery.getBatV(), battery.PowerGood());
+    }    
+  };
+
+  timer = millis();
+
+
   if (newStatePtr != _currStatePtr) {
     changeState(newStatePtr);
   }
-
   
 };
 

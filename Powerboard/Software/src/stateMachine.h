@@ -29,7 +29,7 @@ Written by the Electronics team, Imperial College London Rocketry
 #include "SPI.h"
 #include "Wire.h"
 
-
+#include "LEDScreen/ledscreen.h"
 
 
 class stateMachine {
@@ -56,9 +56,11 @@ class stateMachine {
     SystemStatus systemstatus;
     Battery battery;
     Reg3V3 reg3V3;
+    LEDScreen ledscreen;
    
   private:
     State* _currStatePtr;
+    uint32_t timer;
 
 
 };

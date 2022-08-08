@@ -10,37 +10,41 @@ Battery::Battery()
 
 
 Battery::STATUS Battery::getChargingStat(){
+
     if(digitalRead(BattStat1) == HIGH && digitalRead(BattStat2) == LOW){
-        //charge in progress
-        return STATUS::IN_PROGRESS;
+        return STATUS::IN_PROGRESS;         //charge in progress
     }
+
     else if(digitalRead(BattStat1) == LOW && digitalRead(BattStat2) == HIGH){
-        //charge complete
-        return STATUS::CHARGE_COMPLETE;
+        return STATUS::CHARGE_COMPLETE;     //charge complete
     }
+
     else if(digitalRead(BattStat1) == LOW && digitalRead(BattStat2) == LOW){
-        //charge suspend, timer fault, overvoltage, sleep mode, battery absent
-        return STATUS::CHARGE_SUSPEND;
+        return STATUS::CHARGE_SUSPEND;      //charge suspend, timer fault, overvoltage, sleep mode, battery absent
     }
+
     else{
-        //error in charge status
-        return STATUS::ERROR;
+        return STATUS::ERROR;       //error in charge status
     }
 }
 
 
 
 float Battery::getBatV(){
-    battvoltage = (analogRead(Charge)/4095)*100;
+    battvoltage = (analogRead(Charge)/4095)*25.2;   //25.2V at full charge
     return battvoltage;
 }
 
 
+
 bool Battery::PowerGood(){
+
     if(digitalRead(PG)==LOW){
         return true;
     }
+
     else{
         return false;
     }
+    
 }

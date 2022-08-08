@@ -3,9 +3,12 @@
 #include "flags.h"
 #include "stateMachine.h"
 
+#include "LEDScreen/ledscreen.h"
+
 Armed::Armed(stateMachine* sm):
 State(sm,SYSTEM_FLAG::STATE_ARMED)
 {};
+
 
 void Armed::initialise(){
     State::initialise();
@@ -16,6 +19,7 @@ void Armed::initialise(){
 
 State* Armed::update(){
     return this;
+    
 };
 
 void Armed::exitstate(){

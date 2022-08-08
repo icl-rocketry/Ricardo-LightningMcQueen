@@ -10,11 +10,11 @@ static constexpr int LoraReset = 4;
 static constexpr int LoraCs = 5;
 static constexpr int LoraInt = 6;
 
-
 static constexpr int _SDA = 21;
 static constexpr int _SCL = 22;
 
 static constexpr int PDU_EN = 9;
+
 static constexpr int TxCan = 18;
 static constexpr int RxCan = 5;
 

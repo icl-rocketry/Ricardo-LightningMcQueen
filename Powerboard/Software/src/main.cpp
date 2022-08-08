@@ -14,6 +14,7 @@ stateMachine statemachine;
 void setup_task()
 {
     statemachine.initialise(new GroundstationGateway(&statemachine));
+
 }
 
 void inner_loop_task()

@@ -6,6 +6,8 @@
 #include "flags.h"
 #include "stateMachine.h"
 
+#include "LEDScreen/ledscreen.h"
+
 
 Idle::Idle(stateMachine* sm):
 State(sm,SYSTEM_FLAG::STATE_IDLE)
@@ -25,6 +27,8 @@ State* Idle::update(){
     }else{
         return this; //loopy loop
     }
+
+
 };
 
 void Idle::exitstate(){

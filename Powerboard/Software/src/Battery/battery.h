@@ -2,8 +2,8 @@
 #include <Arduino.h>
 
 
-
 class Battery {
+
     public:
         enum class STATUS:uint8_t{
             IN_PROGRESS = 0,
@@ -13,9 +13,9 @@ class Battery {
         };
 
         Battery();
-        STATUS getChargingStat();
-        float getBatV();
-        bool PowerGood();
+        STATUS getChargingStat();   //charging status function
+        float getBatV();    //battery voltage function
+        bool PowerGood();   //adapter connectivity function
         float battvoltage;
         
 };

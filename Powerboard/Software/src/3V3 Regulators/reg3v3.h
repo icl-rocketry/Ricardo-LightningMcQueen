@@ -2,6 +2,7 @@
 #include <Arduino.h>
 
 class Reg3V3 {
+
     public:
         enum class STATUS:uint8_t{
             VREG1_OFF = 0,
@@ -10,7 +11,7 @@ class Reg3V3 {
             ERROR = 3
         };
 
-        Reg3V3();
-        STATUS get3V3Stat();
+        Reg3V3();   
+        STATUS get3V3Stat();    //Vregs status function
 
 };

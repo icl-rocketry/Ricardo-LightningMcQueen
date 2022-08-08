@@ -16,6 +16,7 @@ void Bricked::initialise(){
 
 State* Bricked::update(){
     return this;
+
 };
 
 void Bricked::exitstate(){
