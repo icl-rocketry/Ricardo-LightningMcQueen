@@ -45,7 +45,7 @@ stateMachine::stateMachine() :
     systemstatus(&logcontroller),
     battery(),
     reg3V3(),
-    ledscreen(this,systemstatus, battery, Wire)
+    ledscreen(systemstatus, Wire)
 {};
 
 
@@ -111,7 +111,7 @@ void stateMachine::update() {
 
   if(millis() - timer > 100){
     if(systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){
-      ledscreen.updateTimerScreen(battery.getBatV(), timer);
+      ledscreen.updateTimerScreen(battery.getBatV());
     }
 
     else{

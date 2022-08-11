@@ -2,13 +2,13 @@
 
 #include <Arduino.h>
 
-enum class SYSTEM_FLAG:uint16_t{
+enum class SYSTEM_FLAG:uint32_t{
 
     //state flags
     STATE_DEBUG = (1 << 0), 
     STATE_IDLE = (1 << 1),
     STATE_TIMEOUT = (1 << 2),
-    STATE_ARMED = (1 << 3),
+    STATE_READY = (1 << 3),
     STATE_LIVE = (1 << 4),    
     STATE_BRICKED = (1 << 5),
     STATE_SETUP = (1 << 6),
@@ -24,7 +24,8 @@ enum class SYSTEM_FLAG:uint16_t{
     ERROR_LPC = (1 << 12),
     ERROR_3V3REG = (1 << 13),
     ERROR_BATTSTAT = (1 << 14),
-    ERROR_CAN = (1 << 15)
+    ERROR_CAN = (1 << 15),
+    ERROR_DISPLAY = (1 << 16)
 
 };
 

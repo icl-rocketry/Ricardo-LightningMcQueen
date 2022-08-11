@@ -1,6 +1,6 @@
 
 #include "timeout.h"
-#include "armed.h"
+#include "ready.h"
 #include "flags.h"
 #include "stateMachine.h"
 #include "flags.h"
@@ -18,8 +18,8 @@ void Timeout::initialise(){
 
 State* Timeout::update(){
     if(millis() - timer_15s >= 15000){
-        State* armed_ptr = new Armed(_sm);
-        return armed_ptr;
+        State* ready_ptr = new Ready(_sm);
+        return ready_ptr;
     }
     else{
         return this;

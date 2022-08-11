@@ -1,28 +1,28 @@
-#include "armed.h"
+#include "ready.h"
 
 #include "flags.h"
 #include "stateMachine.h"
 
 #include "LEDScreen/ledscreen.h"
 
-Armed::Armed(stateMachine* sm):
-State(sm,SYSTEM_FLAG::STATE_ARMED)
+Ready::Ready(stateMachine* sm):
+State(sm,SYSTEM_FLAG::STATE_READY)
 {};
 
 
-void Armed::initialise(){
+void Ready::initialise(){
     State::initialise();
     //start telemetry logging here
 
 
 };
 
-State* Armed::update(){
+State* Ready::update(){
     return this;
     
 };
 
-void Armed::exitstate(){
+void Ready::exitstate(){
     State::exitstate();
 
 };

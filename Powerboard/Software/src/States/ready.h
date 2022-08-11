@@ -3,9 +3,9 @@
 #include "state.h"
 
 
-class Armed: public State {
+class Ready: public State {
   public:
-    Armed(stateMachine* sm);
+    Ready(stateMachine* sm);
     void initialise();
     State* update();
     void exitstate();

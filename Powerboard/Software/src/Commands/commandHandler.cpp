@@ -74,7 +74,7 @@ void CommandHandler::ArmCommand(const RnpPacketSerialized& packet)
 		State* _bricked_ptr = new Bricked(_sm);
     	_sm->changeState(_bricked_ptr);
 	}
-	if (_sm->systemstatus.flag_triggered(SYSTEM_FLAG::STATE_ARMED))
+	if (_sm->systemstatus.flag_triggered(SYSTEM_FLAG::STATE_READY))
 {
 	//go to live state
 		State* _live_ptr = new Live(_sm);

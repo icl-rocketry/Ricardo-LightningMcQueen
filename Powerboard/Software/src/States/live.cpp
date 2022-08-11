@@ -1,6 +1,6 @@
 
 #include "live.h"
-#include "armed.h"
+#include "ready.h"
 
 #include "flags.h"
 #include "stateMachine.h"
@@ -18,8 +18,8 @@ void Live::initialise(){
 
 State* Live::update(){
     if(_sm->battery.getBatV() <= 20){
-        State* armed_ptr = new Armed(_sm);
-        return armed_ptr;       
+        State* ready_ptr = new Ready(_sm);
+        return ready_ptr;       
     }
     else{
         return this;
