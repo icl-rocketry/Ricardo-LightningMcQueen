@@ -33,7 +33,7 @@ class CommandHandler {
         
         void FreeRamCommand(const RnpPacketSerialized& packet);
 
-        void ArmCommand(const RnpPacketSerialized& packet);
+        void goLiveCommand(const RnpPacketSerialized& packet);
 
         void Reboot(const RnpPacketSerialized& packet);
 
