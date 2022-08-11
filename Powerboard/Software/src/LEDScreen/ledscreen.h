@@ -8,6 +8,8 @@
 
 
 class LEDScreen{
+
+  
   public:
 
     LEDScreen(SystemStatus& systemstatus, TwoWire& wire):
@@ -18,10 +20,12 @@ class LEDScreen{
     void updateDefaultScreen(Battery::STATUS chargingStatus, float batteryVoltage, bool adpConn); //update led screen for states: idle, ready, live, bricked
     void updateTimerScreen(float batteryVoltage);  //update led screen for timeout state
   
+
+
   private:  
     SystemStatus& _systemstatus;
 
-    static constexpr int SCREEN_WIDTH = 128;
+    static constexpr int SCREEN_WIDTH = 128;  //required for display setup
     static constexpr int SCREEN_HEIGHT = 32;
     static constexpr int SCREEN_ADDRESS = 0x3C;
     static constexpr int OLED_RESET = -1;
@@ -38,7 +42,7 @@ class LEDScreen{
     0x03, 0xe3, 0xc7, 0xc0, 0x01, 0xdf, 0xff, 0x80, 0x00, 0x7f, 0xde, 0x00, 0x00, 0x0f, 0xf0, 0x00
     };
 
-    static constexpr std::array<uint8_t,12> empty_batt = {  //bitmap of empty battery
+    static constexpr std::array<uint8_t,12> empty_batt = {  //bitmap of empty battery icon
       0xff, 0xfc, 0xff, 0xfc, 0xff, 0xfc, 0xff, 0xfc, 0xff, 0xfc, 0xff, 0xfc
     };
 
@@ -47,6 +51,6 @@ class LEDScreen{
     uint8_t chargebars;
 
     uint64_t timer2s = 2000;
-    uint64_t init_time; //time after screen successfully initialised
+    uint64_t init_time; //time screen successfully initialised
 };
 

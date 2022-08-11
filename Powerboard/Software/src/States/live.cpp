@@ -17,7 +17,7 @@ void Live::initialise(){
 };
 
 State* Live::update(){
-    if(_sm->battery.getBatV() <= 20){
+    if(_sm->battery.getBatV() <= 0.2*25.2){ //if batV drops below 20%
         State* ready_ptr = new Ready(_sm);
         return ready_ptr;       
     }

@@ -15,14 +15,11 @@ State(sm,SYSTEM_FLAG::STATE_IDLE)
 
 void Idle::initialise(){
     State::initialise();
-    //start telemetry logging here
-
-
 };
 
 State* Idle::update(){
-    if(PDU_EN == HIGH){
-        State* timeout_ptr = new Timeout(_sm);
+    if(PDU_EN == HIGH){ //if PDU enable connector pulled out
+        State* timeout_ptr = new Timeout(_sm);  //transition to 'timeout' state
         return timeout_ptr;
     }else{
         return this; //loopy loop
@@ -33,6 +30,5 @@ State* Idle::update(){
 
 void Idle::exitstate(){
     State::exitstate();
-
 };
 

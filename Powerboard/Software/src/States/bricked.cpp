@@ -10,12 +10,10 @@ State(sm,SYSTEM_FLAG::STATE_BRICKED)
 
 void Bricked::initialise(){
     State::initialise();
-    //start telemetry logging here
-
 };
 
 State* Bricked::update(){
-    return this;
+    return this;    //nothing happens when bricked, waiting for reboot cmd
 
 };
 

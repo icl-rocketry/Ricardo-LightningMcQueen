@@ -67,26 +67,28 @@ void CommandHandler::FreeRamCommand(const RnpPacketSerialized& packet)
 	
 }
 
-void CommandHandler::ArmCommand(const RnpPacketSerialized& packet)
+void CommandHandler::goLiveCommand(const RnpPacketSerialized& packet)
 {
 	if(_sm->systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){
 		// go to bricked
 		State* _bricked_ptr = new Bricked(_sm);
     	_sm->changeState(_bricked_ptr);
 	}
-	if (_sm->systemstatus.flag_triggered(SYSTEM_FLAG::STATE_READY))
-{
-	//go to live state
+	if (_sm->systemstatus.flag_triggered(SYSTEM_FLAG::STATE_READY)){
+		//go to live state
 		State* _live_ptr = new Live(_sm);
     	_sm->changeState(_live_ptr);
 }
 }
+
 
 void CommandHandler::Reboot(const RnpPacketSerialized& packet)
 {
 	ESP.restart();
 }
 
+
+//Send packet with PDU data
 void CommandHandler::PDUPacketCommand(const RnpPacketSerialized& packet)
 {
 

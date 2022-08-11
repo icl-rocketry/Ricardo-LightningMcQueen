@@ -50,6 +50,7 @@ class PDUPacket : public RnpPacket{
         uint8_t RegStat;
         uint32_t Current_state;
 
+
         static constexpr size_t size(){
             return getSerializer().member_size();
         }

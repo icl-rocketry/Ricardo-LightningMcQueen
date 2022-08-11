@@ -88,8 +88,6 @@ void stateMachine::initialise(State* initStatePtr) {
   logcontroller.setup();
   networkmanager.setLogCb([this](const std::string& message){return logcontroller.log(message);});
 
- 
-
 
   //call setup state
   changeState(initStatePtr);
@@ -108,10 +106,10 @@ void stateMachine::update() {
 
   State* newStatePtr = _currStatePtr->update();
 
-
+  //updating led screen every 0.1s
   if(millis() - timer > 100){
-    if(systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){
-      ledscreen.updateTimerScreen(battery.getBatV());
+    if(systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){  //checking state, to update screen
+      ledscreen.updateTimerScreen(battery.getBatV());             //according to right screen config
     }
 
     else{
@@ -119,7 +117,7 @@ void stateMachine::update() {
     }    
   };
 
-  timer = millis();
+  timer = millis(); //update timer
 
 
   if (newStatePtr != _currStatePtr) {
