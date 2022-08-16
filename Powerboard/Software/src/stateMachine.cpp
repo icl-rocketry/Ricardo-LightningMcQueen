@@ -89,6 +89,18 @@ void stateMachine::initialise(State* initStatePtr) {
   networkmanager.setLogCb([this](const std::string& message){return logcontroller.log(message);});
 
 
+  RoutingTable routetable;
+  routetable.setRoute((uint8_t)DEFAULT_ADDRESS::ROCKET,Route{2,1,{}});
+  routetable.setRoute((uint8_t)DEFAULT_ADDRESS::GROUNDSTATION,Route{1,1,{}});
+
+  networkmanager.setRoutingTable(routetable);
+  networkmanager.updateBaseTable(); // save the new base table
+  networkmanager.setAddress(static_cast<uint8_t>(DEFAULT_ADDRESS::GROUNDSTATION_GATEWAY));
+
+  networkmanager.enableAutoRouteGen(true); // enable route learning
+  networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,2}); // enable broadcast over serial and radio only
+
+
   //call setup state
   changeState(initStatePtr);
 
@@ -108,6 +120,7 @@ void stateMachine::update() {
 
   //updating led screen every 0.1s
   if(millis() - timer > 100){
+    Serial.println("if loop entered");    
     if(systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){  //checking state, to update screen
       ledscreen.updateTimerScreen(battery.getBatV());             //according to right screen config
     }
@@ -115,9 +128,10 @@ void stateMachine::update() {
     else{
       ledscreen.updateDefaultScreen(battery.getChargingStat(), battery.getBatV(), battery.PowerGood());
     }    
+    timer = millis(); //update timer
   };
 
-  timer = millis(); //update timer
+
 
 
   if (newStatePtr != _currStatePtr) {

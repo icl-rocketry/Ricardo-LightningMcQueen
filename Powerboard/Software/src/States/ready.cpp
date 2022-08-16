@@ -15,6 +15,7 @@ void Ready::initialise(){
 };
 
 State* Ready::update(){
+    Serial.println("Ready");
     return this;    //just waiting for goLiveCommand
 };
 

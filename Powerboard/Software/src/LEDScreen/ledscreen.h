@@ -42,15 +42,13 @@ class LEDScreen{
     0x03, 0xe3, 0xc7, 0xc0, 0x01, 0xdf, 0xff, 0x80, 0x00, 0x7f, 0xde, 0x00, 0x00, 0x0f, 0xf0, 0x00
     };
 
-    static constexpr std::array<uint8_t,12> empty_batt = {  //bitmap of empty battery icon
-      0xff, 0xfc, 0xff, 0xfc, 0xff, 0xfc, 0xff, 0xfc, 0xff, 0xfc, 0xff, 0xfc
-    };
 
     static constexpr int CHARGE_AREA_START_Y = 2; //x-position of start of charge area on screen
-    static constexpr int CHARGE_AREA_START_X = 114; //y-position of start of charge area on screen
+    static constexpr int CHARGE_AREA_START_X = 115; //y-position of start of charge area on screen
     uint8_t chargebars;
 
     uint64_t timer2s = 2000;
     uint64_t init_time; //time screen successfully initialised
+    uint64_t curr_time;
 };
 

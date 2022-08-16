@@ -18,6 +18,8 @@ void Idle::initialise(){
 };
 
 State* Idle::update(){
+    Serial.println("Idle");
+
     if(PDU_EN == HIGH){ //if PDU enable connector pulled out
         State* timeout_ptr = new Timeout(_sm);  //transition to 'timeout' state
         return timeout_ptr;

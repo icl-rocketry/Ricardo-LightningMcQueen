@@ -21,13 +21,13 @@ void LEDScreen::setupScreen(){
     }
     else{
 
-        //Display iclr logo for 2s on startup
-        init_time = millis();
-        if(millis() - init_time < timer2s){
-            display.drawBitmap(48, 0, iclr_logo.data(), 32, 32, WHITE);
-            display.display();            
-        }
+        Serial.println("LED initialisation successful");
 
+        display.clearDisplay();
+
+        //Display iclr logo on startup until updateScreen function is called
+        display.drawBitmap(48, 0, iclr_logo.data(), 32, 32, WHITE);
+        display.display();
     }
 
 }
@@ -35,9 +35,9 @@ void LEDScreen::setupScreen(){
 
 
 void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batteryVoltage, bool adpConn){
-
+    Serial.println("Entered update function");
     //If error in screen setup or 2s have not passed, returns to calling function
-    if(_systemstatus.flag_triggered(SYSTEM_FLAG::ERROR_DISPLAY) || millis() - init_time < timer2s){
+    if(_systemstatus.flag_triggered(SYSTEM_FLAG::ERROR_DISPLAY)){
         return;
         }
 
@@ -50,9 +50,13 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
 
 
         //Line of text stating current system state
-        if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_IDLE)){ 
-            display.println("STATE: IDLE");
+        if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_SETUP)){ 
+            display.println("STATE: SETUP");
             }
+
+        else if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_IDLE)){
+            display.println("STATE: IDLE");
+        }
 
         else if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_READY)){
             display.println("STATE: READY");            
@@ -116,13 +120,16 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
 
 
         //Battery icon in top right corner
-        display.drawBitmap(113, 0, empty_batt.data(), 6, 14, WHITE);    //outline of battery icon as bitmap
-        chargebars = (batteryVoltage/25.2)*10;  //number of bars of charge out of 10
-        display.fillRect(CHARGE_AREA_START_X, CHARGE_AREA_START_Y, chargebars, 4, WHITE);   //filling in battery icon with rectangular bars
-
+        display.drawRect(113, 0, 15, 6, WHITE);
+        display.drawRect(128, 3, 1, 2, WHITE);
+        chargebars = (batteryVoltage/25.2)*11;  //number of bars of charge out of 11
+        display.fillRect(CHARGE_AREA_START_X, CHARGE_AREA_START_Y, chargebars, 4, WHITE);
+        //filling in battery icon with rectangular bars
 
 
         display.display();
+
+        Serial.println("Default screen updated successfully");
     }
 }
 
@@ -160,13 +167,17 @@ void LEDScreen::updateTimerScreen(float batteryVoltage){
 
 
 
-        //Battery icon
-        display.drawBitmap(113, 0, empty_batt.data(), 6, 14, WHITE);
-        chargebars = (batteryVoltage/25.2)*10;
+        //Battery icon in top right corner
+        display.drawRect(113, 0, 14, 6, WHITE);
+        display.drawRect(128, 3, 1, 2, WHITE);
+        chargebars = (batteryVoltage/25.2)*10;  //number of bars of charge out of 10
         display.fillRect(CHARGE_AREA_START_X, CHARGE_AREA_START_Y, chargebars, 4, WHITE);
+        //filling in battery icon with rectangular bars
 
 
 
         display.display();
+        Serial.println("Timer screen updated successfully");
+
     }
 }
