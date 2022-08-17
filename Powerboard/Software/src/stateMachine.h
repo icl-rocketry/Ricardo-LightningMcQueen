@@ -10,6 +10,7 @@ Written by the Electronics team, Imperial College London Rocketry
 #include "Arduino.h"
 
 #include "States/state.h"
+#include "States/timeout.h"
 
 #include "Storage/systemstatus.h"
 #include "Storage/logController.h"
@@ -54,6 +55,7 @@ class stateMachine {
 
     LogController logcontroller;
     SystemStatus systemstatus;
+    Timeout timeout;
     Battery battery;
     Reg3V3 reg3V3;
     LEDScreen ledscreen;

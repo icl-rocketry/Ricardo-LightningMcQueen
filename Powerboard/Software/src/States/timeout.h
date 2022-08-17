@@ -1,6 +1,8 @@
 #pragma once
 
 #include "state.h"
+#include "LEDScreen/ledscreen.h"
+#include "Battery/battery.h"
 
 
 class Timeout: public State {
@@ -9,6 +11,8 @@ class Timeout: public State {
     void initialise();
     State* update();
     void exitstate();
-  private:
+
+    private:
     uint32_t timer_15s;
+    uint32_t timer;
 };

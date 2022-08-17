@@ -18,7 +18,7 @@ class LEDScreen{
 
     void setupScreen(); //initialise led screen
     void updateDefaultScreen(Battery::STATUS chargingStatus, float batteryVoltage, bool adpConn); //update led screen for states: idle, ready, live, bricked
-    void updateTimerScreen(float batteryVoltage);  //update led screen for timeout state
+    void updateTimerScreen(float batteryVoltage, uint32_t time_timer_started);  //update led screen for timeout state
   
 
 
@@ -46,9 +46,5 @@ class LEDScreen{
     static constexpr int CHARGE_AREA_START_Y = 2; //x-position of start of charge area on screen
     static constexpr int CHARGE_AREA_START_X = 115; //y-position of start of charge area on screen
     uint8_t chargebars;
-
-    uint64_t timer2s = 2000;
-    uint64_t init_time; //time screen successfully initialised
-    uint64_t curr_time;
 };
 

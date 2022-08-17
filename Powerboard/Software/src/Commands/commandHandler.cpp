@@ -14,6 +14,7 @@
 #include "Storage/systemstatus.h"
 #include "States/bricked.h"
 #include "States/live.h"
+#include "States/ready.h"
 #include "rnp_packet.h"
 #include "rnp_interface.h"
 #include "Network/interfaces/radio.h"
@@ -81,6 +82,11 @@ void CommandHandler::goLiveCommand(const RnpPacketSerialized& packet)
 }
 }
 
+void CommandHandler::returnToReadyCommand(const RnpPacketSerialized& packet){
+		State* _ready_ptr = new Ready(_sm);
+    	_sm->changeState(_ready_ptr);
+		digitalWrite(LPC_24V, HIGH);
+}
 
 void CommandHandler::Reboot(const RnpPacketSerialized& packet)
 {

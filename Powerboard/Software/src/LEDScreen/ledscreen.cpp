@@ -135,10 +135,10 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
 
 
 
-void LEDScreen::updateTimerScreen(float batteryVoltage){
+void LEDScreen::updateTimerScreen(float batteryVoltage, uint32_t time_timer_started){
 
     //If error in screen setup or 2s have not passed, returns to calling function
-    if(_systemstatus.flag_triggered(SYSTEM_FLAG::ERROR_DISPLAY) || millis() - timer2s < 2000){
+    if(_systemstatus.flag_triggered(SYSTEM_FLAG::ERROR_DISPLAY)){
         return;
     }
         
@@ -161,8 +161,8 @@ void LEDScreen::updateTimerScreen(float batteryVoltage){
 
 
         //Line of text showing 15s countdown to transition to 'ready' state
-        uint64_t time_timer_started = millis();
-        uint64_t time_remaining = (15000 - (millis() - time_timer_started))/1000;
+        uint32_t time_remaining = (15000 - (millis() - time_timer_started))/1000;
+        Serial.println(("15000 - (" + std::to_string(millis()) + " - " + std::to_string(time_timer_started) + ")").c_str());
         display.println(("TIMER: " + std::to_string(time_remaining) + "s").c_str());
 
 

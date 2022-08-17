@@ -6,14 +6,12 @@
 #include "stateMachine.h"
 
 Live::Live(stateMachine* sm):
-State(sm,SYSTEM_FLAG::STATE_IDLE)
+State(sm,SYSTEM_FLAG::STATE_LIVE)
 {};
 
 void Live::initialise(){
     State::initialise();
-    //start telemetry logging here
-
-
+    digitalWrite(LPC_24V, LOW);
 };
 
 State* Live::update(){

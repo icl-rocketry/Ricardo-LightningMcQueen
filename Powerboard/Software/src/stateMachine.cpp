@@ -14,7 +14,8 @@ Written by the Electronics team, Imperial College London Rocketry
 #include "ricardo_pins.h"
 
 #include "States/state.h"
-
+#include "States/timeout.h"
+#include "States/live.h"
 
 #include "Network/interfaces/usb.h"
 #include "Network/interfaces/radio.h"
@@ -43,6 +44,7 @@ stateMachine::stateMachine() :
     commandhandler(this),
     logcontroller(networkmanager),
     systemstatus(&logcontroller),
+    timeout(this),
     battery(),
     reg3V3(),
     ledscreen(systemstatus, Wire)
@@ -67,6 +69,15 @@ void stateMachine::initialise(State* initStatePtr) {
   //open serial port on usb interface
   Serial.begin(Serial_baud);
   Serial.setRxBufferSize(SERIAL_SIZE_RX);
+
+  //setup pins
+  pinMode(PDU_EN,INPUT_PULLDOWN);
+  pinMode(BattStat1,INPUT);
+  pinMode(BattStat2,INPUT);
+  pinMode(PG,INPUT);
+  pinMode(Charge,INPUT);
+  pinMode(LPC_24V,OUTPUT);
+  digitalWrite(LPC_24V, HIGH);
 
   //setup interfaces
   usbserial.setup();
@@ -119,19 +130,10 @@ void stateMachine::update() {
   State* newStatePtr = _currStatePtr->update();
 
   //updating led screen every 0.1s
-  if(millis() - timer > 100){
-    Serial.println("if loop entered");    
-    if(systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){  //checking state, to update screen
-      ledscreen.updateTimerScreen(battery.getBatV());             //according to right screen config
-    }
-
-    else{
-      ledscreen.updateDefaultScreen(battery.getChargingStat(), battery.getBatV(), battery.PowerGood());
-    }    
+  if(millis() - timer > 100 && !systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){
+    ledscreen.updateDefaultScreen(battery.getChargingStat(), battery.getBatV(), battery.PowerGood());   
     timer = millis(); //update timer
-  };
-
-
+  }
 
 
   if (newStatePtr != _currStatePtr) {

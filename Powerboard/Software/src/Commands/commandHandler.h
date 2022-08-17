@@ -35,6 +35,8 @@ class CommandHandler {
 
         void goLiveCommand(const RnpPacketSerialized& packet);
 
+        void returnToReadyCommand(const RnpPacketSerialized& packet);
+
         void Reboot(const RnpPacketSerialized& packet);
 
         void PDUPacketCommand(const RnpPacketSerialized& packet);
