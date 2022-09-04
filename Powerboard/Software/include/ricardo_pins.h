@@ -59,6 +59,6 @@ static constexpr int Stat2_3V3 = 25;
 
 static constexpr int LPC_24V = 33;
 
-static constexpr int Charge = 23;
+static constexpr int Charge = 14;
 
 static constexpr int PG = 26;

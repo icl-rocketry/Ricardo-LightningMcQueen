@@ -118,7 +118,6 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
         display.println(("BATTERY VOLTAGE: " + std::to_string(batteryVoltage)).c_str());
 
 
-
         //Battery icon in top right corner
         display.drawRect(113, 0, 15, 6, WHITE);
         display.drawRect(128, 3, 1, 2, WHITE);
