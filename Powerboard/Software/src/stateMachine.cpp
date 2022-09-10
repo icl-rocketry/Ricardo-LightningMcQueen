@@ -47,7 +47,7 @@ stateMachine::stateMachine() :
     timeout(this),
     battery(),
     reg3V3(),
-    ledscreen(systemstatus, Wire)
+    ledscreen(systemstatus, I2C)
 {};
 
 

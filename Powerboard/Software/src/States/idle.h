@@ -10,4 +10,7 @@ public:
     State* update();
     void exitstate();
 
+private:
+    bool key_was_inserted = false;
+
 };
