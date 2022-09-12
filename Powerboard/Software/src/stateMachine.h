@@ -48,7 +48,6 @@ class stateMachine {
     TwoWire I2C;
 
     USB usbserial;
-    Radio radio;
     CanBus canbus;
     RnpNetworkManager networkmanager;
     CommandHandler commandhandler;

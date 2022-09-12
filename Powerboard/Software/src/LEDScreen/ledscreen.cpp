@@ -21,8 +21,7 @@ void LEDScreen::setupScreen(){
     }
     else{
 
-        Serial.println("LED initialisation successful");
-
+        display.display();
         display.clearDisplay();
 
         //Display iclr logo on startup until updateScreen function is called
@@ -35,7 +34,6 @@ void LEDScreen::setupScreen(){
 
 
 void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batteryVoltage, bool adpConn){
-    Serial.println("Entered update function");
     //If error in screen setup or 2s have not passed, returns to calling function
     if(_systemstatus.flag_triggered(SYSTEM_FLAG::ERROR_DISPLAY)){
         return;
@@ -43,7 +41,7 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
 
     else{
 
-        display.clearDisplay();
+        //display.clearDisplay();
         display.setTextSize(1);             // Normal 1:1 pixel scale
         display.setTextColor(SSD1306_WHITE);        // Draw white text
         display.setCursor(0,0);             // Start at top-left corner
@@ -75,7 +73,6 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
         }
 
 
-
         //Line of text stating charger connected/not
         if(adpConn){       
             display.println("ADAPTER CONN: YES");
@@ -83,7 +80,6 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
         else{
             display.println("ADAPTER CONN: NO");
         }
-
 
 
         //Line of text stating charging status
@@ -113,7 +109,6 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
         }
 
 
-
         //Line of text stating battery voltage
         display.println(("BATTERY VOLTAGE: " + std::to_string(batteryVoltage)).c_str());
 
@@ -128,7 +123,6 @@ void LEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batter
 
         display.display();
 
-        Serial.println("Default screen updated successfully");
     }
 }
 
@@ -161,7 +155,6 @@ void LEDScreen::updateTimerScreen(float batteryVoltage, uint32_t time_timer_star
 
         //Line of text showing 15s countdown to transition to 'ready' state
         uint32_t time_remaining = (15000 - (millis() - time_timer_started))/1000;
-        Serial.println(("15000 - (" + std::to_string(millis()) + " - " + std::to_string(time_timer_started) + ")").c_str());
         display.println(("TIMER: " + std::to_string(time_remaining) + "s").c_str());
 
 
@@ -176,7 +169,5 @@ void LEDScreen::updateTimerScreen(float batteryVoltage, uint32_t time_timer_star
 
 
         display.display();
-        Serial.println("Timer screen updated successfully");
-
     }
 }

@@ -14,7 +14,7 @@ class LEDScreen{
 
     LEDScreen(SystemStatus& systemstatus, TwoWire& wire):
     _systemstatus(systemstatus),
-    display(SCREEN_WIDTH, SCREEN_HEIGHT,&wire, OLED_RESET){};
+    display(SCREEN_WIDTH, SCREEN_HEIGHT, &wire, OLED_RESET){};
 
     void setupScreen(); //initialise led screen
     void updateDefaultScreen(Battery::STATUS chargingStatus, float batteryVoltage, bool adpConn); //update led screen for states: idle, ready, live, bricked
@@ -25,11 +25,11 @@ class LEDScreen{
   private:  
     SystemStatus& _systemstatus;
 
-    static constexpr int SCREEN_WIDTH = 128;  //required for display setup
-    static constexpr int SCREEN_HEIGHT = 32;
-    static constexpr int SCREEN_ADDRESS = 0x3C;
-    static constexpr int OLED_RESET = -1;
-    Adafruit_SSD1306 display;
+    Adafruit_SSD1306 display;    
+    static constexpr uint8_t SCREEN_WIDTH = 128;  //required for display setup
+    static constexpr uint8_t SCREEN_HEIGHT = 32;
+    static constexpr int8_t SCREEN_ADDRESS = 0x3C;
+    static constexpr int8_t OLED_RESET = -1;
 
     static constexpr std::array<uint8_t,128> iclr_logo = {  //bitmap of iclr logo
     0x00, 0x0f, 0xf0, 0x00, 0x00, 0x7b, 0xfe, 0x00, 0x01, 0xbf, 0xfb, 0x80, 0x03, 0xe6, 0x66, 0xc0, 
