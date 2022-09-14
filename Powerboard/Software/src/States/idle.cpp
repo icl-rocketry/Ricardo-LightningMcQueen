@@ -18,6 +18,7 @@ void Idle::initialise(){
 };
 
 State* Idle::update(){
+    // Serial.println("Idle");
     
     if(digitalRead(PDU_EN) == HIGH){    //if PDU_EN pin externally pulled high because conn was inserted 
         key_was_inserted = true;       //bool var is true

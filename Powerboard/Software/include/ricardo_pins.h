@@ -51,7 +51,7 @@ static constexpr int PDU_EN = 13;
 static constexpr int TxCan = 18;
 static constexpr int RxCan = 5;
 
-static constexpr int BattStat1 = 14;
+static constexpr int BattStat1 = 25;
 static constexpr int BattStat2 = 27;
 
 static constexpr int Stat1_3V3 = 32;

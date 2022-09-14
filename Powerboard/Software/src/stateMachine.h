@@ -42,9 +42,6 @@ class stateMachine {
     void update();
     void changeState(State* newStatePtr);
 
-   
-    SPIClass vspi;
-    SPIClass hspi;
     TwoWire I2C;
 
     USB usbserial;

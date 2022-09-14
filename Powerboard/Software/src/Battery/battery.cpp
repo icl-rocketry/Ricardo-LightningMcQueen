@@ -31,7 +31,7 @@ Battery::STATUS Battery::getChargingStat(){
 
 
 float Battery::getBatV(){
-    battvoltage = (analogRead(Charge)/4095)*25.2;   //25.2V at full charge
+    battvoltage = (analogRead(Charge)/4095.0)*25.2;   //25.2V at full charge
     return battvoltage;
 }
 

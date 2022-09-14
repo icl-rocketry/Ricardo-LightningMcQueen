@@ -46,5 +46,8 @@ class LEDScreen{
     static constexpr int CHARGE_AREA_START_Y = 2; //x-position of start of charge area on screen
     static constexpr int CHARGE_AREA_START_X = 115; //y-position of start of charge area on screen
     uint8_t chargebars;
+
+    uint32_t timeEnteredSetup;
+    static constexpr uint16_t logoDelay = 2000;
 };
 
