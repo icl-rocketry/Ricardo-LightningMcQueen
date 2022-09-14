@@ -74,7 +74,6 @@ void stateMachine::initialise(State* initStatePtr) {
   //setup network manager so communication is running
   // add interfaces
   networkmanager.addInterface(&usbserial);
-  networkmanager.addInterface(&radio);
   networkmanager.addInterface(&canbus);
 
    // command handler callback
@@ -115,79 +114,6 @@ void stateMachine::update() {
 
   //updating led screen every 0.1s
   if(millis() - timer > 100 && !systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){
-    ledscreen.updateDefaultScreen(battery.getChargingStat(), battery.getBatV(), battery.PowerGood());   
-    timer = millis(); //update timer
-  }
-
-
-  if (newStatePtr != _currStatePtr) {
-    changeState(newStatePtr);
-  }
-  
-};
-
-void stateMachine::changeState(State* newStatePtr) {
-  // Delete old state instance and change to new one
-  if (_currStatePtr != NULL){
-    //if not null pointer call exitstate method
-    _currStatePtr->exitstate();
-  };
-
-  delete _currStatePtr;
-  
-  _currStatePtr = newStatePtr;
-  _currStatePtr->initialise();
-
-
-
-};
-
-
-<<<<<<< HEAD
-  //networkmanager.addInterface(&radio);
-  networkmanager.addInterface(&canbus);
-  networkmanager.enableAutoRouteGen(true);
-  networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,2});
-
-=======
-  networkmanager.addInterface(&canbus);
-
-  logcontroller.setup();
-  networkmanager.setLogCb([this](const std::string& message){return logcontroller.log(message);});
-
-
-  RoutingTable routetable;
-  routetable.setRoute((uint8_t)DEFAULT_ADDRESS::ROCKET,Route{2,1,{}});
-  routetable.setRoute((uint8_t)DEFAULT_ADDRESS::GROUNDSTATION,Route{1,1,{}});
-
-  networkmanager.setRoutingTable(routetable);
-  networkmanager.updateBaseTable(); // save the new base table
-  networkmanager.setAddress(static_cast<uint8_t>(DEFAULT_ADDRESS::GROUNDSTATION_GATEWAY));
-
-  networkmanager.enableAutoRouteGen(true); // enable route learning
-  networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,2}); // enable broadcast over serial and radio only
-
-
-  //led screen setup
-  
-
-  // call setup state
-  changeState(initStatePtr);
-
-
-  timer = millis();
-
-};
-
-void stateMachine::update() {
-
-  //networkmanager.update();
-
-  State* newStatePtr = _currStatePtr->update();
-
-  //updating led screen every 0.1s
-  if(millis() - timer > 100 && !systemstatus.flag_triggered(SYSTEM_FLAG::STATE_TIMEOUT)){
-
     ledscreen.updateDefaultScreen(battery.getChargingStat(), battery.getBatV(), battery.PowerGood());   
     timer = millis(); //update timer
   }
