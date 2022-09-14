@@ -178,9 +178,5 @@ void LEDScreen::updateTimerScreen(float batteryVoltage, uint32_t time_timer_star
 
 
         display.display();
-<<<<<<< HEAD
-=======
-
->>>>>>> e833cc3 (update)
     }
 }
