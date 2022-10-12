@@ -1,0 +1,3 @@
+[submodule "Powerboard/Software/lib/librnp"]
+	path = Powerboard/Software/lib/librnp
+	url = git@github.com:icl-rocketry/librnp.git
