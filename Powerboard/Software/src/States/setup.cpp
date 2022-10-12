@@ -18,7 +18,7 @@ void Setup::initialise(){
 
 
 State* Setup::update(){
-    Serial.println("Setup");
+    // Serial.println("Setup");
     //transtion to preflight state
     State* _idle_ptr = new Idle(_sm);
     return _idle_ptr;

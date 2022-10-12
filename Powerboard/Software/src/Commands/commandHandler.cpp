@@ -18,7 +18,7 @@
 #include "rnp_packet.h"
 #include "rnp_interface.h"
 #include "Network/interfaces/radio.h"
-#include "commandpacket.h"
+#include <default_packets/simplecommandpacket.h>
 #include "Battery/battery.h"
 #include "3V3 Regulators/reg3v3.h"
 
@@ -36,6 +36,21 @@ void CommandHandler::handleCommand(std::unique_ptr<RnpPacketSerialized> packetpt
 		case COMMANDS::Free_Ram:
 		{
 			FreeRamCommand(*packetptr);
+			break;
+		}
+		case COMMANDS::goLive:
+		{
+			goLiveCommand(*packetptr);
+			break;
+		}
+		case COMMANDS::Reboot:
+		{
+			Reboot(*packetptr);
+			break;
+		}
+		case COMMANDS::returnToReady:
+		{
+			returnToReadyCommand(*packetptr);
 			break;
 		}
 		default:
@@ -58,7 +73,7 @@ void CommandHandler::FreeRamCommand(const RnpPacketSerialized& packet)
 	//avliable in all states
 	//returning as simple string packet for ease
 	//currently only returning free ram
-	MessagePacket_Base<0,static_cast<uint8_t>(CommandPacket::TYPES::MESSAGE_RESPONSE)> message("FreeRam: " + std::to_string(esp_get_free_heap_size()));
+	MessagePacket_Base<0,static_cast<uint8_t>(PACKET_TYPES::MESSAGE_RESPONSE)> message("FreeRam: " + std::to_string(esp_get_free_heap_size()));
 	message.header.source_service = serviceID;
 	message.header.destination_service = packet.header.source_service;
 	message.header.source = packet.header.destination;
@@ -100,7 +115,7 @@ void CommandHandler::PDUPacketCommand(const RnpPacketSerialized& packet)
 
 	PDUPacket PDU_status;
 
-	PDU_status.header.type = static_cast<uint8_t>(CommandPacket::TYPES::PDU_STATUS_RESPONSE);
+	PDU_status.header.type = static_cast<uint8_t>(PACKET_TYPES::PDU_STATUS_RESPONSE);
 	PDU_status.header.source = _sm->networkmanager.getAddress();
 	PDU_status.header.source_service = serviceID;
 	PDU_status.header.destination = packet.header.source;

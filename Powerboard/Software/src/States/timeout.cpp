@@ -17,10 +17,10 @@ void Timeout::initialise(){
 
 State* Timeout::update(){
  
-    Serial.println("Timeout");
+    // Serial.println("Timeout");
     
     if(millis() - timer > 100){
-        Serial.println("Updating timer screen");
+        // Serial.println("Updating timer screen");
         _sm->ledscreen.updateTimerScreen(_sm->battery.getBatV(),time_entered_state);
         timer = millis();
     }

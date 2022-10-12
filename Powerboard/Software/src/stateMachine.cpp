@@ -60,7 +60,7 @@ void stateMachine::initialise(State* initStatePtr) {
   Serial.setRxBufferSize(SERIAL_SIZE_RX);
 
   //setup pins
-  pinMode(PDU_EN,INPUT_PULLDOWN);
+  pinMode(PDU_EN,INPUT_PULLUP);
   pinMode(BattStat1,INPUT);
   pinMode(BattStat2,INPUT);
   pinMode(PG,INPUT);
