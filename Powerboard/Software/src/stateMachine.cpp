@@ -32,6 +32,7 @@ Written by the Electronics team, Imperial College London Rocketry
 
 #include "LEDScreen/ledscreen.h"
 
+#include "rnp_nvs_save.h"
 
 stateMachine::stateMachine() : 
     I2C(0),
@@ -93,6 +94,17 @@ void stateMachine::initialise(State* initStatePtr) {
 
   networkmanager.enableAutoRouteGen(true); // enable route learning
   networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,2}); // enable broadcast over serial and radio only
+
+   //configure save function from network manager
+  networkmanager.setSaveConfigImpl(RnpNvsSave::SaveToNVS);
+
+  //try to load previous net config from nvs
+  RnpNetworkManagerConfig savedNetworkConfig;
+  if (!RnpNvsSave::ReadFromNVS(savedNetworkConfig))
+  {
+    logcontroller.log("loading saved config");
+    networkmanager.loadconfig(savedNetworkConfig);
+  }
 
 
   //call setup state
