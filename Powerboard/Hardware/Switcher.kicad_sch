@@ -3335,13 +3335,13 @@
       (reference "J3") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G")
     )
     (path "/133f56f4-a29c-4cbf-87b7-9d99a292e3c0/031213dd-5689-4d36-a614-00163f71bac8"
-      (reference "J4") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal")
+      (reference "J4") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/133f56f4-a29c-4cbf-87b7-9d99a292e3c0/54dd1344-16a8-488c-9a14-dbc90d349796"
       (reference "J5") (unit 1) (value "Conn_01x08_Male") (footprint "Connector_Molex:Molex_Mini-Fit_Jr_5569-08A2_2x04_P4.20mm_Horizontal")
     )
     (path "/133f56f4-a29c-4cbf-87b7-9d99a292e3c0/a279a44f-9f2c-4039-8662-1350138fdbd0"
-      (reference "J6") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal")
+      (reference "J6") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/28e6b261-117e-44a5-b9bb-0b673909a1cb"
       (reference "J7") (unit 1) (value "XT60PW-M") (footprint "iclr:AMASS_XT60PW-M")
