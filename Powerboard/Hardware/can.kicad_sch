@@ -887,7 +887,7 @@
     (property "Reference" "C20" (at 154.94 86.106 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "0.1uF" (at 154.94 88.646 90)
+    (property "Value" "47nF" (at 154.94 88.646 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 158.75 91.4908 0)
