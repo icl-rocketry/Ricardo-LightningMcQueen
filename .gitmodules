@@ -1,3 +1,0 @@
-[submodule "components/arduino-esp32.git"]
-	path = components/arduino-esp32.git
-	url = https://github.com/espressif/arduino-esp32.git
