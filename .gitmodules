@@ -1,0 +1,2 @@
+[submodule "Powerboard/Software/components/ArduinoJson"]
+	url = https://github.com/bblanchon/ArduinoJson.git
