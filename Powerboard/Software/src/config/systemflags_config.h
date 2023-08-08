@@ -5,9 +5,13 @@
 
 enum class SYSTEM_FLAG:uint32_t{
     //state flags
-    STATE_IDLE = (1 << 0), 
+    STATE_IDLE = (1 << 0),
+    STATE_READY = (1 << 1),
+    STATE_LIVE = (1 << 2),
+
     //flags
     DEBUG = (1 << 7),
+    ERROR_DISPLAY = (1 << 8),
     //critical messages 
     ERROR_SERIAL = (1 << 10),
     //if rocket is inverted

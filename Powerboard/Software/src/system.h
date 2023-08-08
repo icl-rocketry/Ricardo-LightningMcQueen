@@ -7,6 +7,7 @@
 #include "config/pinmap_config.h"
 
 #include "commands/commands.h"
+#include "latchbitmonitor/latchbitmonitor.h"
 
 class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 {
@@ -17,6 +18,8 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         void systemSetup();
 
         void systemUpdate();
+
+        LatchBitMonitor latchbitmonitor;
 
     // private:
 

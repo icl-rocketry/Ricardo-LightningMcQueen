@@ -27,7 +27,7 @@ class Idle : public Types::CoreTypes::State_t
          * we want to control the available commands, we need to pass in the command handler from the riccoresystem.
          * 
          */
-        Idle(Types::CoreTypes::SystemStatus_t& systemtatus, Types::CoreTypes::CommandHandler_t& commandhandler);
+        Idle(System& system);
 
         /**
          * @brief Perform any initialization required for the state
@@ -50,6 +50,8 @@ class Idle : public Types::CoreTypes::State_t
         void exit() override;
 
     private:
-        Types::CoreTypes::CommandHandler_t& _commandhandler;
-        uint32_t prevLogMessageTime;
+        System& _system;
+        bool RBF_was_inserted = false;
+        uint8_t latch_bit;
+
 };

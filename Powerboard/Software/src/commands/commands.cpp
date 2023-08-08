@@ -16,6 +16,8 @@
 
 #include "system.h"
 
+#include "states/live.h"
+
 
 void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 {	
@@ -35,4 +37,9 @@ void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 	message.header.uid = packet.header.uid;
 	sm.networkmanager.sendPacket(message);
 	
+}
+
+void Commands::GoLiveCommand(System& system, const RnpPacketSerialized& packet) 
+{
+	system.statemachine.changeState(std::make_unique<Live>(system));
 }
