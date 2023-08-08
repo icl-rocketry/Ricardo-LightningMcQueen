@@ -1,2 +1,15 @@
+[submodule "Powerboard/Software/components/libriccore"]
+	path = components/libriccore
+	url = git@github.com:icl-rocketry/libriccore.git
+[submodule "Powerboard/Software/components/librnp"]
+	path = components/librnp
+	url = git@github.com:icl-rocketry/librnp.git
+[submodule "Powerboard/Software/components/arduino"]
+	path = components/arduino
+	url = https://github.com/espressif/arduino-esp32.git
+[submodule "Powerboard/Software/components/librrc"]
+	path = components/librrc
+	url = git@github.com:icl-rocketry/librrc.git
 [submodule "Powerboard/Software/components/ArduinoJson"]
+	path = components/ArduinoJson
 	url = https://github.com/bblanchon/ArduinoJson.git
