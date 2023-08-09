@@ -8,6 +8,8 @@
 
 #include "commands/commands.h"
 #include "latchbitmonitor/latchbitmonitor.h"
+#include "Wire.h"
+#include "oledscreen/oledscreen.h"
 
 class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 {
@@ -19,6 +21,8 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         void systemUpdate();
 
+        TwoWire I2C;
+        OLEDScreen oledscreen;
         LatchBitMonitor latchbitmonitor;
 
     // private:

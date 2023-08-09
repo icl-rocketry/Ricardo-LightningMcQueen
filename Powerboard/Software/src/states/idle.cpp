@@ -27,6 +27,11 @@ void Idle::initialize()
 {
     Types::CoreTypes::State_t::initialize(); // call parent initialize first!
 
+    RBF_was_inserted = false;
+
+    //dep power OFF
+    digitalWrite(PinMap::DepPowerSwitch, HIGH);
+
     //retrieve latch bit
     latch_bit = _system.latchbitmonitor.getLatchBit();
 
@@ -35,7 +40,12 @@ void Idle::initialize()
 
 Types::CoreTypes::State_ptr_t Idle::update()
 {
-    //Serial.println("Idle");
+
+    if (millis()-prevLogMessageTime > 1000)
+    {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Idle");
+        prevLogMessageTime = millis();
+    }
 
     //if arming pin has been inserted, set bool to true
     if (digitalRead(PinMap::ARMING) == HIGH && RBF_was_inserted == false){
@@ -47,8 +57,8 @@ Types::CoreTypes::State_ptr_t Idle::update()
         return std::make_unique<Ready>(_system);
     }
 
-    //if arming pin has been removed and latch is set to 1, skip to live
-    if (digitalRead(PinMap::ARMING) == LOW && RBF_was_inserted == true && latch_bit == 1){
+    //if latch is set to 1, skip to live
+    if (latch_bit == 1){
         return std::make_unique<Live>(_system);
     }
     

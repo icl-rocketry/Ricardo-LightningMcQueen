@@ -51,7 +51,8 @@ class Idle : public Types::CoreTypes::State_t
 
     private:
         System& _system;
-        bool RBF_was_inserted = false;
+        bool RBF_was_inserted;
         uint8_t latch_bit;
+        uint32_t prevLogMessageTime;
 
 };

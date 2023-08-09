@@ -18,5 +18,7 @@ namespace Commands{
     
     void FreeRamCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
     void GoLiveCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
-
+    void GoReadyCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void RestartLogicCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void LMQTelemCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);   
 }

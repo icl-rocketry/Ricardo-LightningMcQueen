@@ -1494,7 +1494,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 7f96e219-9cf7-42d3-99a6-da5231e43fa6)
   )
-  (hierarchical_label "3V3LOG" (shape input) (at 29.21 121.412 0) (fields_autoplaced)
+  (hierarchical_label "LogicVoltage" (shape input) (at 29.21 121.412 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 9a471209-a0c9-4c1a-a526-aeebf671376a)
   )

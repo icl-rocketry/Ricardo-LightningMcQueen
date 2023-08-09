@@ -10,6 +10,7 @@
 
 #include "config/systemflags_config.h"
 #include "config/types.h"
+#include "config/commands_config.h"
 
 #include "system.h"
 #include <Preferences.h>
@@ -25,6 +26,7 @@ _system(system)
 void Ready::initialize()
 {
     Types::CoreTypes::State_t::initialize(); // call parent initialize first!
+    _system.commandhandler.enableCommands({Commands::ID::GoLive}); //DONT FORGET TO DISABLE!!!!
 
     //update oled state text
 
@@ -32,7 +34,12 @@ void Ready::initialize()
 
 Types::CoreTypes::State_ptr_t Ready::update()
 {
-    //Serial.println("Ready");
+
+    if (millis()-prevLogMessageTime > 1000)
+    {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Ready");
+        prevLogMessageTime = millis();
+    }
     
     //if arming pin is inserted, reset latch bit to 0 and return to idle
     if (digitalRead(PinMap::ARMING) == HIGH){
@@ -41,11 +48,12 @@ Types::CoreTypes::State_ptr_t Ready::update()
         return std::make_unique<Idle>(_system);
     }
     else{
-        return nullptr; //waiting for ON or OFF command
+        return nullptr; //waiting for ON command
     }
 };
 
 void Ready::exit()
 {
     Types::CoreTypes::State_t::exit(); // call parent exit last!
+    _system.commandhandler.resetCommands();
 };

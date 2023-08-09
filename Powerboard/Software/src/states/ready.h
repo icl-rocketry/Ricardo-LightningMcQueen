@@ -33,5 +33,5 @@ class Ready : public Types::CoreTypes::State_t
     private:
         System& _system;
         uint8_t latch_bit;
-        
+        uint32_t prevLogMessageTime;    
 };
