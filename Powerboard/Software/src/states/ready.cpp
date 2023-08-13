@@ -26,7 +26,7 @@ _system(system)
 void Ready::initialize()
 {
     Types::CoreTypes::State_t::initialize(); // call parent initialize first!
-    _system.commandhandler.enableCommands({Commands::ID::GoLive}); //DONT FORGET TO DISABLE!!!!
+    _system.commandhandler.enableCommands({Commands::ID::GoLive});
 
     //update oled state text
 

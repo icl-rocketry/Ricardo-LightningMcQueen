@@ -27,11 +27,13 @@ void Live::initialize()
     Types::CoreTypes::State_t::initialize(); // call parent initialize first!
 
     //deployment power goes ON
-    digitalWrite(PinMap::DepPowerSwitch, LOW);
+    _system.deploypower.RailOn();
 
     //latch bit set to 1
     latch_bit = 1;
     _system.latchbitmonitor.updateLatchBit(latch_bit);
+
+    _system.commandhandler.enableCommands({Commands::ID::GoReady});
 
 };
 
@@ -56,5 +58,6 @@ Types::CoreTypes::State_ptr_t Live::update()
 
 void Live::exit()
 {
+    _system.commandhandler.disableCommands({Commands::ID::GoReady});
     Types::CoreTypes::State_t::exit(); // call parent exit last!
 };

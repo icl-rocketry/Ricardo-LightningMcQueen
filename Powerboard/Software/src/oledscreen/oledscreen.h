@@ -10,8 +10,9 @@ class OLEDScreen{
   
   public:
 
-    OLEDScreen(TwoWire& wire);
-
+    OLEDScreen(TwoWire& wire):
+    display(SCREEN_WIDTH, SCREEN_HEIGHT, &wire, OLED_RESET){};
+    
     void setupScreen(); //initialise led screen
     // void updateScreen(Battery::STATUS chargingStatus, float batteryVoltage, bool adpConn); //update led screen for states: idle, ready, live, bricked
     // void updateDepV(float depV);

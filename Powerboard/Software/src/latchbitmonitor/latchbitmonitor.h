@@ -9,6 +9,5 @@ class LatchBitMonitor{
         void updateLatchBit(uint8_t _latch_bit);
 
     private:
-        Preferences pref;
         uint8_t _latch_bit;
 };

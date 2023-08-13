@@ -20,7 +20,9 @@ System::System():
 RicCoreSystem(Commands::command_map,Commands::defaultEnabledCommands,Serial),
 I2C(0),
 oledscreen(I2C),
-latchbitmonitor()
+latchbitmonitor(),
+logicpower(PinMap::LogicSwitch, true),
+deploypower(PinMap::DepPowerSwitch, false)
 {};
 
 
@@ -38,14 +40,15 @@ void System::systemSetup(){
     //any other setup goes here
 
     //setup pins
-    pinMode(PinMap::LogicSwitch, OUTPUT);
-    pinMode(PinMap::DepPowerSwitch, OUTPUT);
     pinMode(PinMap::ARMING, INPUT_PULLDOWN);
     pinMode(PinMap::DepPowerLog, INPUT_PULLDOWN);
     pinMode(PinMap::LogicPowerLog, INPUT_PULLDOWN);
-    
-    //logic power on
-    digitalWrite(PinMap::LogicSwitch, LOW);
+
+    //deployment rail setup
+    deploypower.RailSetup();
+
+    //logic rail setup
+    logicpower.RailSetup();
 
     //initialize oled screen
     I2C.begin(PinMap::_SDA, PinMap::_SCL, GeneralConfig::I2C_FREQUENCY);
@@ -53,8 +56,9 @@ void System::systemSetup(){
 
     //initialize power rail logging
    
-
 };
 
 
-void System::systemUpdate(){};
+void System::systemUpdate(){
+    logicpower.RailUpdate();
+};

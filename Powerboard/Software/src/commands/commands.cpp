@@ -56,7 +56,8 @@ void Commands::GoReadyCommand(System& system, const RnpPacketSerialized& packet)
 
 void Commands::RestartLogicCommand(System& system, const RnpPacketSerialized& packet)
 {
-	
+	SimpleCommandPacket commandpacket(packet);
+		system.logicpower.RailRestart(commandpacket.arg);
 }
 
 void Commands::LMQTelemCommand(System& sm, const RnpPacketSerialized& packet)

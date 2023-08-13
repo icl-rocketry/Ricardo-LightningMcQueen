@@ -10,6 +10,7 @@
 #include "latchbitmonitor/latchbitmonitor.h"
 #include "Wire.h"
 #include "oledscreen/oledscreen.h"
+#include "powerrail/powerrail.h"
 
 class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 {
@@ -24,6 +25,8 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         TwoWire I2C;
         OLEDScreen oledscreen;
         LatchBitMonitor latchbitmonitor;
+        PowerRail logicpower;       
+        PowerRail deploypower;
 
     // private:
 

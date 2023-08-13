@@ -30,16 +30,21 @@ void Idle::initialize()
     RBF_was_inserted = false;
 
     //dep power OFF
-    digitalWrite(PinMap::DepPowerSwitch, HIGH);
+    _system.deploypower.RailOff();
+
+    //dep power ON
+    _system.logicpower.RailOn();
 
     //retrieve latch bit
     latch_bit = _system.latchbitmonitor.getLatchBit();
 
     //update oled state text
+
 };
 
 Types::CoreTypes::State_ptr_t Idle::update()
 {
+    
 
     if (millis()-prevLogMessageTime > 1000)
     {

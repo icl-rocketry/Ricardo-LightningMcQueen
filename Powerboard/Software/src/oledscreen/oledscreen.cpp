@@ -9,9 +9,6 @@
 #include "Config/systemflags_config.h"
 
 
-OLEDScreen::OLEDScreen(TwoWire& wire):
-    display(SCREEN_WIDTH, SCREEN_HEIGHT, &wire, OLED_RESET){};
-
 void OLEDScreen::setupScreen(){
 
     // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally (from test code)

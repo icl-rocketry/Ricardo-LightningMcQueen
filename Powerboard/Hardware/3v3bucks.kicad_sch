@@ -1521,7 +1521,7 @@
     (pin "1" (uuid 696882ac-de5d-4330-aa6b-bdd94bba84eb))
     (pin "2" (uuid 80799c2a-76f2-481e-9d8a-e460f9a28646))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C44") (unit 1)
         )
@@ -1546,7 +1546,7 @@
     )
     (pin "1" (uuid 2c19a32c-6602-4503-9644-060ed211edc1))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR04") (unit 1)
         )
@@ -1572,7 +1572,7 @@
     (pin "1" (uuid 0d6795bb-cf37-48e4-95dd-5c943c25b312))
     (pin "2" (uuid ecaf67dc-2cbd-470a-b271-2a5ea87f8d9a))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C42") (unit 1)
         )
@@ -1598,7 +1598,7 @@
     (pin "1" (uuid e621f1f1-345c-47d9-bb9f-2f650299d229))
     (pin "2" (uuid 85ee4bd7-abb3-4862-ad9b-7eaea6dca483))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "R30") (unit 1)
         )
@@ -1623,7 +1623,7 @@
     )
     (pin "1" (uuid 1593e6a9-5670-4fa3-ae3c-3f5df192f490))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0149") (unit 1)
         )
@@ -1649,7 +1649,7 @@
     (pin "1" (uuid 5c3eca1d-d5ab-49cd-aba1-c03c726f3228))
     (pin "2" (uuid dc6ccf4d-497d-4150-ab72-27a5278b16e0))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C30") (unit 1)
         )
@@ -1675,7 +1675,7 @@
     (pin "1" (uuid 6159ed22-30c9-4942-9f15-cd66c41169a7))
     (pin "2" (uuid 1e612ab4-e9af-45eb-bb4f-769997ff38fd))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "R21") (unit 1)
         )
@@ -1701,7 +1701,7 @@
     (pin "1" (uuid eb250f56-8179-4ec9-ab8e-01d79f37b793))
     (pin "2" (uuid 667efeff-ad87-445f-b39a-4f5bac9f3fd7))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C40") (unit 1)
         )
@@ -1751,7 +1751,7 @@
     (pin "1" (uuid e4b5fb3d-7d71-46fa-8029-2a1e036a84ea))
     (pin "2" (uuid d4e80e39-a1af-4962-8d5b-9fdf514a807d))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "L3") (unit 1)
         )
@@ -1776,7 +1776,7 @@
     )
     (pin "1" (uuid 43d65032-83b1-474d-8f9f-0e751592b1d7))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
           (reference "#PWR01") (unit 1)
         )
@@ -1793,7 +1793,7 @@
     (property "Reference" "R31" (at 183.1086 95.9393 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "200k" (at 183.134 98.552 90)
+    (property "Value" "100k" (at 183.134 98.552 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 181.102 101.092 0)
@@ -1805,7 +1805,7 @@
     (pin "1" (uuid eea74865-bbd1-4287-8764-8879309645d2))
     (pin "2" (uuid 4bb5c641-5756-4db3-9afd-0ed93e441755))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "R31") (unit 1)
         )
@@ -1831,7 +1831,7 @@
     (pin "1" (uuid be3a38b6-17c6-4e2f-a7ae-fb0591e02972))
     (pin "2" (uuid 3c713932-b91b-4a74-a845-103eac56a296))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C47") (unit 1)
         )
@@ -1857,7 +1857,7 @@
     (pin "1" (uuid d14da624-165f-468c-b6ce-556c21ee08af))
     (pin "2" (uuid 950047da-2ef0-48d9-b932-eede9a58ea7a))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "R20") (unit 1)
         )
@@ -1941,7 +1941,7 @@
     (pin "8" (uuid 1e2ea8e0-e55b-4eb5-b5df-25dd678a2bf7))
     (pin "9" (uuid 7a93b4f7-bbee-42bc-bb48-05087cffe2dc))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "IC2") (unit 1)
         )
@@ -1967,7 +1967,7 @@
     (pin "1" (uuid 7696b401-fada-4e53-8bc1-2b682457610a))
     (pin "2" (uuid f404363f-c63f-488f-8516-2b5cd3935c10))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C32") (unit 1)
         )
@@ -2030,7 +2030,7 @@
     (pin "8" (uuid 259a5568-feae-4f25-a22e-452f3b14496e))
     (pin "9" (uuid d68f4bb1-3773-4ca6-bd16-398468682bdc))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "Q5") (unit 1)
         )
@@ -2056,7 +2056,7 @@
     (pin "1" (uuid c5f24567-f95d-46f8-b75b-af14de2b2731))
     (pin "2" (uuid 6246c6c8-4c1f-4eab-abb3-eb3ffab10fa5))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C46") (unit 1)
         )
@@ -2082,7 +2082,7 @@
     (pin "1" (uuid 8ce46a64-f771-49f6-a758-665adb803d01))
     (pin "2" (uuid 31f4f65b-bac6-4ddc-a4bc-95a68034d07f))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
           (reference "R26") (unit 1)
         )
@@ -2111,7 +2111,7 @@
     (pin "1" (uuid 5af3df94-2032-4060-b3c9-ffddf26cee93))
     (pin "2" (uuid 2af693d5-31e8-4268-96f7-fb24d05f0b28))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C25") (unit 1)
         )
@@ -2136,7 +2136,7 @@
     )
     (pin "1" (uuid bc0f280f-8f7c-4b4c-a721-081d0c9b8ab3))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0169") (unit 1)
         )
@@ -2199,7 +2199,7 @@
     (pin "8" (uuid 83ee0a84-c9ca-48a7-a45c-0eb25972cbaf))
     (pin "9" (uuid c86b7a06-cba0-4b1c-a504-32ba02c1267c))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "Q6") (unit 1)
         )
@@ -2225,7 +2225,7 @@
     (pin "1" (uuid 8823070e-b60a-4d8d-a3ca-3fea5e444825))
     (pin "2" (uuid 354988d4-bf77-4a50-ae8f-55e3c55cd946))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
           (reference "R24") (unit 1)
         )
@@ -2258,7 +2258,7 @@
     (pin "5" (uuid 9035fab4-6be8-4b0a-89ba-f352aae2d3b9))
     (pin "6" (uuid 9bd19b12-ce8a-4dc3-b863-108027249e25))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "U1") (unit 1)
         )
@@ -2283,7 +2283,7 @@
     )
     (pin "1" (uuid 3cd14e32-2ea9-4ba0-8c96-ab971f5e6164))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0183") (unit 1)
         )
@@ -2308,7 +2308,7 @@
     )
     (pin "1" (uuid 36dafb9b-c6a0-453f-8e20-5668435ba417))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0181") (unit 1)
         )
@@ -2334,7 +2334,7 @@
     (pin "1" (uuid 1b6c1ebb-67d0-4ef5-8819-0de21ff980f2))
     (pin "2" (uuid eff9476c-7ace-41a4-b270-12a64c6bda8a))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C38") (unit 1)
         )
@@ -2359,7 +2359,7 @@
     )
     (pin "1" (uuid 022345a4-a09b-4070-80db-3f271535b585))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR06") (unit 1)
         )
@@ -2385,7 +2385,7 @@
     (pin "1" (uuid 320e889f-08ac-40a7-b1b1-ce6a273d7038))
     (pin "2" (uuid dad79352-cddb-4473-a9f6-f4ff2bc890be))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "R25") (unit 1)
         )
@@ -2410,7 +2410,7 @@
     )
     (pin "1" (uuid fcdeef87-656a-4f6b-be61-c60ce1bb99a3))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR05") (unit 1)
         )
@@ -2435,7 +2435,7 @@
     )
     (pin "1" (uuid 8a94aaa0-6b36-48b7-a1c8-ce71fc1f8061))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR02") (unit 1)
         )
@@ -2461,7 +2461,7 @@
     (pin "1" (uuid b6e941f5-57d5-4e25-9272-1dcfd2a4f4da))
     (pin "2" (uuid a3b0ac4c-9b7a-436e-ace1-d9397904e79d))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C15") (unit 1)
         )
@@ -2486,7 +2486,7 @@
     )
     (pin "1" (uuid d5cd0d35-93ba-48a0-bf98-f67074311211))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0180") (unit 1)
         )
@@ -2511,7 +2511,7 @@
     )
     (pin "1" (uuid b6ba38b7-d810-44ca-a11d-52c8ea5865ae))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR03") (unit 1)
         )
@@ -2541,7 +2541,7 @@
     (pin "5" (uuid 9e5fb38d-144e-4235-8681-b1bc7b0e4423))
     (pin "6" (uuid 94ccd7e2-b9ad-4060-94d4-ec9d4ed47469))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "U8") (unit 1)
         )
@@ -2566,7 +2566,7 @@
     )
     (pin "1" (uuid c840cae7-f79d-4cdd-bf94-0b84ccd2d0b1))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR08") (unit 1)
         )
@@ -2591,7 +2591,7 @@
     )
     (pin "1" (uuid d56a7a78-80c6-481a-8cee-989e6d0c5d12))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0168") (unit 1)
         )
@@ -2616,7 +2616,7 @@
     )
     (pin "1" (uuid af4b8494-99f1-4207-93d4-64a36cd7d16f))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0166") (unit 1)
         )
@@ -2641,7 +2641,7 @@
     )
     (pin "1" (uuid 4659c1b4-316b-460d-a17f-02acb7cbfc44))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0158") (unit 1)
         )
@@ -2667,7 +2667,7 @@
     (pin "1" (uuid c6bf17b5-d860-45c5-9495-6f57a947d5f3))
     (pin "2" (uuid cdd8344d-3ed1-48bd-a7d1-33a4e4f280dc))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C34") (unit 1)
         )
@@ -2693,7 +2693,7 @@
     (pin "1" (uuid 8ea4cd2e-2a61-4c3f-8f63-5398baf25c97))
     (pin "2" (uuid 759fa506-bfcf-459b-aaf2-d1e2f0cd51fe))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "C36") (unit 1)
         )
@@ -2718,7 +2718,7 @@
     )
     (pin "1" (uuid 8c96ff0a-d7ff-46d8-a164-0a11eec1fe40))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "#PWR0150") (unit 1)
         )
@@ -2744,7 +2744,7 @@
     (pin "1" (uuid 54c29d11-5d9e-455b-b7a9-129dec59850b))
     (pin "2" (uuid 912f2e81-d0f5-49bb-94ef-6ec471ce37a3))
     (instances
-      (project "Switcher"
+      (project "PDU"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
           (reference "R29") (unit 1)
         )
