@@ -72,9 +72,12 @@ void Commands::LMQTelemCommand(System& sm, const RnpPacketSerialized& packet)
 	lmqtelem.header.destination = commandpacket.header.source;
 	lmqtelem.header.destination_service = commandpacket.header.source_service;
 	lmqtelem.header.uid = commandpacket.header.uid; 
-	//lmqtelem.logicVoltage = system.voltagelogging.getOutputV();
-	//lmqtelem.depVoltage = system.voltagelogging.getOutputV();
+	lmqtelem.logicVoltage = sm.logicpower.getData().volt;
+	lmqtelem.logicPerc = sm.logicpower.getData().percent;
+	lmqtelem.depVoltage = sm.deploypower.getData().volt;
+	lmqtelem.depPerc = sm.deploypower.getData().percent;	
 	lmqtelem.system_status = sm.systemstatus.getStatus();
+	lmqtelem.system_time = millis();
 	
 	sm.networkmanager.sendPacket(lmqtelem);
 	

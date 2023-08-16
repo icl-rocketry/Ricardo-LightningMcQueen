@@ -14,18 +14,20 @@ class OLEDScreen{
     display(SCREEN_WIDTH, SCREEN_HEIGHT, &wire, OLED_RESET){};
     
     void setupScreen(); //initialise led screen
-    // void updateScreen(Battery::STATUS chargingStatus, float batteryVoltage, bool adpConn); //update led screen for states: idle, ready, live, bricked
-    // void updateDepV(float depV);
-    // void updateLogicV(float logicV);
-    // void updateState(Types::CoreTypes::SystemStatus_t &_systemstatus);
+    void updateScreen(); //general update method
+    void updateBattV(float battV, float maxbattV);
+    void updateDepV(float depV);
+    void updateLogicV(float logicV);
+    void updateState(std::string systemstatus);
   
 
 
   private:  
-    //Types::CoreTypes::SystemStatus_t &_systemstatus; // pointer to system status object
-
-    float _depV;
-    float _logicV;
+    std::string _systemstatus;
+    float _battV = 0;
+    float _depV = 0;
+    float _logicV = 0;
+    float _maxbattV = 16.8; //3s dont know why
   
 
     Adafruit_SSD1306 display;    

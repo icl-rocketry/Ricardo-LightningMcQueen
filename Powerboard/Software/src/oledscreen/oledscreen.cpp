@@ -27,112 +27,54 @@ void OLEDScreen::setupScreen(){
 
 }
 
-// void OLEDScreen::updateDepV(float depV){
-//     _depV = depV;
-// }
+void OLEDScreen::updateBattV(float battV, float maxbattV){
+    _battV = battV;
+    _maxbattV = maxbattV;
+}
 
-// void OLEDScreen::updateLogic(float logicV){
-//     _logicV = logicV;
-// }
+void OLEDScreen::updateDepV(float depV){
+    _depV = depV;
+}
 
-// void OLEDScreen::updateState(SystemStatus& systemstatus){
-//     _systemstatus = systemstatus;
-// }
+void OLEDScreen::updateLogicV(float logicV){
+    _logicV = logicV;
+}
 
-
-// void OLEDScreen::updateDefaultScreen(Battery::STATUS chargingStatus, float batteryVoltage, bool adpConn){
-
-//     if (millis()-timeEnteredSetup < logoDelay)
-//     {
-//         return;
-//     }
-//     //If error in screen setup or 2s have not passed, returns to calling function
-//     if(_systemstatus.flag_triggered(SYSTEM_FLAG::ERROR_DISPLAY)){
-//         return;
-//         }
-
-//     else{
-
-//         display.clearDisplay();
-//         display.setTextSize(1);             // Normal 1:1 pixel scale
-//         display.setTextColor(SSD1306_WHITE);        // Draw white text
-//         display.setCursor(0,0);             // Start at top-left corner
+void OLEDScreen::updateState(std::string systemstatus){
+    _systemstatus = systemstatus;
+}
 
 
-//         //Line of text stating current system state
-//         if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_SETUP)){ 
-//             display.println("STATE: SETUP");
-//             }
+void OLEDScreen::updateScreen(){
 
-//         else if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_IDLE)){
-//             display.println("STATE: IDLE");
-//         }
+    if (millis()-timeEnteredSetup < logoDelay)
+    {
+        return;
+    }
 
-//         else if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_READY)){
-//             display.println("STATE: READY");            
-//             }
-        
-//         else if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_LIVE)){
-//             display.println("STATE: LIVE");            
-//             }
+    else{
 
-//         else if(_systemstatus.flag_triggered(SYSTEM_FLAG::STATE_BRICKED)){
-//             display.println("STATE: BRICKED");            
-//             }
-
-//         else{
-//             display.println("STATE: ERROR");            
-//         }
+        display.clearDisplay();
+        display.setTextSize(1);             // Normal 1:1 pixel scale
+        display.setTextColor(SSD1306_WHITE);        // Draw white text
+        display.setCursor(0,0);             // Start at top-left corner
 
 
+        display.println(("STATE: " + _systemstatus).c_str());
+        display.println(("BATTERY: " + std::to_string(static_cast<uint16_t>(_battV)) + "mV").c_str());
+        display.println(("DEPLOYMENT: " + std::to_string(static_cast<uint16_t>(_depV)) + "mV").c_str());
+        display.println(("LOGIC: " + std::to_string(static_cast<uint16_t>(_logicV)) + "mV").c_str());
 
-//         //Line of text stating charger connected/not
-        
-
-
-
-//         //Line of text stating charging status
-//         switch(chargingStatus) {    
-
-//             case Battery::STATUS::IN_PROGRESS:
-//             {
-//                 display.println("CHARGING: IN PROGRESS");
-//                 break;
-//             }
-
-//             case Battery::STATUS::CHARGE_COMPLETE:
-//             {
-//                 display.println("CHARGING: COMPLETE");
-//                 break;
-//             }
-
-//             case Battery::STATUS::CHARGE_SUSPEND:
-//             {
-//                 display.println("CHARGING: SUSPENDED"); 
-//                 break;  
-//             }
-
-//             default:
-//                 display.println("CHARGING: ERROR");
-
-//         }
+        //Battery icon in top right corner
+        display.drawRect(113, 0, 15, 6, WHITE);
+        display.drawRect(128, 3, 1, 2, WHITE);
+        chargebars = (_battV/_maxbattV)*11;  //number of bars of charge out of 11
+        display.fillRect(CHARGE_AREA_START_X, CHARGE_AREA_START_Y, chargebars, 4, WHITE);
+        //filling in battery icon with rectangular bars
 
 
+        display.display();
 
-//         //Line of text stating battery voltage
-//         display.println(("BATTERY VOLTAGE: " + std::to_string(batteryVoltage)).c_str());
-
-
-//         //Battery icon in top right corner
-//         display.drawRect(113, 0, 15, 6, WHITE);
-//         display.drawRect(128, 3, 1, 2, WHITE);
-//         chargebars = (batteryVoltage/25.2)*11;  //number of bars of charge out of 11
-//         display.fillRect(CHARGE_AREA_START_X, CHARGE_AREA_START_Y, chargebars, 4, WHITE);
-//         //filling in battery icon with rectangular bars
-
-
-//         display.display();
-
-//         // Serial.println("Default screen updated successfully");
-//     }
-// }
+        // Serial.println("Default screen updated successfully");
+    }
+}

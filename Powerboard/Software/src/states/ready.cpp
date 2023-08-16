@@ -29,7 +29,7 @@ void Ready::initialize()
     _system.commandhandler.enableCommands({Commands::ID::GoLive});
 
     //update oled state text
-
+    _system.oledscreen.updateState("READY");
 };
 
 Types::CoreTypes::State_ptr_t Ready::update()

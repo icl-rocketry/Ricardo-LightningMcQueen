@@ -35,6 +35,9 @@ void Live::initialize()
 
     _system.commandhandler.enableCommands({Commands::ID::GoReady});
 
+    //update oled state text
+    _system.oledscreen.updateState("LIVE");
+
 };
 
 Types::CoreTypes::State_ptr_t Live::update()

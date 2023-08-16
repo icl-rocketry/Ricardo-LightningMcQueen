@@ -39,6 +39,8 @@ void Idle::initialize()
     latch_bit = _system.latchbitmonitor.getLatchBit();
 
     //update oled state text
+    _system.oledscreen.updateState("IDLE");
+
 
 };
 
@@ -48,7 +50,7 @@ Types::CoreTypes::State_ptr_t Idle::update()
 
     if (millis()-prevLogMessageTime > 1000)
     {
-        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Idle");
+        //RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Idle");
         prevLogMessageTime = millis();
     }
 
