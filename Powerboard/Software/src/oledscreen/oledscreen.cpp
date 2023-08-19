@@ -21,7 +21,7 @@ void OLEDScreen::setupScreen(){
         display.clearDisplay();
 
         //Display iclr logo on startup until updateScreen function is called
-        display.drawBitmap(48, 0, iclr_logo.data(), 32, 32, WHITE);
+        display.drawBitmap(0, 0, nimbus_logo.data(), 128, 32, WHITE);
         display.display();
     }
 
