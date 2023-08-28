@@ -17,14 +17,33 @@ void OLEDScreen::setupScreen(){
     }
     else{
         timeEnteredSetup = millis();
-
-        display.clearDisplay();
-
-        //Display iclr logo on startup until updateScreen function is called
-        display.drawBitmap(0, 0, nimbus_logo.data(), 128, 32, WHITE);
-        display.display();
     }
 
+}
+
+void OLEDScreen::displayLogos(){
+        if (millis() - timeEnteredSetup < iclrLogoDelay){
+            displayICLRLogo();
+        }
+
+        if (millis() - timeEnteredSetup > iclrLogoDelay && millis() - timeEnteredSetup < setupDelay){
+            displayNimbusLogo();
+        }
+}
+
+void OLEDScreen::displayICLRLogo(){
+
+    display.clearDisplay();
+    display.drawBitmap(48, 0, iclr_logo.data(), 32, 32, WHITE);
+    display.display();
+
+}
+
+void OLEDScreen::displayNimbusLogo(){
+
+    display.clearDisplay();
+    display.drawBitmap(0, 2, nimbus_logo.data(), 128, 32, WHITE);
+    display.display();
 }
 
 void OLEDScreen::updateBattV(float battV, float maxbattV){
@@ -47,9 +66,9 @@ void OLEDScreen::updateState(std::string systemstatus){
 
 void OLEDScreen::updateScreen(){
 
-    if (millis()-timeEnteredSetup < logoDelay)
+    if (millis() - timeEnteredSetup < setupDelay)
     {
-        return;
+        displayLogos();
     }
 
     else{
