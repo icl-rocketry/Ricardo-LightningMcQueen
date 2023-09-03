@@ -12,6 +12,7 @@ enum class SYSTEM_FLAG:uint32_t{
     //flags
     DEBUG = (1 << 7),
     ERROR_DISPLAY = (1 << 8),
+    ERROR_CAN = (1 << 9),
     //critical messages 
     ERROR_SERIAL = (1 << 10),
     //if rocket is inverted

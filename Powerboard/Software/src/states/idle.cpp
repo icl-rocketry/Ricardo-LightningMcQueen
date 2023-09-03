@@ -50,17 +50,17 @@ Types::CoreTypes::State_ptr_t Idle::update()
 
     if (millis()-prevLogMessageTime > 1000)
     {
-        //RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Idle");
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Idle");
         prevLogMessageTime = millis();
     }
 
     //if arming pin has been inserted, set bool to true
-    if (digitalRead(PinMap::ARMING) == HIGH && RBF_was_inserted == false){
+    if (digitalRead(PinMap::ARMING) == LOW && RBF_was_inserted == false){
         RBF_was_inserted = true;
     }
 
     //if arming pin has been removed and latch is set to 0, transition to ready
-    if (digitalRead(PinMap::ARMING) == LOW && RBF_was_inserted == true && latch_bit == 0){
+    if (digitalRead(PinMap::ARMING) == HIGH && RBF_was_inserted == true && latch_bit == 0){
         return std::make_unique<Ready>(_system);
     }
 

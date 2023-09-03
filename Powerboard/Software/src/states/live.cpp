@@ -49,7 +49,7 @@ Types::CoreTypes::State_ptr_t Live::update()
         prevLogMessageTime = millis();
     }
 
-    if (digitalRead(PinMap::ARMING) == HIGH){
+    if (digitalRead(PinMap::ARMING) == LOW){
         latch_bit = 0;
         _system.latchbitmonitor.updateLatchBit(latch_bit);
         return std::make_unique<Idle>(_system);

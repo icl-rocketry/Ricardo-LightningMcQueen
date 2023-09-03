@@ -30,6 +30,8 @@ void Ready::initialize()
 
     //update oled state text
     _system.oledscreen.updateState("READY");
+
+    _system.deploypower.RailOff();
 };
 
 Types::CoreTypes::State_ptr_t Ready::update()
@@ -42,7 +44,7 @@ Types::CoreTypes::State_ptr_t Ready::update()
     }
     
     //if arming pin is inserted, reset latch bit to 0 and return to idle
-    if (digitalRead(PinMap::ARMING) == HIGH){
+    if (digitalRead(PinMap::ARMING) == LOW){
         latch_bit = 0;
         _system.latchbitmonitor.updateLatchBit(latch_bit);
         return std::make_unique<Idle>(_system);

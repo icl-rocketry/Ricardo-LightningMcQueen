@@ -17,8 +17,8 @@ namespace Commands
     enum class ID : uint8_t
     {
         NoCommand = 0,
-        GoLive = 1,
-        GoReady = 2,
+        GoReady = 1,       
+        GoLive = 2,
         RestartLogic = 3,
         LMQTelemCommand = 4,
         Free_Ram = 250

@@ -18,6 +18,7 @@
 
 System::System():
 RicCoreSystem(Commands::command_map,Commands::defaultEnabledCommands,Serial),
+canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 I2C(0),
 oledscreen(I2C),
 latchbitmonitor(),
@@ -38,9 +39,15 @@ void System::systemSetup(){
     statemachine.initalize(std::make_unique<Idle>(*this));
     
     //any other setup goes here
+    canbus.setup();    
+    networkmanager.addInterface(&canbus);
+        
+    networkmanager.setNodeType(NODETYPE::HUB);
+    networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,3});
+
 
     //setup pins
-    pinMode(PinMap::ARMING, INPUT_PULLDOWN);
+    pinMode(PinMap::ARMING, INPUT_PULLUP);
     //pinMode(PinMap::DepPowerLog, INPUT_PULLDOWN);
     //pinMode(PinMap::LogicPowerLog, INPUT_PULLDOWN);
 

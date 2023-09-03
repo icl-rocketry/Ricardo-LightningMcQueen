@@ -1,6 +1,7 @@
 #pragma once
 
 #include <libriccore/riccoresystem.h>
+#include <libriccore/networkinterfaces/can/canbus.h>
 
 #include "config/systemflags_config.h"
 #include "config/commands_config.h"
@@ -21,6 +22,8 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         void systemSetup();
 
         void systemUpdate();
+
+        CanBus<SYSTEM_FLAG> canbus;
 
         TwoWire I2C;
         OLEDScreen oledscreen;
