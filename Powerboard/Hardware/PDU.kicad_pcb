@@ -558,7 +558,7 @@
       (net 3 "GND") (pinfunction "P_GND_4") (pintype "passive") (tstamp 639ef05e-8124-4480-abda-d1da22d3f6a5))
     (pad "30" smd rect (at -0.406 1.644 90) (size 0.275 2.35) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 13 "/Bucks/SW") (pinfunction "SW_6") (pintype "passive") (tstamp acb7eff7-1405-4d94-ab37-3996393fa4f1))
-    (model "SiC437BED-T1-GE3.stp"
+    (model "${ICLR}/SiC437BED-T1-GE3.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -644,7 +644,7 @@
       (net 8 "Net-(J5-Pin_4)") (pinfunction "D_6") (pintype "passive") (tstamp a9d0194a-e480-4fa8-9f02-b3d8001f70fc))
     (pad "11" smd rect (at 1.295 -1.156) (size 0.077 0.25) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 8 "Net-(J5-Pin_4)") (pinfunction "D_7") (pintype "passive") (tstamp 95b29e36-fa80-49b4-9c8d-3d46b6f59853))
-    (model "SQS141ELNW-T1_GE3.stp"
+    (model "${ICLR}/SQS141ELNW-T1_GE3.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -730,7 +730,7 @@
       (net 9 "Net-(J5-Pin_5)") (pinfunction "D_6") (pintype "passive") (tstamp 34b3de0b-9ff2-477c-b58a-67e797d7baae))
     (pad "11" smd rect (at 1.295 -1.156) (size 0.077 0.25) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 9 "Net-(J5-Pin_5)") (pinfunction "D_7") (pintype "passive") (tstamp b40670f1-e422-40bf-8bec-75d7f18ea81b))
-    (model "SQS141ELNW-T1_GE3.stp"
+    (model "${ICLR}/SQS141ELNW-T1_GE3.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1159,7 +1159,7 @@
       (net 2 "+12V") (pinfunction "D_4") (pintype "passive") (tstamp 8196afe5-645c-4b5e-b059-1d3d4b1b6e01))
     (pad "9" smd rect (at 0 -0.335) (size 2.03 2.65) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "+12V") (pinfunction "D_5") (pintype "passive") (tstamp e1eac544-8b1f-438d-a9a5-76768b9de3c1))
-    (model "PXP012-30QLJ.stp"
+    (model "${ICLR}/PXP012-30QLJ.stp"
       (offset (xyz -1.739999983 2.339999879 -1.669999932))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -1263,7 +1263,7 @@
       (net 3 "GND") (pinfunction "SHIELD") (pintype "passive") (tstamp 472f4796-764d-4bf7-b880-2c81c7132a75))
     (pad "S1" thru_hole oval (at 4.32 2.24 270) (size 1.7 0.9) (drill oval 1.4 0.6) (layers "*.Cu" "*.Mask")
       (net 3 "GND") (pinfunction "SHIELD") (pintype "passive") (tstamp 22cc29d2-0f2d-4844-a77c-b02073f67a2b))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_Palconn_UTC16-G.wrl"
+    (model "${ICLR}/USB_C.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1744,6 +1744,11 @@
       (net 3 "GND") (pinfunction "-") (pintype "passive") (tstamp 9a3b77e2-5740-46a5-8da0-f384222cf74b))
     (pad "S1" thru_hole oval (at 6.75 0) (size 1.2 2.4) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (tstamp e2bf8351-7813-4720-a015-8b6fb9d614a4))
     (pad "S2" thru_hole oval (at -6.75 0) (size 1.2 2.4) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (tstamp 7bc04e80-b7b9-4ff3-99aa-da4760d127d7))
+    (model "${ICLR}/XT60PW MALE.STEP"
+      (offset (xyz 0 10.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "iclr:SQS850ENT1_GE3" (layer "F.Cu")
@@ -1825,7 +1830,7 @@
       (net 2 "+12V") (pinfunction "D_6") (pintype "passive") (tstamp db4bb744-546d-4e55-a43f-6a7a386c3503))
     (pad "11" smd rect (at 1.295 -1.156 180) (size 0.077 0.25) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "+12V") (pinfunction "D_7") (pintype "passive") (tstamp acd9fd48-e191-49f1-9c3c-5ee85ea9313e))
-    (model "SQS141ELNW-T1_GE3.stp"
+    (model "${ICLR}/SQS141ELNW-T1_GE3.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1889,7 +1894,7 @@
       (net 30 "/CHIP_PU") (pinfunction "Pin_1") (pintype "passive") (tstamp 8bd3fda9-fd19-4162-adc2-5628227f5500))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 3 "GND") (pinfunction "Pin_2") (pintype "passive") (tstamp a5784138-bae4-4ad4-9d08-4b3d79dbfa7b))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1953,7 +1958,7 @@
       (net 1 "+3V3") (pinfunction "Pin_1") (pintype "passive") (tstamp 30c59d0e-0a00-4854-b799-3d1b38dcb145))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 3 "GND") (pinfunction "Pin_2") (pintype "passive") (tstamp ff7b6207-5f93-4fd4-82af-f3660068ba8d))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2343,7 +2348,7 @@
       (net 35 "/SCL") (pinfunction "Pin_3") (pintype "passive") (tstamp 09dda788-e116-4a12-a06d-16f63566d978))
     (pad "4" thru_hole oval (at 0 7.62) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 56 "/SDA") (pinfunction "Pin_4") (pintype "passive") (tstamp 856984a6-4838-41e9-be92-4c2fb3d6cb95))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3797,6 +3802,11 @@
       (net 1 "+3V3") (pinfunction "VDDA") (pintype "power_in") (tstamp 049eac1e-1c56-4c5c-a040-e2af22e56da6))
     (pad "57" smd rect (at 0 0 180) (size 4 4) (layers "F.Cu" "F.Mask")
       (net 3 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 17bf09c4-4273-4931-a366-df08f59a451b))
+    (model "${ICLR}/ESP32-S3.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" (layer "F.Cu")
@@ -4073,7 +4083,7 @@
       (net 81 "RBUS_uC_V") (pinfunction "D_6") (pintype "passive") (tstamp 91d15e63-873f-4055-b080-39786c3825ff))
     (pad "11" smd rect (at 1.295 -1.156 180) (size 0.077 0.25) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 81 "RBUS_uC_V") (pinfunction "D_7") (pintype "passive") (tstamp 3688d566-df80-4918-a6d0-b048b6140063))
-    (model "SQS141ELNW-T1_GE3.stp"
+    (model "${ICLR}/SQS141ELNW-T1_GE3.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4811,7 +4821,7 @@
       (net 112 "Net-(J6-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 0dc9a980-ee86-4379-b8da-8c87f36cc39a))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "+3V3") (pinfunction "Pin_2") (pintype "passive") (tstamp 4c7acf38-819d-412a-a4f9-3915ecc4ecae))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5512,7 +5522,7 @@
       (net 42 "Net-(J4-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 785fdc9c-c832-4034-8f7f-fe8fb3464e3b))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 3 "GND") (pinfunction "Pin_2") (pintype "passive") (tstamp 8a5118ed-7d4f-4e69-b9ca-227ab88d47c2))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5867,7 +5877,7 @@
       (net 17 "VBUS") (pinfunction "D_4") (pintype "passive") (tstamp 664a4f0d-952e-4ee4-ac73-a5afd6104267))
     (pad "9" smd rect (at 0 -0.335 180) (size 2.03 2.65) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 17 "VBUS") (pinfunction "D_5") (pintype "passive") (tstamp a2fb81d5-6cae-4016-b26c-49c924e0d554))
-    (model "PXP012-30QLJ.stp"
+    (model "${ICLR}/PXP012-30QLJ.stp"
       (offset (xyz -1.739999983 2.339999879 -1.669999932))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -6827,7 +6837,7 @@
       (net 31 "/BOOT") (pinfunction "Pin_1") (pintype "passive") (tstamp f4f8e1b6-fdc6-461a-8f94-d2a737141e3e))
     (pad "2" thru_hole oval (at 0 2.54 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 3 "GND") (pinfunction "Pin_2") (pintype "passive") (tstamp 487ab4b4-5af6-4e27-806f-029b74dd76b2))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -7438,6 +7448,11 @@
           )
           (width 0.01) (fill yes))
       ) (tstamp c900c4c4-56f8-4bea-b03c-eaafd14b7839))
+    (model "${ICLR}/MAX77827AEFD+T.stp"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
@@ -7613,6 +7628,11 @@
       (net 3 "GND") (pinfunction "GND") (pintype "input") (tstamp 79e6fe62-0c83-4e68-976a-08258cf332ca))
     (pad "9" smd rect (at 0 0 180) (size 2.15 2.15) (layers "F.Cu" "F.Mask")
       (net 3 "GND") (pinfunction "GND") (pintype "input") (tstamp ec75a90b-c6fc-4bf0-bc0c-3059945ca91f))
+    (model "${ICLR}/SOIC-8.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
@@ -7927,6 +7947,11 @@
       (net 29 "Net-(J7-+)") (pinfunction "-") (pintype "passive") (tstamp fd76ad89-782b-43f3-9bb0-f0332184ae96))
     (pad "S1" thru_hole oval (at 6.75 0) (size 1.2 2.4) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (tstamp ff391df9-ff2f-4d24-966d-1f2d3c1f3d49))
     (pad "S2" thru_hole oval (at -6.75 0) (size 1.2 2.4) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (tstamp 1268f6f4-1113-4a6b-9680-788a86cc4e9b))
+    (model "${ICLR}/XT60PW MALE.STEP"
+      (offset (xyz 0 10.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" (layer "F.Cu")
@@ -8114,7 +8139,7 @@
       (net 81 "RBUS_uC_V") (pintype "passive") (tstamp 6630d036-505e-49ec-80a9-678fd5ebd7b2))
     (pad "2" smd rect (at 4.45 0) (size 3.35 4.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 13 "/Bucks/SW") (pintype "passive") (tstamp b8534fdf-fffc-4fc5-a84b-43df73960b86))
-    (model "SRP1050WA-3R3M.stp"
+    (model "${ICLR}/SRP1050WA-3R3M v0.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
