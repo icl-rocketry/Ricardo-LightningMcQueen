@@ -9,7 +9,7 @@
 class PowerRail{
     public:
 
-        PowerRail(const uint8_t control_pin, const uint8_t voltage_pin, bool on_at_startup, const float r1, const float r2);
+        PowerRail(const uint8_t control_pin, const uint8_t voltage_pin, bool high_is_rail_on, bool on_at_startup, const float r1, const float r2);
 
         void RailSetup(uint16_t maxVoltage, uint16_t minVoltage);
         void RailUpdate();        
@@ -28,6 +28,7 @@ class PowerRail{
 
         const uint8_t _control_pin;
         const uint8_t _voltage_pin;
+        bool _high_is_rail_on;
         bool _on_at_startup;
         uint32_t _delay;
         bool restart;
@@ -43,5 +44,6 @@ class PowerRail{
         uint16_t _minVoltage;
         uint16_t sampleDelta = 20; // sample the voltage rail at 5hz
         uint32_t prevSampleTime = 0;
-
+        uint8_t ON_state;
+        uint8_t OFF_state;
 };

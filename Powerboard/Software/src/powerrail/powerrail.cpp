@@ -11,9 +11,10 @@
 #include <esp32-hal-adc.h>
 
 
-PowerRail::PowerRail(const uint8_t control_pin, const uint8_t voltage_pin, bool on_at_startup, const float r1, const float r2):
+PowerRail::PowerRail(const uint8_t control_pin, const uint8_t voltage_pin, bool high_is_rail_on, bool on_at_startup, const float r1, const float r2):
 _control_pin(control_pin),
 _voltage_pin(voltage_pin),
+_high_is_rail_on(high_is_rail_on),
 _on_at_startup(on_at_startup),
 _channel(ADC_CHANNEL_0),//default
 _unit(ADC_UNIT_1),
@@ -26,15 +27,24 @@ _minVoltage(0)
 
 void PowerRail::RailSetup(uint16_t maxVoltage, uint16_t minVoltage){
 
-    // control pin setup
-
     pinMode(_control_pin,OUTPUT);
 
+    //the logic on the logic and dep rails is reversed so couldnt think of a better way of doing this
+    if (_high_is_rail_on){
+        ON_state = HIGH;
+        OFF_state = LOW;
+    }
+    else {
+        ON_state = LOW;
+        OFF_state = HIGH;
+    }
+
+
     if (_on_at_startup == true){
-        digitalWrite(_control_pin, LOW);    
+        RailOn();    
     }
     if (_on_at_startup == false){
-        digitalWrite(_control_pin, HIGH);
+        RailOff();
     }
 
 
@@ -76,12 +86,12 @@ void PowerRail::RailSetup(uint16_t maxVoltage, uint16_t minVoltage){
 }
 
 void PowerRail::RailOn(){
-    digitalWrite(_control_pin, LOW);
+    digitalWrite(_control_pin, ON_state);
 
 }
 
 void PowerRail::RailOff(){
-    digitalWrite(_control_pin, HIGH);
+    digitalWrite(_control_pin, OFF_state);
 }
 
 

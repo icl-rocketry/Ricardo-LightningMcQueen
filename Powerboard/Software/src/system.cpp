@@ -22,8 +22,8 @@ canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 I2C(0),
 oledscreen(I2C),
 latchbitmonitor(),
-logicpower(PinMap::LogicSwitch, PinMap::LogicPowerLog, true, 1, 16),
-deploypower(PinMap::DepPowerSwitch, PinMap::DepPowerLog, false, 47, 10)
+logicpower(PinMap::LogicSwitch, PinMap::LogicPowerLog, false, true, 1, 16),
+deploypower(PinMap::DepPowerSwitch, PinMap::DepPowerLog, true, false, 47, 10)
 {};
 
 
