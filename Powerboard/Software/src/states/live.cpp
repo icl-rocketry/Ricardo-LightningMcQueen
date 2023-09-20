@@ -43,11 +43,11 @@ void Live::initialize()
 Types::CoreTypes::State_ptr_t Live::update()
 {
 
-    if (millis()-prevLogMessageTime > 1000)
-    {
-        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Live");
-        prevLogMessageTime = millis();
-    }
+    // if (millis()-prevLogMessageTime > 1000)
+    // {
+    //     RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Live");
+    //     prevLogMessageTime = millis();
+    // }
 
     if (digitalRead(PinMap::ARMING) == LOW){
         latch_bit = 0;

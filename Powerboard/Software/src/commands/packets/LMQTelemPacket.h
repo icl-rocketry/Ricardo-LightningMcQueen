@@ -14,9 +14,9 @@ class LMQTelemPacket : public RnpPacket{
         {
             auto ret = RnpSerializer(
                 &LMQTelemPacket::logicVoltage,
-                &LMQTelemPacket::logicPerc,
                 &LMQTelemPacket::depVoltage,
-                &LMQTelemPacket::depPerc,
+                &LMQTelemPacket::battVoltage,
+                &LMQTelemPacket::battPerc,
                 &LMQTelemPacket::system_status,
                 &LMQTelemPacket::system_time
             );
@@ -43,9 +43,9 @@ class LMQTelemPacket : public RnpPacket{
         void serialize(std::vector<uint8_t>& buf) override;
 
         uint16_t logicVoltage;
-        uint16_t logicPerc;
         uint16_t depVoltage;
-        uint16_t depPerc;
+        uint16_t battVoltage;
+        uint16_t battPerc;
         uint32_t system_status;
         uint64_t system_time;
 

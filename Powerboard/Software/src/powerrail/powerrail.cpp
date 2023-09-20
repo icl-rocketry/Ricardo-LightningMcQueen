@@ -11,20 +11,6 @@
 #include <esp32-hal-adc.h>
 
 
-PowerRail::PowerRail(const uint8_t control_pin, const uint8_t voltage_pin, bool high_is_rail_on, bool on_at_startup, const float r1, const float r2):
-_control_pin(control_pin),
-_voltage_pin(voltage_pin),
-_high_is_rail_on(high_is_rail_on),
-_on_at_startup(on_at_startup),
-_channel(ADC_CHANNEL_0),//default
-_unit(ADC_UNIT_1),
-_adcCal(),
-_adcInitialized(false),
-factor(((r1+r2)/r2)),
-_maxVoltage(0),
-_minVoltage(0)
-{}
-
 void PowerRail::RailSetup(uint16_t maxVoltage, uint16_t minVoltage){
 
     pinMode(_control_pin,OUTPUT);

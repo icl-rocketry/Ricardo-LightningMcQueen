@@ -9,7 +9,33 @@
 class PowerRail{
     public:
 
-        PowerRail(const uint8_t control_pin, const uint8_t voltage_pin, bool high_is_rail_on, bool on_at_startup, const float r1, const float r2);
+        //power rail with voltage reading only
+        PowerRail(const uint8_t voltage_pin, const float r1, const float r2):
+            _voltage_pin(voltage_pin),
+            _channel(ADC_CHANNEL_0),//default
+            _unit(ADC_UNIT_1),
+            _adcCal(),
+            _adcInitialized(false),
+            factor(((r1+r2)/r2)),
+            _maxVoltage(0),
+            _minVoltage(0)
+        {}
+
+        // power rail with switching on/off and voltage reading
+        PowerRail(const uint8_t control_pin, const uint8_t voltage_pin, const bool high_is_rail_on, const bool on_at_startup, const float r1, const float r2):
+            _control_pin(control_pin),
+            _voltage_pin(voltage_pin),
+            _high_is_rail_on(high_is_rail_on),
+            _on_at_startup(on_at_startup),
+            _channel(ADC_CHANNEL_0),//default
+            _unit(ADC_UNIT_1),
+            _adcCal(),
+            _adcInitialized(false),
+            factor(((r1+r2)/r2)),
+            _maxVoltage(0),
+            _minVoltage(0)
+        {}
+
 
         void RailSetup(uint16_t maxVoltage, uint16_t minVoltage);
         void RailUpdate();        
@@ -26,10 +52,10 @@ class PowerRail{
 
         void RailMonitoringUpdate();
 
-        const uint8_t _control_pin;
+        const uint8_t _control_pin = 0;
         const uint8_t _voltage_pin;
-        bool _high_is_rail_on;
-        bool _on_at_startup;
+        const bool _high_is_rail_on = 0;
+        const bool _on_at_startup = 0;
         uint32_t _delay;
         bool restart;
         uint32_t time_restart_started;
@@ -42,7 +68,7 @@ class PowerRail{
         const float factor;
         uint16_t _maxVoltage;
         uint16_t _minVoltage;
-        uint16_t sampleDelta = 20; // sample the voltage rail at 5hz
+        uint16_t sampleDelta = 200; // sample the voltage rail at 5hz
         uint32_t prevSampleTime = 0;
         uint8_t ON_state;
         uint8_t OFF_state;

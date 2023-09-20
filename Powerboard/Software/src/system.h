@@ -30,6 +30,7 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         LatchBitMonitor latchbitmonitor;
         PowerRail logicpower;
         PowerRail deploypower;
+        PowerRail battpower;
 
 
     // private:

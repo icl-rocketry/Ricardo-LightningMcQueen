@@ -48,11 +48,11 @@ Types::CoreTypes::State_ptr_t Idle::update()
 {
     
 
-    if (millis()-prevLogMessageTime > 1000)
-    {
-        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Idle");
-        prevLogMessageTime = millis();
-    }
+    // if (millis()-prevLogMessageTime > 1000)
+    // {
+    //     RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Idle");
+    //     prevLogMessageTime = millis();
+    // }
 
     //if arming pin has been inserted, set bool to true
     if (digitalRead(PinMap::ARMING) == LOW && RBF_was_inserted == false){
