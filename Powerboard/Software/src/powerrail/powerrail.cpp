@@ -60,7 +60,7 @@ void PowerRail::RailSetup(uint16_t maxVoltage, uint16_t minVoltage){
 
     if (error)
     {
-        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Vrail Monitor Failed to initialize!");
+        //RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Vrail Monitor Failed to initialize!");
         return;
     }
 
