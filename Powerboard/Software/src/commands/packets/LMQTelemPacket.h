@@ -15,8 +15,6 @@ class LMQTelemPacket : public RnpPacket{
             auto ret = RnpSerializer(
                 &LMQTelemPacket::logicVoltage,
                 &LMQTelemPacket::depVoltage,
-                &LMQTelemPacket::battVoltage,
-                &LMQTelemPacket::battPerc,
                 &LMQTelemPacket::system_status,
                 &LMQTelemPacket::system_time
             );
@@ -44,8 +42,6 @@ class LMQTelemPacket : public RnpPacket{
 
         uint16_t logicVoltage;
         uint16_t depVoltage;
-        uint16_t battVoltage;
-        uint16_t battPerc;
         uint32_t system_status;
         uint64_t system_time;
 

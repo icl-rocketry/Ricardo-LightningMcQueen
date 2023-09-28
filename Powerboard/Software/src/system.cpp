@@ -23,8 +23,7 @@ I2C(0),
 oledscreen(I2C),
 latchbitmonitor(),
 logicpower(PinMap::LogicSwitch, PinMap::LogicPowerLog, false, true, 1, 16),
-deploypower(PinMap::DepPowerSwitch, PinMap::DepPowerLog, true, false, 47, 10),
-battpower(PinMap::BattPowerLog, 47, 10)
+deploypower(PinMap::DepPowerSwitch, PinMap::DepPowerLog, false, false, 47, 10)
 {};
 
 
@@ -55,7 +54,6 @@ void System::systemSetup(){
     //power rail setup
     deploypower.RailSetup(16800, 0);
     logicpower.RailSetup(3300, 0);
-    battpower.RailSetup(16800, 0);
 
     //initialize oled screen
     I2C.begin(PinMap::_SDA, PinMap::_SCL, GeneralConfig::I2C_FREQUENCY);
@@ -67,10 +65,8 @@ void System::systemSetup(){
 void System::systemUpdate(){
     logicpower.RailUpdate();
     deploypower.RailUpdate();
-    battpower.RailUpdate();
 
     oledscreen.updateDepV(deploypower.getData().volt);
     oledscreen.updateLogicV(logicpower.getData().volt);
-    oledscreen.updateBattV(battpower.getData().volt, 16800);
     oledscreen.updateScreen();
 };
