@@ -57,7 +57,9 @@ void System::systemSetup(){
 
     //initialize oled screen
     I2C.begin(PinMap::_SDA, PinMap::_SCL, GeneralConfig::I2C_FREQUENCY);
-    //oledscreen.setupScreen();
+    oledscreen.setupScreen();
+
+    oled_update_time = millis();
 
 };
 
@@ -66,7 +68,12 @@ void System::systemUpdate(){
     logicpower.RailUpdate();
     deploypower.RailUpdate();
 
-    // oledscreen.updateDepV(deploypower.getData().volt);
-    // oledscreen.updateLogicV(logicpower.getData().volt);
-    // oledscreen.updateScreen();
+    if (millis() - oled_update_time > 500){
+        oledscreen.updateDepV(deploypower.getData().volt);
+        oledscreen.updateLogicV(logicpower.getData().volt);
+        oledscreen.updateScreen(); 
+
+        oled_update_time = millis();   
+    }
+
 };

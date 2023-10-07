@@ -32,7 +32,9 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         PowerRail deploypower;
 
 
-    // private:
+    private:
+
+        uint64_t oled_update_time;
 
 
 };
