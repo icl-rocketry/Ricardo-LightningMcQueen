@@ -1,4 +1,4 @@
-21608846974938553
+21615631762364764
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89579,6 +89579,13 @@ varistor
 2
 2
 iclr
+95
+
+
+0
+0
+0
+iclr
 292227-7
 
 
@@ -90034,6 +90041,13 @@ Integrated Circuit
 8
 8
 iclr
+SQS850ENT1_GE3
+PowerPAK 1212-8 Single
+MOSFET (P-Channel)
+0
+11
+11
+iclr
 SR0502CTG
 SOT-143
 TVS Diode (Uni-directional)
@@ -90153,7 +90167,21 @@ Inductor
 2
 2
 iclr
+astronautPete30mmwide
+
+
+0
+0
+0
+iclr
 buckaroo
+
+
+0
+0
+0
+iclr
+cheshire
 
 
 0
