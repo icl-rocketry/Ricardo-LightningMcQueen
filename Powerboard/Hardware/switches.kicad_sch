@@ -2614,6 +2614,12 @@
 		(uuid "0593e2a6-7f1d-4929-9b53-37318957b494")
 	)
 	(junction
+		(at 140.462 141.478)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05c860ea-189e-4ebc-b5e6-7bfda957f1b6")
+	)
+	(junction
 		(at 104.902 111.506)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2738,12 +2744,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8dd311fb-cab1-45f9-b35d-4e3a0276035b")
-	)
-	(junction
-		(at 137.922 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f352629-cdec-42ba-986a-2b9f0b078334")
 	)
 	(junction
 		(at 196.596 58.42)
@@ -3048,16 +3048,6 @@
 			(type default)
 		)
 		(uuid "1f442549-bab1-467a-b556-267db8d9444e")
-	)
-	(wire
-		(pts
-			(xy 137.922 146.05) (xy 137.922 155.448)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24b2710e-bebd-46f6-bba0-948845c39330")
 	)
 	(wire
 		(pts
@@ -3731,6 +3721,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.462 141.478) (xy 144.78 141.478)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5e51615-7525-4f69-8c05-7b9874ed310d")
+	)
+	(wire
+		(pts
 			(xy 75.692 88.646) (xy 75.819 51.435)
 		)
 		(stroke
@@ -3741,7 +3741,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.922 119.634) (xy 137.922 146.05)
+			(xy 137.922 119.634) (xy 137.922 155.448)
 		)
 		(stroke
 			(width 0)
@@ -3761,13 +3761,13 @@
 	)
 	(wire
 		(pts
-			(xy 129.794 146.05) (xy 137.922 146.05)
+			(xy 140.462 141.478) (xy 140.462 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cbbb0fa0-546b-4870-90a1-25cf176264d6")
+		(uuid "cb9638e8-b912-414f-9d36-510897d27e1d")
 	)
 	(wire
 		(pts
@@ -3871,7 +3871,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.462 119.634) (xy 140.462 146.05)
+			(xy 140.462 119.634) (xy 140.462 141.478)
 		)
 		(stroke
 			(width 0)
@@ -4233,7 +4233,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Male")
-		(at 66.548 80.01 270)
+		(at 64.008 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4241,7 +4241,7 @@
 		(dnp no)
 		(uuid "031213dd-5689-4d36-a614-00163f71bac8")
 		(property "Reference" "J4"
-			(at 73.66 84.328 90)
+			(at 64.008 81.026 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4250,7 +4250,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Male"
-			(at 67.818 82.296 90)
+			(at 69.85 83.058 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4259,7 +4259,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 66.548 80.01 0)
+			(at 64.008 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,7 +4268,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.548 80.01 0)
+			(at 64.008 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4277,7 +4277,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.548 80.01 0)
+			(at 64.008 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5300,7 +5300,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 129.794 140.97 270)
+		(at 147.32 136.398 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5308,7 +5308,7 @@
 		(dnp no)
 		(uuid "3ea3e04c-aa11-4f1e-a3d9-d350edf50f69")
 		(property "Reference" "J2"
-			(at 131.064 147.828 90)
+			(at 148.59 143.256 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5317,7 +5317,7 @@
 			)
 		)
 		(property "Value" "FAN"
-			(at 131.064 149.749 90)
+			(at 148.59 145.177 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5326,7 +5326,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 129.794 140.97 0)
+			(at 147.32 136.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5335,7 +5335,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.794 140.97 0)
+			(at 147.32 136.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5344,7 +5344,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 129.794 140.97 0)
+			(at 147.32 136.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6178,7 +6178,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 127.254 146.05 0)
+		(at 147.32 141.478 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6187,7 +6187,7 @@
 		(fields_autoplaced yes)
 		(uuid "9013734f-6f61-471c-9ae4-f02ec3aa37e6")
 		(property "Reference" "#PWR011"
-			(at 127.254 152.4 0)
+			(at 147.32 147.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6196,7 +6196,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127.254 150.1855 0)
+			(at 147.32 145.6135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6204,7 +6204,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127.254 146.05 0)
+			(at 147.32 141.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6213,7 +6213,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127.254 146.05 0)
+			(at 147.32 141.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6222,7 +6222,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127.254 146.05 0)
+			(at 147.32 141.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6757,7 +6757,7 @@
 		(dnp no)
 		(uuid "a279a44f-9f2c-4039-8662-1350138fdbd0")
 		(property "Reference" "J6"
-			(at 242.316 25.654 90)
+			(at 242.57 25.908 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6766,7 +6766,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Male"
-			(at 236.474 23.622 90)
+			(at 236.728 23.876 90)
 			(effects
 				(font
 					(size 1.27 1.27)
