@@ -59,7 +59,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "hole_clearance|119075000|81080000|0fd04860-6ad7-4b44-bb7e-5ebb4b1c2972|e4d5d284-cb99-42e8-8fca-54407f40a747",
+        "hole_clearance|119075000|81080000|a812ba66-f3c0-4257-b7f0-d2e5ec066faa|e4d5d284-cb99-42e8-8fca-54407f40a747",
+        "hole_clearance|119075000|81280000|22f5c523-4134-46c3-8382-2d3be18e8d7b|e4d5d284-cb99-42e8-8fca-54407f40a747",
+        "hole_clearance|119075000|81280000|e48020b7-6781-494e-98b6-e78a29d09714|e4d5d284-cb99-42e8-8fca-54407f40a747",
+        "hole_clearance|119075000|86680000|48f3ca22-6bed-4f8a-a03c-0eb09c4069dd|b40e6fac-418f-4d92-94c9-3d535e408605",
+        "hole_clearance|119075000|86680000|72881f0a-7866-4a30-b056-00f9cf946483|b40e6fac-418f-4d92-94c9-3d535e408605",
+        "hole_clearance|119075000|86880000|d9b0536d-837e-480d-af20-61ae776274fe|b40e6fac-418f-4d92-94c9-3d535e408605",
+        "hole_clearance|119075000|86880000|fa2a52b0-6481-426e-893e-868d8b2630a0|b40e6fac-418f-4d92-94c9-3d535e408605"
+      ],
       "meta": {
         "version": 2
       },

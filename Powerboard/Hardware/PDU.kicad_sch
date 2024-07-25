@@ -3265,6 +3265,12 @@
 		(uuid "30f4e1d9-2792-4637-a961-b1ce85e57bfb")
 	)
 	(junction
+		(at 61.468 142.494)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33ec2fc2-5ae0-46a6-af80-730c830b0108")
+	)
+	(junction
 		(at 273.812 132.842)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3421,6 +3427,10 @@
 		(uuid "f2f87467-b852-419c-afa3-4653d891e7f8")
 	)
 	(no_connect
+		(at 176.022 121.412)
+		(uuid "0c55a2c7-e79f-451e-9de8-778272047ffd")
+	)
+	(no_connect
 		(at 176.022 126.492)
 		(uuid "27f55bb7-f11e-4054-894f-79e74ef3aaba")
 	)
@@ -3429,11 +3439,15 @@
 		(uuid "370cd60c-3c89-4114-8fdd-8f8f1cdc99d7")
 	)
 	(no_connect
-		(at 242.062 116.332)
+		(at 242.062 108.712)
 		(uuid "3a848c0f-1ea6-41d3-af0f-d896724961c0")
 	)
 	(no_connect
-		(at 242.062 118.872)
+		(at 176.022 123.952)
+		(uuid "48da3b05-9125-4587-88d6-d46e496f163c")
+	)
+	(no_connect
+		(at 176.022 118.872)
 		(uuid "69d64875-44da-41d5-b213-219798330d05")
 	)
 	(no_connect
@@ -3457,28 +3471,12 @@
 		(uuid "b1397694-2460-41a8-8952-8881d6db6acd")
 	)
 	(no_connect
-		(at 176.022 75.692)
+		(at 176.022 106.172)
 		(uuid "b1397694-2460-41a8-8952-8881d6db6ad0")
 	)
 	(no_connect
-		(at 176.022 80.772)
+		(at 176.022 103.632)
 		(uuid "b1397694-2460-41a8-8952-8881d6db6ad3")
-	)
-	(no_connect
-		(at 176.022 83.312)
-		(uuid "b1397694-2460-41a8-8952-8881d6db6ad4")
-	)
-	(no_connect
-		(at 176.022 88.392)
-		(uuid "b1397694-2460-41a8-8952-8881d6db6ad6")
-	)
-	(no_connect
-		(at 176.022 90.932)
-		(uuid "b1397694-2460-41a8-8952-8881d6db6ad7")
-	)
-	(no_connect
-		(at 176.022 93.472)
-		(uuid "b1397694-2460-41a8-8952-8881d6db6ad8")
 	)
 	(no_connect
 		(at 176.022 96.012)
@@ -3497,7 +3495,7 @@
 		(uuid "b22cc31a-5686-47d2-8c1c-5db09b4ae942")
 	)
 	(no_connect
-		(at 242.062 101.092)
+		(at 242.062 96.012)
 		(uuid "b22cc31a-5686-47d2-8c1c-5db09b4ae943")
 	)
 	(no_connect
@@ -3537,7 +3535,7 @@
 		(uuid "b22cc31a-5686-47d2-8c1c-5db09b4ae94f")
 	)
 	(no_connect
-		(at 176.022 73.152)
+		(at 176.022 88.392)
 		(uuid "ec728256-e750-4c91-b2a0-16b45a38a1ea")
 	)
 	(no_connect
@@ -3573,6 +3571,16 @@
 			(type default)
 		)
 		(uuid "025e1df8-baa6-4e24-8c3a-64138fa0c841")
+	)
+	(wire
+		(pts
+			(xy 56.642 143.002) (xy 56.642 142.494)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07b9c7db-d7ec-40ce-9234-4ca8948282f4")
 	)
 	(wire
 		(pts
@@ -3856,6 +3864,16 @@
 	)
 	(wire
 		(pts
+			(xy 56.642 142.494) (xy 61.468 142.494)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea5e9b9-924f-4506-8c04-9cc89fa00d79")
+	)
+	(wire
+		(pts
 			(xy 123.952 31.242) (xy 129.032 31.242)
 		)
 		(stroke
@@ -4063,6 +4081,16 @@
 			(type default)
 		)
 		(uuid "61b56c77-c22c-4c88-b331-75db4a05fcae")
+	)
+	(wire
+		(pts
+			(xy 56.642 148.082) (xy 56.642 148.844)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65771af8-1c20-4a5d-91e6-e081555e0b48")
 	)
 	(wire
 		(pts
@@ -4514,6 +4542,16 @@
 		)
 		(uuid "da93d576-c73d-4de9-aa30-85a7e760d040")
 	)
+	(wire
+		(pts
+			(xy 56.642 148.844) (xy 61.468 148.844)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd210860-7f76-415c-84c9-4d1e3045e688")
+	)
 	(polyline
 		(pts
 			(xy 196.342 76.962) (xy 196.342 79.502)
@@ -4803,7 +4841,7 @@
 		(uuid "4e6da382-fff5-4786-bed1-931bf9acc073")
 	)
 	(label "BattVoltage"
-		(at 176.022 106.172 180)
+		(at 176.022 85.852 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4846,6 +4884,28 @@
 		)
 		(uuid "64c95313-005b-49f7-bb4b-fca3e94c0d0b")
 	)
+	(label "DepCurrent"
+		(at 176.022 83.312 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6b248bbe-5c6e-45b0-8aee-652f7b2d81bb")
+	)
+	(label "EFuse_PG"
+		(at 64.262 85.852 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "761490b6-8e49-4665-aad9-92a586fee4c6")
+	)
 	(label "CAN+"
 		(at 35.052 78.74 180)
 		(fields_autoplaced yes)
@@ -4858,13 +4918,13 @@
 		(uuid "78c68dfc-e264-435f-abb1-5fd3d1f6145f")
 	)
 	(label "SCL"
-		(at 176.022 118.872 180)
+		(at 242.062 118.872 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "7beb067c-0b7f-4f24-a971-20f7e9559c78")
 	)
@@ -4913,7 +4973,7 @@
 		(uuid "8838005c-1bf8-4f84-9795-ddc02cc08a22")
 	)
 	(label "LogicSwitch"
-		(at 242.062 103.632 0)
+		(at 242.062 101.092 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4922,6 +4982,17 @@
 			(justify left bottom)
 		)
 		(uuid "8e0b6146-d4b3-4d44-8b89-a642a387dfb5")
+	)
+	(label "DepCurrent"
+		(at 64.262 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9253f1cb-39ec-4ba7-a7d5-5b55923e1237")
 	)
 	(label "CHIP_PU"
 		(at 145.542 192.532 180)
@@ -4990,7 +5061,7 @@
 		(uuid "a9278bd4-301b-4722-8cd2-91af04e5ae7d")
 	)
 	(label "ARMING"
-		(at 242.062 96.012 0)
+		(at 242.062 103.632 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5032,6 +5103,17 @@
 			(justify left bottom)
 		)
 		(uuid "bec6bf45-8386-4e65-9761-d39911030d98")
+	)
+	(label "EFuse_PG"
+		(at 176.022 80.772 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c99d6848-1aae-4f2c-a4cc-1505c9aeea10")
 	)
 	(label "CHIP_PU"
 		(at 165.862 68.072 0)
@@ -5089,7 +5171,7 @@
 		(uuid "db6ff818-2773-4d38-88fc-acd9acb0468a")
 	)
 	(label "SDA"
-		(at 242.062 108.712 0)
+		(at 242.062 116.332 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5100,7 +5182,7 @@
 		(uuid "dc23c328-65de-43fb-a914-8938066176bf")
 	)
 	(label "LogicVoltage"
-		(at 176.022 85.852 180)
+		(at 176.022 73.152 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5111,7 +5193,7 @@
 		(uuid "de1243ed-c5e6-4169-b2e1-b5ccd330e8de")
 	)
 	(label "CAN_TX"
-		(at 176.022 121.412 180)
+		(at 176.022 93.472 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5122,7 +5204,7 @@
 		(uuid "df749f4e-5f36-453c-9525-da2fb2bb9017")
 	)
 	(label "CAN_RX"
-		(at 176.022 123.952 180)
+		(at 176.022 90.932 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5144,7 +5226,7 @@
 		(uuid "f63f3c64-d980-4ae0-b129-a351881a850f")
 	)
 	(label "DepVoltage"
-		(at 176.022 103.632 180)
+		(at 176.022 75.692 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5216,6 +5298,75 @@
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 56.642 145.542 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a075a0d-20c3-4def-828b-5b6724303c99")
+		(property "Reference" "C28"
+			(at 49.276 144.6417 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 49.276 147.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 56.642 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 56.642 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 56.642 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a80146fa-3359-4567-851f-a261e75bef90")
+		)
+		(pin "1"
+			(uuid "da416915-c2bd-43f8-b10d-b0ac7aacf547")
+		)
+		(instances
+			(project "PDU"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -6546,7 +6697,7 @@
 		(fields_autoplaced yes)
 		(uuid "53c0fa19-4857-45ef-a0b0-d2d75f95cdd8")
 		(property "Reference" "R14"
-			(at 62.9666 144.1993 0)
+			(at 62.9666 143.8218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6554,8 +6705,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47k"
-			(at 62.9666 146.7362 0)
+		(property "Value" "97.6k"
+			(at 62.9666 146.2461 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10529,6 +10680,26 @@
 				(justify right)
 			)
 			(uuid "1532e342-a68b-49b3-a091-6dff5c0dca8b")
+		)
+		(pin "DepCurrent" output
+			(at 64.262 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "38b6a6a4-196d-42fa-b7d4-8bad7874be42")
+		)
+		(pin "EFuse_PG" output
+			(at 64.262 85.852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "745c35b0-5f9b-4435-8f49-ee9c407f6e91")
 		)
 		(instances
 			(project "PDU"

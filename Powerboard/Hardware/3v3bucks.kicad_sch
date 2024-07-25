@@ -2342,6 +2342,12 @@
 		(uuid "2f1ebd2b-d08b-4301-aae2-f6ef217f6430")
 	)
 	(junction
+		(at 228.346 93.472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36af904b-821d-48a3-985b-67919431cbf5")
+	)
+	(junction
 		(at 262.636 96.012)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2364,12 +2370,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4e2e34ef-1eae-42d3-aa8c-0ef80920806b")
-	)
-	(junction
-		(at 228.346 93.472)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ec85af6-1aae-42f0-a57a-c9711ca739ae")
 	)
 	(junction
 		(at 237.236 96.012)
@@ -3179,6 +3179,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.346 93.472) (xy 228.346 137.414)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b00197f-599b-45ef-8771-2a4678303b6d")
+	)
+	(wire
+		(pts
 			(xy 111.506 83.312) (xy 164.084 83.312)
 		)
 		(stroke
@@ -3196,16 +3206,6 @@
 			(type default)
 		)
 		(uuid "80274772-6d0a-4a22-8a03-ef80beaae6f1")
-	)
-	(wire
-		(pts
-			(xy 228.346 93.472) (xy 228.346 137.414)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "806e8a55-3e75-4099-a078-1d5633fcd1bc")
 	)
 	(wire
 		(pts
@@ -3259,7 +3259,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.346 93.472) (xy 237.236 93.472)
+			(xy 203.454 93.472) (xy 228.346 93.472)
 		)
 		(stroke
 			(width 0)
@@ -3489,13 +3489,13 @@
 	)
 	(wire
 		(pts
-			(xy 203.454 93.472) (xy 228.346 93.472)
+			(xy 228.346 93.472) (xy 237.236 93.472)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "beb53c21-adc9-42cc-aca2-b18ea3cb17b7")
+		(uuid "beea4e47-5272-40a8-b727-1e274307b538")
 	)
 	(wire
 		(pts
@@ -3817,16 +3817,16 @@
 		)
 		(uuid "fd4de54a-84d0-4b71-87df-9d88a15e7b99")
 	)
-	(text "Sim says up to 330uF on input for 12V,\nformulas suggest 20uF should suffice.\nN.B. formula uses Vcinpkpk of 500mV\n(upper bound)"
+	(text "TCN4107M035R0100E"
 		(exclude_from_sim no)
-		(at 159.512 81.788 0)
+		(at 169.672 79.756 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(href "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/TCN4107M035R0100E?qs=sGAEpiMZZMtZ1n0r9vR22SeqCvkzATeszEri9mej2H9L7z4cLaofwQ%3D%3D")
 		)
-		(uuid "5537c63f-3513-479c-afbd-d44353a14380")
+		(uuid "57e806ac-e69f-46da-9c08-ed1a3f826b1b")
 	)
 	(text "Cmin = 100uF. Went for 22uF caps \ninstead of 10uF to save space and lower ESR"
 		(exclude_from_sim no)
@@ -4549,7 +4549,7 @@
 		(fields_autoplaced yes)
 		(uuid "521452e6-3fbe-404d-81b4-805de74e007f")
 		(property "Reference" "C40"
-			(at 171.831 84.4712 0)
+			(at 171.831 84.0937 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,8 +4557,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF"
-			(at 171.831 87.0081 0)
+		(property "Value" "100uF"
+			(at 171.831 86.518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4566,7 +4566,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "iclr:CAPPM7362X200N"
 			(at 169.672 85.852 0)
 			(effects
 				(font
