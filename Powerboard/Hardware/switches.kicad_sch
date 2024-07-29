@@ -3526,6 +3526,12 @@
 		(uuid "10744271-f94c-4077-9d23-c6dfc9246446")
 	)
 	(junction
+		(at 39.116 67.818)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10cf87c0-7bc3-43c7-b9c2-9d4476fb9e36")
+	)
+	(junction
 		(at 68.326 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3554,6 +3560,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b30b2c4-f11e-468b-82c6-74df20f37356")
+	)
+	(junction
+		(at 123.698 68.834)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b7cfff5-c1b8-444e-8e8e-4353eedc691d")
+	)
+	(junction
+		(at 48.006 77.978)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f4ffe16-480d-415e-81b7-04b49e150ee4")
 	)
 	(junction
 		(at 152.4 37.592)
@@ -3788,6 +3806,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7e153f9-6fd8-4b9e-b087-4dafe03eee21")
+	)
+	(junction
+		(at 132.842 78.994)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cffbb727-b820-472a-8b46-d5da3289b818")
 	)
 	(junction
 		(at 154.94 91.948)
@@ -4073,7 +4097,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.736 77.978) (xy 50.546 77.978)
+			(xy 46.736 77.978) (xy 48.006 77.978)
 		)
 		(stroke
 			(width 0)
@@ -4120,6 +4144,16 @@
 			(type default)
 		)
 		(uuid "26221c66-f7e4-464a-be88-a01b91e1d1e3")
+	)
+	(wire
+		(pts
+			(xy 132.842 73.914) (xy 132.842 68.834)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "268117a6-f7ca-4ff7-a759-db95d35c13ee")
 	)
 	(wire
 		(pts
@@ -4553,6 +4587,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.006 77.978) (xy 50.546 77.978)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f8bd8de-6630-4ba4-8f5f-ed6042d08793")
+	)
+	(wire
+		(pts
 			(xy 78.486 60.96) (xy 81.026 60.96)
 		)
 		(stroke
@@ -4923,6 +4967,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.006 72.898) (xy 48.006 67.818)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5b0e2b7-8482-4bb9-91eb-e7045da32abf")
+	)
+	(wire
+		(pts
 			(xy 213.106 136.398) (xy 213.106 139.192)
 		)
 		(stroke
@@ -5043,6 +5097,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.842 78.994) (xy 135.128 78.994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba5216a5-e2dd-46bf-9280-209d8467700b")
+	)
+	(wire
+		(pts
 			(xy 34.036 54.864) (xy 34.036 64.262)
 		)
 		(stroke
@@ -5103,6 +5167,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.842 68.834) (xy 123.698 68.834)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c659bef3-73a3-4e65-8a44-1e92885f79c5")
+	)
+	(wire
+		(pts
 			(xy 39.116 67.818) (xy 39.243 30.607)
 		)
 		(stroke
@@ -5130,6 +5204,16 @@
 			(type default)
 		)
 		(uuid "c9731d35-3d28-42c7-9007-5f224e1243e1")
+	)
+	(wire
+		(pts
+			(xy 48.006 67.818) (xy 39.116 67.818)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9747a81-1f56-430f-a368-b6e708b2c3b7")
 	)
 	(wire
 		(pts
@@ -5303,7 +5387,7 @@
 	)
 	(wire
 		(pts
-			(xy 131.318 78.994) (xy 135.128 78.994)
+			(xy 131.318 78.994) (xy 132.842 78.994)
 		)
 		(stroke
 			(width 0)
@@ -6114,6 +6198,145 @@
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
 					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 48.006 75.438 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f96e546-c4f8-4264-9f1b-8cd31f327b5d")
+		(property "Reference" "C29"
+			(at 48.768 70.9817 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 48.768 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 48.006 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.006 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 48.006 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aede505e-7401-4932-a2b4-cf5c7703581c")
+		)
+		(pin "1"
+			(uuid "30734384-d21d-46b6-82c1-891497b1dafd")
+		)
+		(instances
+			(project "PDU"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
+					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 48.006 80.518 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11faa964-863a-49c7-bf98-50fabf95f01f")
+		(property "Reference" "R44"
+			(at 49.5046 79.3058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 49.5046 81.7301 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 48.006 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.006 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 48.006 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2840b38c-a58f-4d5d-a899-ca9f4afaad6d")
+		)
+		(pin "2"
+			(uuid "49fd56c6-3aaf-442f-a343-6404201fef14")
+		)
+		(instances
+			(project "PDU"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -7491,6 +7714,141 @@
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 48.006 83.058 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4488c388-44bf-438a-a749-4f4fb37d08f7")
+		(property "Reference" "#PWR026"
+			(at 48.006 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.006 87.5014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.006 83.058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.006 83.058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.006 83.058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dab7e892-eb19-4a09-98e2-297cb0ec603c")
+		)
+		(instances
+			(project "PDU"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 132.842 76.454 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46bbdfc3-a860-490f-9f89-19e86ac37239")
+		(property "Reference" "C31"
+			(at 133.604 71.9977 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 133.604 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 132.842 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.842 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 132.842 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4d57e435-b28e-4fb0-89a4-124a94866cff")
+		)
+		(pin "1"
+			(uuid "32757160-a0f7-4d20-b0d4-00a40e77ab3a")
+		)
+		(instances
+			(project "PDU"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -10058,6 +10416,142 @@
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
 					(reference "LOGICLED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 132.842 81.534 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d866e589-cb12-4aa2-af7f-b9acb51a2bbd")
+		(property "Reference" "R45"
+			(at 134.3406 80.3218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 134.3406 82.7461 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 132.842 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.842 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 132.842 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88a32593-6cf2-436b-9d82-66ec35d1ed8f")
+		)
+		(pin "2"
+			(uuid "e530fae0-c0eb-42c8-9366-41909a055bc5")
+		)
+		(instances
+			(project "PDU"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.842 84.074 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da0e757d-a5bf-47fd-8865-da0705aa644c")
+		(property "Reference" "#PWR027"
+			(at 132.842 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.842 88.5174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.842 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.842 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.842 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4fd6052b-ee65-490b-8d85-2901a179bcbf")
+		)
+		(instances
+			(project "PDU"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
