@@ -7035,6 +7035,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "VKME1301H181MV"
+			(at 154.94 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "17f647c8-76b0-46a1-b425-bf1c6c8e9d71")
 		)
@@ -7831,6 +7840,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 132.842 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "UMK212ABJ225KG-T"
 			(at 132.842 76.454 0)
 			(effects
 				(font
@@ -9058,6 +9076,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "SSM3K15AMFV,L3F(T"
+			(at 242.316 39.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "909808a3-e206-4946-aa74-8fd5fafd9341")
 		)
@@ -9234,7 +9261,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "97.6"
+		(property "Value" "97.6k"
 			(at 136.3726 110.1781 0)
 			(effects
 				(font

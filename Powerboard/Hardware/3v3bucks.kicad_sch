@@ -4456,6 +4456,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" " CGA0603X5R226M160JT"
+			(at 71.12 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5c3eca1d-d5ab-49cd-aba1-c03c726f3228")
 		)
@@ -4906,7 +4915,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "45k"
+		(property "Value" "45.3k"
 			(at 66.5226 100.7622 0)
 			(effects
 				(font
@@ -5103,6 +5112,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" " SIC437AED-T1-GE3"
+			(at 115.316 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9a2ad128-294b-4982-ae0a-ee0ecb418820")
 		)
@@ -5248,6 +5266,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 75.692 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" " CGA0603X5R226M160JT"
 			(at 75.692 114.808 0)
 			(effects
 				(font
@@ -5568,6 +5595,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 61.468 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" " CGA0603X5R226M160JT"
 			(at 61.468 114.808 0)
 			(effects
 				(font
@@ -6240,6 +6276,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" " CGA0603X5R226M160JT"
+			(at 88.646 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1b6c1ebb-67d0-4ef5-8819-0de21ff980f2")
 		)
@@ -6638,6 +6683,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 56.642 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" " CGA0603X5R226M160JT"
 			(at 56.642 114.808 0)
 			(effects
 				(font
@@ -7189,6 +7243,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" " CGA0603X5R226M160JT"
+			(at 80.01 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c6bf17b5-d860-45c5-9495-6f57a947d5f3")
 		)
@@ -7250,6 +7313,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 84.328 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" " CGA0603X5R226M160JT"
 			(at 84.328 114.808 0)
 			(effects
 				(font
