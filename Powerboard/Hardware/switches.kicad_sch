@@ -8575,6 +8575,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" " C1005X7S2A103KT000F"
+			(at 216.662 113.538 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "63cbffaa-4399-4d92-b51a-39f1ea627d19")
 		)
@@ -10866,6 +10875,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 131.318 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CGA0603X5R226M160JT"
 			(at 131.318 108.966 0)
 			(effects
 				(font

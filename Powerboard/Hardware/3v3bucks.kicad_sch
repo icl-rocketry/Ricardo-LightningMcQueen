@@ -4115,6 +4115,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" " C1005X7R1H104KT000S"
+			(at 181.864 85.852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "696882ac-de5d-4330-aa6b-bdd94bba84eb")
 		)
