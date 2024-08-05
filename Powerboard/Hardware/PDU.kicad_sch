@@ -8684,7 +8684,7 @@
 				)
 			)
 		)
-		(property "Footprint" "iclr:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal"
 			(at 32.258 134.874 0)
 			(effects
 				(font
@@ -8702,7 +8702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 32.258 134.874 0)
 			(effects
 				(font
