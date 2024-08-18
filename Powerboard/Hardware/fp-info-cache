@@ -1,4 +1,4 @@
-23337850511120138
+23351672779368448
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -94857,6 +94857,13 @@ Chad
 0
 0
 iclr
+Crystal_SMD_2016-4Pin_2.0x1.6mm
+SMD Crystal SERIES SMD2016/4 http://www.q-crystal.com/upload/5/2015552223166229.pdf, 2.0x1.6mm^2 package
+SMD SMT crystal
+0
+4
+4
+iclr
 D5V0FS4U10LP7
 D5V0FS4U10LP-7-1
 TVS Diode (Uni-directional)
@@ -94962,6 +94969,13 @@ IND_ETQP5M330YFM
 2
 2
 iclr
+IND_SPM10065VT-3R3M-D
+
+
+0
+2
+2
+iclr
 IND_SRP6540-390M
 
 
@@ -95060,6 +95074,13 @@ Inductor
 2
 2
 iclr
+Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-06A2, example for new mpn: 39-30-0060, 3 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryplastic_peg
+0
+6
+6
+iclr
 Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal_No_Mounting_Holes
 Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-06A2, example for new mpn: 39-30-0060, 3 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
 connector Molex Mini-Fit_Jr top entryplastic_peg
@@ -95087,6 +95108,13 @@ connector Molex Nano-Fit top entry
 0
 2
 2
+iclr
+Molex_Nano-Fit_105313-xx03_1x03_P2.50mm_Horizontal
+Molex Nano-Fit Power Connectors, 105313-xx03, 3 Pins per row (http://www.molex.com/pdm_docs/sd/1053131208_sd.pdf), generated with kicad-footprint-generator
+connector Molex Nano-Fit top entry
+0
+3
+3
 iclr
 P160KN0QC20A10K
 P160KN-0QC20A10K-2
@@ -95284,6 +95312,13 @@ SOP65P637X110-16N
 17
 17
 iclr
+SOT-723
+http://toshiba.semicon-storage.com/info/docget.jsp?did=5879&prodName=RN1104MFV
+sot 723
+0
+3
+3
+iclr
 SOT65P210X110-6N
 
 
@@ -95368,6 +95403,13 @@ Integrated Circuit
 26
 26
 iclr
+TRANS_SI7635DP-T1-GE3
+
+
+0
+9
+9
+iclr
 TRANS_SSM6J511NU,LF
 
 
@@ -95388,6 +95430,13 @@ TopTrumps
 0
 0
 0
+iclr
+USB_C_Receptacle_Palconn_UTC16-G
+http://www.palpilot.com/wp-content/uploads/2017/05/UTC027-GKN-OR-Rev-A.pdf
+USB C Type-C Receptacle USB2.0
+0
+20
+17
 iclr
 VIA-0.6mm
 
@@ -95495,6 +95544,13 @@ chinesebuck
 0
 iclr
 daisychain
+
+
+0
+0
+0
+iclr
+greggs
 
 
 0
