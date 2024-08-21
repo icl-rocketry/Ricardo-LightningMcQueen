@@ -1,15 +1,15 @@
 [submodule "libriccore"]
-	path = Powerboard/Software/components/libriccore
+	path = Powerboard/Firmware/components/libriccore
 	url = git@github.com:icl-rocketry/libriccore.git
 [submodule "librnp"]
-	path = Powerboard/Software/components/librnp
+	path = Powerboard/Firmware/components/librnp
 	url = git@github.com:icl-rocketry/librnp.git
 [submodule "arduino"]
-	path = Powerboard/Software/components/arduino
+	path = Powerboard/Firmware/components/arduino
 	url = https://github.com/espressif/arduino-esp32.git
 [submodule "librrc"]
-	path = Powerboard/Software/components/librrc
+	path = Powerboard/Firmware/components/librrc
 	url = git@github.com:icl-rocketry/librrc.git
 [submodule "ArduinoJson"]
-	path = Powerboard/Software/components/ArduinoJson
+	path = Powerboard/Firmware/components/ArduinoJson
 	url = https://github.com/bblanchon/ArduinoJson.git
