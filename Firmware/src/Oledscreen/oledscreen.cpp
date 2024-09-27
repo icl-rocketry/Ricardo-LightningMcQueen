@@ -11,9 +11,13 @@
 
 void OLEDScreen::setupScreen(){
 
+    m_wire.setTimeout(5); // to stop the stupid lag
     // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally (from test code)
     if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
         //_systemstatus.newFlag(SYSTEM_FLAG::ERROR_DISPLAY);
+
+        m_wire.setTimeout(1); // to stop the stupid lag
+        
     }
     else{
         timeEnteredSetup = millis();

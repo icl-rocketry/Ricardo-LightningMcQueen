@@ -23,7 +23,7 @@ I2C(0),
 oledscreen(I2C),
 latchbitmonitor(),
 logicpower(PinMap::LogicSwitch, PinMap::LogicPowerLog, false, true, 2.87, 10),
-deploypower(PinMap::DepPowerSwitch, PinMap::DepPowerLog, false, false, 97.6, 10),
+deploypower(PinMap::DepPowerSwitch, PinMap::DepPowerLog, true, false, 97.6, 10),
 battpower(PinMap::BattPowerLog, 97.6, 10)
 {};
 

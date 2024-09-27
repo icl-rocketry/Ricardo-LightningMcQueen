@@ -11,7 +11,7 @@ class OLEDScreen{
   public:
 
     OLEDScreen(TwoWire& wire):
-    display(SCREEN_WIDTH, SCREEN_HEIGHT, &wire, OLED_RESET){};
+    display(SCREEN_WIDTH, SCREEN_HEIGHT, &wire, OLED_RESET),m_wire(wire){};
     
     void setupScreen(); //initialise led screen
     void updateScreen(); //general update method
@@ -35,6 +35,7 @@ class OLEDScreen{
   
 
     Adafruit_SSD1306 display;    
+    TwoWire& m_wire;
     static constexpr uint8_t SCREEN_WIDTH = 128;  //required for display setup
     static constexpr uint8_t SCREEN_HEIGHT = 32;
     static constexpr int8_t SCREEN_ADDRESS = 0x3C;
