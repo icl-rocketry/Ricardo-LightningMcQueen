@@ -13,3 +13,15 @@
 [submodule "ArduinoJson"]
 	path = Firmware/components/ArduinoJson
 	url = https://github.com/bblanchon/ArduinoJson.git
+[submodule "Firmware/components/librrc"]
+	path = Firmware/components/librrc
+	url = https://github.com/icl-rocketry/librrc
+[submodule "Firmware/components/libriccore"]
+	path = Firmware/components/libriccore
+	url = https://github.com/icl-rocketry/libriccore
+[submodule "Firmware/components/librnp"]
+	path = Firmware/components/librnp
+	url = https://github.com/icl-rocketry/librnp
+[submodule "Firmware/components/arduino"]
+	path = Firmware/components/arduino
+	url = https://github.com/espressif/arduino-esp32
