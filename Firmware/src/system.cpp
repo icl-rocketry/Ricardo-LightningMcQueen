@@ -68,13 +68,13 @@ void System::systemUpdate(){
     deploypower.RailUpdate();
     battpower.RailUpdate();
 
-    if (millis() - oled_update_time > 500){
-        oledscreen.updateLogicV(logicpower.getData().volt);
-        oledscreen.updateDepV(deploypower.getData().volt);
-        oledscreen.updateBattV(battpower.getData().volt, 16800);
-        oledscreen.updateScreen(); 
+    // if (millis() - oled_update_time > 500){
+    //     oledscreen.updateLogicV(logicpower.getData().volt);
+    //     oledscreen.updateDepV(deploypower.getData().volt);
+    //     oledscreen.updateBattV(battpower.getData().volt, 16800);
+    //     oledscreen.updateScreen(); 
 
-        oled_update_time = millis();   
-    }
+    //     oled_update_time = millis();   
+    // }
 
 };
