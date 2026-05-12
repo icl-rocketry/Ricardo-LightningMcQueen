@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.1
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -109,7 +109,6 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
-        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -128,7 +127,7 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.09,
-        "min_connection": 0.125,
+        "min_connection": 0.0,
         "min_copper_edge_clearance": 0.254,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.254,
@@ -139,13 +138,13 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.25,
-        "min_track_width": 0.125,
-        "min_via_annular_width": 0.125,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.09,
+        "min_via_annular_width": 0.075,
         "min_via_diameter": 0.45,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.005,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -484,7 +483,6 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
-      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -531,8 +529,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "Switcher.net",
-      "plot": "",
-      "pos_files": "",
+      "plot": "pro/",
+      "pos_files": "pro/",
       "specctra_dsn": "",
       "step": "Switcher.step",
       "svg": "",
