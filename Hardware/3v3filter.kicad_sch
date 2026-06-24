@@ -2602,15 +2602,15 @@
 		(fields_autoplaced yes)
 		(uuid "4b6b7c47-5e11-4065-b26e-9c14c9c8ee50")
 		(property "Reference" "U302"
-			(at 205.232 63.7372 0)
+			(at 205.232 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SC4215"
-			(at 205.232 66.2741 0)
+		(property "Value" "SC4215ASTRT"
+			(at 205.232 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
