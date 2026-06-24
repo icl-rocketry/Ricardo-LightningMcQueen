@@ -1565,7 +1565,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02823022-1e84-42f9-b62a-4f99dde6f006")
-		(property "Reference" "D1"
+		(property "Reference" "D403"
 			(at 173.99 91.186 90)
 			(effects
 				(font
@@ -1622,7 +1622,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "D1")
+					(reference "D403")
 					(unit 1)
 				)
 			)
@@ -1637,7 +1637,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b8f9035-c4ba-4acb-8c8e-2b186e0ff025")
-		(property "Reference" "R17"
+		(property "Reference" "R405"
 			(at 101.6 97.536 0)
 			(effects
 				(font
@@ -1646,7 +1646,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 101.6 100.076 0)
 			(effects
 				(font
@@ -1691,7 +1691,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "R17")
+					(reference "R405")
 					(unit 1)
 				)
 			)
@@ -1707,7 +1707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44aacf1b-4bfb-4ac7-869c-80161381c9b6")
-		(property "Reference" "C22"
+		(property "Reference" "C403"
 			(at 97.79 73.406 0)
 			(effects
 				(font
@@ -1761,7 +1761,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "C22")
+					(reference "C403")
 					(unit 1)
 				)
 			)
@@ -1777,7 +1777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "483eaac7-5d09-4d86-9def-3270f3ef65ba")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR0408"
 			(at 107.95 75.946 0)
 			(effects
 				(font
@@ -1827,7 +1827,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "#PWR038")
+					(reference "#PWR0408")
 					(unit 1)
 				)
 			)
@@ -1843,7 +1843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4de1a94b-5308-4806-ad5e-71e1d527d4ad")
-		(property "Reference" "R20"
+		(property "Reference" "R411"
 			(at 146.05 96.266 0)
 			(effects
 				(font
@@ -1852,7 +1852,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60"
+		(property "Value" "60Ω"
 			(at 146.05 98.806 0)
 			(effects
 				(font
@@ -1897,7 +1897,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "R20")
+					(reference "R411")
 					(unit 1)
 				)
 			)
@@ -1913,7 +1913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50aabd18-8b37-46ae-97b2-42d04825a59a")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR0409"
 			(at 107.95 83.566 0)
 			(effects
 				(font
@@ -1963,7 +1963,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "#PWR039")
+					(reference "#PWR0409")
 					(unit 1)
 				)
 			)
@@ -1979,7 +1979,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d9baebe-2425-45d7-8700-e8094c810011")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR0413"
 			(at 118.11 108.966 0)
 			(effects
 				(font
@@ -2029,7 +2029,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "#PWR040")
+					(reference "#PWR0413")
 					(unit 1)
 				)
 			)
@@ -2045,7 +2045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bea6411-e501-4e5a-a793-dd84fbbd89d6")
-		(property "Reference" "C23"
+		(property "Reference" "C404"
 			(at 113.03 73.4122 0)
 			(effects
 				(font
@@ -2099,7 +2099,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "C23")
+					(reference "C404")
 					(unit 1)
 				)
 			)
@@ -2115,7 +2115,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bb352d5-0320-4a0a-8047-d04312c7b7a8")
-		(property "Reference" "R19"
+		(property "Reference" "R410"
 			(at 146.05 86.106 0)
 			(effects
 				(font
@@ -2124,7 +2124,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60"
+		(property "Value" "60Ω"
 			(at 146.05 88.646 0)
 			(effects
 				(font
@@ -2169,7 +2169,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "R19")
+					(reference "R410")
 					(unit 1)
 				)
 			)
@@ -2185,7 +2185,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94ffc7e6-23e1-4639-b469-12d961ee1187")
-		(property "Reference" "C24"
+		(property "Reference" "C406"
 			(at 154.94 86.106 90)
 			(effects
 				(font
@@ -2237,7 +2237,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "C24")
+					(reference "C406")
 					(unit 1)
 				)
 			)
@@ -2253,7 +2253,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9aa39c65-42c2-4168-8e20-8d8f9206c4e8")
-		(property "Reference" "U4"
+		(property "Reference" "U402"
 			(at 125.73 78.7146 0)
 			(effects
 				(font
@@ -2323,7 +2323,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "U4")
+					(reference "U402")
 					(unit 1)
 				)
 			)
@@ -2339,7 +2339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3befb04-ad83-4d71-93e6-31a252aa254c")
-		(property "Reference" "R18"
+		(property "Reference" "R409"
 			(at 140.97 87.7402 90)
 			(effects
 				(font
@@ -2347,7 +2347,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 140.97 90.2771 90)
 			(effects
 				(font
@@ -2391,7 +2391,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "R18")
+					(reference "R409")
 					(unit 1)
 				)
 			)
@@ -2407,7 +2407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb9061f5-fc85-4653-86be-ed0d2fdc9693")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR0416"
 			(at 158.75 98.806 0)
 			(effects
 				(font
@@ -2457,7 +2457,7 @@
 		(instances
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/12646a0c-a158-4f1c-9172-cd278d717c5e"
-					(reference "#PWR041")
+					(reference "#PWR0416")
 					(unit 1)
 				)
 			)
