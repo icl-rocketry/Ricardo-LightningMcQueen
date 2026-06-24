@@ -7349,7 +7349,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SI7635DP-T1-GE3"
+		(property "Value" "SI7135DP-T1-GE3"
 			(at 156.7942 85.5401 0)
 			(effects
 				(font
@@ -7396,7 +7396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nP-Channel 20 V 40A (Tc) 5W (Ta), 54W (Tc) Surface Mount PowerPAK® SO-8\n"
+		(property "Description_1" "\nP-Channel 30 V 60A Surface Mount PowerPAK® SO-8\n"
 			(at 152.908 84.328 0)
 			(effects
 				(font
@@ -7426,7 +7426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SI7635DP-T1-GE3/Vishay+Siliconix/view-part/?ref=eda"
+		(property "Check_prices" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7135DP-T1-GE3?qs=IRuQNBqMOcnMinMQAFe5cQ%3D%3D"
 			(at 152.908 84.328 0)
 			(effects
 				(font
@@ -7436,7 +7436,7 @@
 				(hide yes)
 			)
 		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SI7635DP-T1-GE3/Vishay+Siliconix/view-part/?ref=snap"
+		(property "SnapEDA_Link" ""
 			(at 152.908 84.328 0)
 			(effects
 				(font
@@ -7446,7 +7446,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "SI7635DP-T1-GE3"
+		(property "MP" "SI7135DP-T1-GE3"
 			(at 152.908 84.328 0)
 			(effects
 				(font
@@ -8534,188 +8534,6 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
 					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "iclr:SI7635DP-T1-GE3")
-		(at 152.908 45.212 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6bb0ecc3-eede-4abe-b305-00b2955fdbcf")
-		(property "Reference" "Q3"
-			(at 149.0219 43.9998 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SI7635DP-T1-GE3"
-			(at 149.0219 46.4241 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Vishay"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\nP-Channel 20 V 40A (Tc) 5W (Ta), 54W (Tc) Surface Mount PowerPAK® SO-8\n"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "PowerPAK SO-8 Vishay"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SI7635DP-T1-GE3/Vishay+Siliconix/view-part/?ref=eda"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SI7635DP-T1-GE3/Vishay+Siliconix/view-part/?ref=snap"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SI7635DP-T1-GE3"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Vishay"
-			(at 152.908 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "cb3b351e-74bc-4368-bdf1-379f531356d8")
-		)
-		(pin "2"
-			(uuid "ca9e9f37-733f-4f29-bc25-38b9af1f3810")
-		)
-		(pin "7"
-			(uuid "548d0ae2-a7c6-469f-b556-21318ba9ef56")
-		)
-		(pin "4"
-			(uuid "a7ae198d-cb37-4e39-8308-09cf5ba7fe2c")
-		)
-		(pin "6"
-			(uuid "9d0b7c7b-e6fa-4f90-85cf-703fde9db6ae")
-		)
-		(pin "9"
-			(uuid "ca02093d-c360-47d1-83ef-800f5fa49604")
-		)
-		(pin "1"
-			(uuid "a5f9f339-d4bd-4fb3-9a2d-cb224ba7fd02")
-		)
-		(pin "3"
-			(uuid "4557853e-1d61-42be-8c0a-dd92f202c21a")
-		)
-		(pin "5"
-			(uuid "d1e1e158-ef0a-4a94-85a7-18deaf98dee9")
-		)
-		(instances
-			(project "PDU"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -10726,6 +10544,188 @@
 			(project "PDU"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iclr:SI7635DP-T1-GE3")
+		(at 152.908 45.212 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e67aae86-03da-455f-a53e-eb7723feab7c")
+		(property "Reference" "Q3"
+			(at 147.828 43.9419 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SI7135DP-T1-GE3"
+			(at 147.828 46.4819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Vishay"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\nP-Channel 30 V 60A Surface Mount PowerPAK® SO-8\n"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "PowerPAK SO-8 Vishay"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SI7135DP-T1-GE3?qs=IRuQNBqMOcnMinMQAFe5cQ%3D%3D"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "SI7135DP-T1-GE3"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Vishay"
+			(at 152.908 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "b19ee008-637f-4128-a926-aa6bc8bfecaa")
+		)
+		(pin "2"
+			(uuid "5b63c32e-c4e4-4a61-8424-b25e65bcd621")
+		)
+		(pin "7"
+			(uuid "68870841-ec0f-494c-b7c8-39229aa0dfb2")
+		)
+		(pin "4"
+			(uuid "d5d9804b-659f-4206-8135-bed25f1e2ed7")
+		)
+		(pin "6"
+			(uuid "19c6ed40-f9e3-49bf-89cb-083b2e7ee609")
+		)
+		(pin "9"
+			(uuid "3f7c3499-c3d2-4371-bf79-2542f9999f60")
+		)
+		(pin "1"
+			(uuid "7d16eee5-0a39-4449-8a55-222e7f9fe8d9")
+		)
+		(pin "3"
+			(uuid "73df534a-96d4-4630-a2c5-04a1b3218b3d")
+		)
+		(pin "5"
+			(uuid "97f57067-0b06-42c7-b367-50eec81974d1")
+		)
+		(instances
+			(project "PDU"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/133f56f4-a29c-4cbf-87b7-9d99a292e3c0"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
