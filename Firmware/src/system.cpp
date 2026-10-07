@@ -19,10 +19,10 @@
 System::System():
 RicCoreSystem(Commands::command_map,Commands::defaultEnabledCommands,Serial),
 canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
-I2C(0),
-oledscreen(I2C),
+//I2C(0),
+//oledscreen(I2C),
 latchbitmonitor(),
-logicpower(PinMap::LogicSwitch, PinMap::LogicPowerLog, false, true, 10, 10),
+logicpower(PinMap::LogicSwitch, PinMap::LogicPowerLog, false, true, 2.87, 10),
 deploypower(PinMap::DepPowerSwitch, PinMap::DepPowerLog, true, false, 97.6, 10),
 battpower(PinMap::BattPowerLog, 97.6, 10)
 {};
@@ -55,10 +55,10 @@ void System::systemSetup(){
     battpower.RailSetup(16800, 0);
 
     //initialize oled screen
-    I2C.begin(PinMap::_SDA, PinMap::_SCL, GeneralConfig::I2C_FREQUENCY);
-    oledscreen.setupScreen();
+    //I2C.begin(PinMap::_SDA, PinMap::_SCL, GeneralConfig::I2C_FREQUENCY);
+    //oledscreen.setupScreen();
 
-    oled_update_time = millis();
+    //oled_update_time = millis();
 
 };
 
@@ -68,13 +68,15 @@ void System::systemUpdate(){
     deploypower.RailUpdate();
     battpower.RailUpdate();
 
-    if (millis() - oled_update_time > 500){
-        oledscreen.updateLogicV(logicpower.getData().volt);
-        oledscreen.updateDepV(deploypower.getData().volt);
-        oledscreen.updateBattV(battpower.getData().volt, 16800);
-        oledscreen.updateScreen(); 
+/*
+
+   // if (millis() - oled_update_time > 500){
+       // oledscreen.updateLogicV(logicpower.getData().volt);
+        //oledscreen.updateDepV(deploypower.getData().volt);
+        //oledscreen.updateBattV(battpower.getData().volt, 16800);
+        //oledscreen.updateScreen(); 
 
         oled_update_time = millis();   
     }
-
+*/
 };

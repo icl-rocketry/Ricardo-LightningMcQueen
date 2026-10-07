@@ -39,7 +39,7 @@ void Idle::initialize()
     latch_bit = _system.latchbitmonitor.getLatchBit();
 
     //update oled state text
-    _system.oledscreen.updateState("IDLE");
+  //  _system.oledscreen.updateState("IDLE");
 
 
 };

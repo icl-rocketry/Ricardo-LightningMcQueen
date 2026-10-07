@@ -25,8 +25,8 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         CanBus<SYSTEM_FLAG> canbus;
 
-        TwoWire I2C;
-        OLEDScreen oledscreen;
+      //  TwoWire I2C;
+    //   OLEDScreen oledscreen;
         LatchBitMonitor latchbitmonitor;
         PowerRail logicpower;
         PowerRail deploypower;
@@ -35,7 +35,7 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
     private:
 
-        uint64_t oled_update_time;
+      //  uint64_t oled_update_time;
 
 
 };
